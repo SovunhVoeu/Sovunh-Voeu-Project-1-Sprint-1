@@ -16,12 +16,11 @@ def api_model_and_response():
     model = genai.GenerativeModel("gemini-1.5-flash")
 
     # Deliver the intended prompt to the AI here
-    prompt = (" ")
+    user_input = input("Deliver the intended prompt to the AI here: \n")
 
-    # job_description = ("software engineer")
 
-    response = model.generate_content(prompt)
-    print(response.text)
+    response = model.generate_content(user_input)
+    print( "\n" + response.text)
 
 if __name__ == '__main__':
     api_model_and_response()
