@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add main.py to the same directory">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="pulled .yml into the main directory">
+      <change beforePath="$PROJECT_DIR$/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
     </key>
   </component>
@@ -248,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738410960293</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="pulled .yml into the main directory">
+      <option name="closed" value="true" />
+      <created>1738411265660</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738411265660</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,6 +275,7 @@
     <MESSAGE value="running test dummy pass to correct pytest error" />
     <MESSAGE value="add python-m pytest" />
     <MESSAGE value="add main.py to the same directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="add main.py to the same directory" />
+    <MESSAGE value="pulled .yml into the main directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="pulled .yml into the main directory" />
   </component>
 </project>
