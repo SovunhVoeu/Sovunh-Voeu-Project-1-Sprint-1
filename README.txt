@@ -8,6 +8,9 @@ codes to my program and developing my program further.
 
 Libraries used: os, Path, google.generativeai
 
+The changes that I have made to settle over the prompt given over the others is I gave a more indepth job description
+so that the format would look more professional.
+
 The job description I had chose to go with was: Application Developer from the JSON
 "The job description of the job I want to apply for:
 Links Technology Solutions is looking for a Software Developer to join their team!
