@@ -42,7 +42,7 @@ def api_model_and_response():
                        "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
 
     response = model.generate_content(user_input + self_description + job_description)
-    print( "\n" + response.text)
+    print("\n" + response.text)
 
     # Create a write to file for the resume in .md or MARKDOWN
     file_name = "my_resume.md"

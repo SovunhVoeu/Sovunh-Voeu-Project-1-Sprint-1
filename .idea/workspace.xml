@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="update python-package.yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix main.py according to linting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/my_resume.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738408723329</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix main.py according to linting">
+      <option name="closed" value="true" />
+      <created>1738408919650</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738408919650</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +174,7 @@
     <MESSAGE value="project complete" />
     <MESSAGE value="update README.txt" />
     <MESSAGE value="update python-package.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update python-package.yml" />
+    <MESSAGE value="fix main.py according to linting" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix main.py according to linting" />
   </component>
 </project>
