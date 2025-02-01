@@ -1,6 +1,7 @@
 Before you run this program paste your API key into the YOUR_API_KEY.txt
 The program will read your .txt file and allow you to use the AI/LLM.
-In order to get started you must input the question into the prompt code line.
+In order to get started you must input the question into the prompt code line since the descriptions are hard coded.
+Example: Hello, can you create a resume for me using these descriptions?
 
 I chose this AI/LLM because it looked the simplest to me. I had no errors adding the
 codes to my program and developing my program further.
