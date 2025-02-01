@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="pip install pytest implemented">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="setting back the main.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +180,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738409214843</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix yml">
+      <option name="closed" value="true" />
+      <created>1738409294911</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738409294911</updated>
+    </task>
+    <task id="LOCAL-00013" summary="creating a pass def to fix the yml glitch">
+      <option name="closed" value="true" />
+      <created>1738409465994</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738409465994</updated>
+    </task>
+    <task id="LOCAL-00014" summary="setting back the main.py">
+      <option name="closed" value="true" />
+      <created>1738409523471</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738409523471</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,6 +216,9 @@
     <MESSAGE value="update python-package.yml" />
     <MESSAGE value="fix main.py according to linting" />
     <MESSAGE value="pip install pytest implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="pip install pytest implemented" />
+    <MESSAGE value="fix yml" />
+    <MESSAGE value="creating a pass def to fix the yml glitch" />
+    <MESSAGE value="setting back the main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting back the main.py" />
   </component>
 </project>

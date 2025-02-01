@@ -8,6 +8,7 @@ Date: 1/29/2025
 import google.generativeai as genai
 from pathlib import Path
 
+
 def api_model_and_response():
     file_path = Path('YOUR_API_KEY.txt')
     api = file_path.read_text()
