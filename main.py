@@ -9,7 +9,7 @@ import google.generativeai as genai
 from pathlib import Path
 
 
-def api_model_and_response():
+def test_api_model_and_response():
     file_path = Path('YOUR_API_KEY.txt')
     api = file_path.read_text()
 
@@ -56,4 +56,4 @@ def api_model_and_response():
 
 
 if __name__ == '__main__':
-    api_model_and_response()
+    test_api_model_and_response()
