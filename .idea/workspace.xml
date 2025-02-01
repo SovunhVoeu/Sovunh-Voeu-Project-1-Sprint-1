@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added google-generativeai to pip install">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added YOUR_API_KEY.txt">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738412044403</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added YOUR_API_KEY.txt">
+      <option name="closed" value="true" />
+      <created>1738412120562</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1738412120562</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -329,6 +337,7 @@
     <MESSAGE value="added test to main.py" />
     <MESSAGE value="added google to pip install" />
     <MESSAGE value="added google-generativeai to pip install" />
-    <option name="LAST_COMMIT_MESSAGE" value="added google-generativeai to pip install" />
+    <MESSAGE value="added YOUR_API_KEY.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added YOUR_API_KEY.txt" />
   </component>
 </project>
