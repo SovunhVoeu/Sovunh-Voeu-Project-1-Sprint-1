@@ -5,12 +5,20 @@ In order to get started you must input the question into the prompt code line.
 I chose this AI/LLM because it looked the simplest to me. I had no errors adding the
 codes to my program and developing my program further.
 
-The job description I had chose to go with was:
-"I am looking for a job that capitalizes on programming and making business deals with big industries.
-I want to work in an industry instead of a small company.
-Some of the companies I was looking at was Google, Microsoft, or Meta.
-I am also capable of working at a company that uses databases as well.
-I have no worries about the location and prefer to work a travel job."
+The job description I had chose to go with was: Application Developer from the JSON
+"The job description of the job I want to apply for:
+Links Technology Solutions is looking for a Software Developer to join their team!
+This role requires a strong foundation in .NET development with a focus on building
+and maintaining robust applications within an Agile team environment.
+Your Day-to-Day Design, develop, test,
+and maintain multitier applications using Microsoft .NET and related technologies
+Participate in daily standups Position Requirements
+Microsoft .NET Framework/.NET Core C# WinForms SQL
+Object-oriented design patterns Source control (Git/SVN)
+HTML/CSS IIS LLBLGen (or other ORM)
+'NSIS (or other Windows installers) Visual Studio
+3-5 / 5-7 years minimum in Agile Development environment Other Valuable Experience
+Cloud platforms (AWS/GCP) Multithreaded programming Aspose CI/CD"
 
 The personal description I gave was:
 "I am an unemployed university student who is 22 years old.
