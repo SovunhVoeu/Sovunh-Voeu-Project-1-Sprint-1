@@ -3,28 +3,34 @@
 
 **Summary**
 
-Highly motivated and outgoing Computer Science student (expected graduation [Month, Year]) with extensive experience in AI and programming, seeking a Software Developer position at Links Technology Solutions.  Possessing a strong foundation in C# and a proven ability to work effectively within Agile environments, I am eager to leverage my skills in .NET development to contribute to the creation and maintenance of robust applications.  Certified in advanced Java programming, I am proficient in various languages including Python, C#, and JavaScript.
+Highly motivated and outgoing recent Computer Science graduate (BSc expected [Graduation Date]) with extensive experience in AI and programming, seeking a Software Developer position at Links Technology Solutions.  Possessing a strong foundation in Java and proficiency in C#, Python, and JavaScript, I am eager to leverage my skills in a collaborative Agile environment to design, develop, and maintain robust .NET applications.  While lacking the specified years of experience, my academic background and proven abilities in key technologies make me a quick learner and valuable asset.
+
+**Education**
+
+* **Bachelor of Science in Computer Science** – [University Name], [City, State] – Expected Graduation: [Graduation Date]
+* **Advanced Java Programming Certificate** – [Institution Name], [City, State] – [Completion Date]
 
 **Skills**
 
 * **Programming Languages:** C#, Java, Python, JavaScript
-* **.NET Technologies:** .NET Framework/.NET Core, WinForms, ASP.NET (mention if you have experience), Entity Framework (mention if you have experience, otherwise remove)
-* **Databases:** SQL (specify which dialects - e.g., SQL Server, MySQL, PostgreSQL)
-* **Development Tools:** Visual Studio, Git, IIS, LLBLGen (or mention alternative ORM if applicable)
-* **Other:** Object-oriented design patterns, Multithreaded programming, HTML/CSS, NSIS (or mention alternative Windows installer), Agile methodologies (mention specific methodologies like Scrum or Kanban if experienced)
+* **.NET Technologies:** .NET Framework/.NET Core (Familiar - seeking to expand expertise), WinForms (Familiar - seeking to expand expertise)
+* **Databases:** SQL (Familiar - seeking to expand expertise)
+* **Development Tools:** Visual Studio, Git (Familiar - seeking to expand expertise), IIS (Familiar - seeking to expand expertise)
+* **Design Patterns:** Object-Oriented Design Patterns (Familiar - seeking to expand expertise)
+* **Other:** HTML/CSS (Familiar - seeking to expand expertise),  AI (Extensive Background), Multithreaded Programming (Familiar - seeking to expand expertise)
+
+**Projects**
+
+*(List 2-3 relevant projects here.  Quantify your accomplishments whenever possible.  For example:  "Developed a machine learning model using Python that improved prediction accuracy by 15%," or "Built a web application using Java and Spring Boot that handled over 1000 concurrent users.")*  If you don't have professional projects, highlight strong academic projects instead.
+
+**Experience**
+
+*(If you have any relevant internships or part-time jobs, list them here. If not, consider omitting this section or replacing it with a strong "Projects" section.)*
 
 
-**Education**
+**Awards and Recognition**
 
-* **Bachelor of Science in Computer Science**, [University Name], [City, State] – Expected Graduation: [Month, Year]
-* **Advanced Java Programming Certificate**, [Institution Name], [City, State] – [Year Completed]
-
-
-**Projects (Optional - Tailor to the Job Description)**
-
-* *(Include 1-2 relevant projects.  Quantify your accomplishments whenever possible.  For example: "Developed a multi-threaded application in C# that improved processing speed by 30%," or "Built a web application using ASP.NET and SQL Server that managed [Number] user accounts.")*
-
-**Experience (Optional - If you have any relevant experience, include it here.  Even volunteer work or personal projects can be valuable.)**
+*(List any relevant awards or recognitions here.  If none, omit this section.)*
 
 
-**Note:**  Because you are a recent graduate with limited professional experience, focus heavily on your academic projects and skills that align with the job description.  Highlight your proficiency in C#, .NET, and relevant technologies.  Since the job description specifies 3-5 years of experience in an Agile environment, you may need to address this gap in your cover letter.  Emphasize your quick learning ability, eagerness to learn, and your strong understanding of Agile principles from coursework or personal projects.  The cover letter will be crucial in explaining this.
+**Note:**  This resume highlights your strengths while acknowledging the experience gap.  Focus on showcasing your skills and projects that align with the job description's requirements.  Actively demonstrate your enthusiasm and willingness to learn.  Consider adding a portfolio link if you have one.  Remember to tailor this resume further to specifically address any additional requirements or preferences mentioned in the job description.  The key is to show them you're a quick learner with the potential to quickly become a valuable asset to their team, despite the experience gap.

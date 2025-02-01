@@ -7,7 +7,6 @@ Date: 1/29/2025
 
 import google.generativeai as genai
 from pathlib import Path
-import os
 
 
 def api_model_and_response():
@@ -42,7 +41,6 @@ def api_model_and_response():
     user_input = input("Deliver the intended prompt to the AI here: "
                        "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
 
-
     response = model.generate_content(user_input + self_description + job_description)
     print( "\n" + response.text)
 
@@ -56,6 +54,6 @@ def api_model_and_response():
     except Exception as e:
         print(f"An error occured: {e}")
 
+
 if __name__ == '__main__':
     api_model_and_response()
-
