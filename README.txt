@@ -5,6 +5,8 @@ In order to get started you must input the question into the prompt code line.
 I chose this AI/LLM because it looked the simplest to me. I had no errors adding the
 codes to my program and developing my program further.
 
+Libraries used: os, Path, google.generativeai
+
 The job description I had chose to go with was: Application Developer from the JSON
 "The job description of the job I want to apply for:
 Links Technology Solutions is looking for a Software Developer to join their team!
