@@ -41,7 +41,8 @@ def test_api_model_and_response():
     # user_input = input("Deliver the intended prompt to the AI here: "
     #                    "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
 
-    response = model.generate_content("Hello, can you create a resume for me using these descriptions?" + self_description + job_description)
+    response = model.generate_content("Hello, can you create a resume for me using these descriptions?"
+                                      + self_description + job_description)
     print("\n" + response.text)
 
     # Create a write to file for the resume in .md or MARKDOWN

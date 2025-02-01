@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added pytest -s">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove user input">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738412265549</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="remove user input">
+      <option name="closed" value="true" />
+      <created>1738412405491</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1738412405491</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -347,6 +356,7 @@
     <MESSAGE value="added google-generativeai to pip install" />
     <MESSAGE value="added YOUR_API_KEY.txt" />
     <MESSAGE value="added pytest -s" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pytest -s" />
+    <MESSAGE value="remove user input" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove user input" />
   </component>
 </project>
