@@ -9,10 +9,6 @@ import google.generativeai as genai
 from pathlib import Path
 
 
-def test_dummy():
-    pass
-
-
 def api_model_and_response():
     file_path = Path('YOUR_API_KEY.txt')
     api = file_path.read_text()
