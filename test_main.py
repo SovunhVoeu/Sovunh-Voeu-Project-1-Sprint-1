@@ -38,10 +38,10 @@ def test_api_model_and_response():
                         'I am a team player, outgoing, willing to go the extra mile, and can handle a busy work flow.')
 
     # Deliver the intended prompt to the AI here
-    user_input = input("Deliver the intended prompt to the AI here: "
-                       "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
+    # user_input = input("Deliver the intended prompt to the AI here: "
+    #                    "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
 
-    response = model.generate_content(user_input + self_description + job_description)
+    response = model.generate_content("Hello, can you create a resume for me using these descriptions?" + self_description + job_description)
     print("\n" + response.text)
 
     # Create a write to file for the resume in .md or MARKDOWN
