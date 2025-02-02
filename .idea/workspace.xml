@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix the yml so that it works and updated the README.txt">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="revise README.txt and my_resume.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/my_resume.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1738412637772</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="revise README.txt and my_resume.md">
+      <option name="closed" value="true" />
+      <created>1738413152773</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1738413152773</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add rough draft README.txt" />
     <MESSAGE value="update README.txt and main.py" />
     <MESSAGE value="project complete" />
     <MESSAGE value="update README.txt" />
@@ -376,6 +384,7 @@
     <MESSAGE value="remove user input" />
     <MESSAGE value="revise according to linting" />
     <MESSAGE value="fix the yml so that it works and updated the README.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the yml so that it works and updated the README.txt" />
+    <MESSAGE value="revise README.txt and my_resume.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="revise README.txt and my_resume.md" />
   </component>
 </project>

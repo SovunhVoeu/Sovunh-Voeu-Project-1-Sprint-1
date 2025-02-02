@@ -3,38 +3,36 @@
 
 **Summary**
 
-Highly motivated and outgoing Computer Science graduate (expected graduation [Month, Year]) with a strong foundation in AI and extensive programming experience in Java, Python, C#, and JavaScript.  Seeking a Software Developer position at Links Technology Solutions to leverage my skills in .NET development and contribute to building robust applications within an Agile environment.  Possessing a proven ability to work effectively in team settings and handle demanding workflows.  Eager to learn and contribute to a challenging and rewarding role.
+Highly motivated and outgoing Computer Science graduate (expected graduation [Month, Year]) with extensive experience in AI and programming, seeking a Software Developer position at Links Technology Solutions.  Possessing a strong foundation in Java and proficiency in multiple languages including C#, Python, and JavaScript, I am eager to leverage my skills in a collaborative Agile environment.  While my experience doesn't fully meet the stated years of experience, my academic background and passion for software development make me a quick learner and valuable asset.
 
 **Education**
 
-* **Bachelor of Science in Computer Science** | [University Name] | [City, State] | Expected Graduation: [Month, Year]
-* **Certificate in Advanced Java Programming** | [Institution Name] | [City, State] | [Date Completed]
+* **Bachelor of Science in Computer Science**, [University Name], [City, State] – Expected Graduation: [Month, Year]
+* **Advanced Java Programming Certificate**, [Institution Name], [City, State] – [Year Completed]
 
 **Skills**
 
 * **Programming Languages:** C#, Java, Python, JavaScript
-* **.NET Technologies:** .NET Framework/.NET Core (proficient in C#), WinForms, ASP.NET (mention if applicable),  Entity Framework Core or other ORM (mention if familiar)
-* **Databases:** SQL (specify dialect if known, e.g., SQL Server, MySQL)
-* **Development Tools:** Visual Studio, Git, IIS, NSIS (mention experience level if applicable, e.g., "Familiar with NSIS")
-* **Other:**  Object-Oriented Programming (OOP), Agile methodologies, HTML/CSS (mention experience level), Multithreaded programming (mention experience level)
+* **Frameworks/Libraries:** .NET Framework/.NET Core, WinForms,  LLBLGen (familiar with ORM concepts), Aspose (familiar)
+* **Databases:** SQL
+* **Source Control:** Git (familiar with SVN concepts)
+* **Web Technologies:** HTML, CSS
+* **Deployment:** IIS, NSIS (familiar with Windows installers)
+* **IDE:** Visual Studio
+* **Other:** Object-Oriented Design Patterns, Multithreaded Programming (familiar), Agile methodologies (familiar through coursework)
 
 **Projects**
 
-*(List 2-3 relevant projects here.  Quantify your accomplishments whenever possible.  Focus on projects that demonstrate skills relevant to the job description.  For example: )*
+*(List 2-3 relevant projects here.  Quantify your accomplishments whenever possible.  For example:  "Developed a machine learning model that improved prediction accuracy by 15%," or "Built a web application using C# and .NET that processed X number of requests per second.")*
 
-* **Project Title 1:** Briefly describe the project and highlight relevant technologies used (e.g., .NET, C#, SQL, etc.).  Quantify your contributions (e.g., "Improved application performance by 15%").
-* **Project Title 2:**  Briefly describe the project and highlight relevant technologies used.  Quantify your contributions.
-* **Project Title 3:**  Briefly describe the project and highlight relevant technologies used.  Quantify your contributions.
-
-
-**Experience**
-
-*(If you have any relevant internship or freelance experience, list it here.  If not, you can omit this section or replace it with a strong "Projects" section.)*
+* **Project 1 Title:** [Brief Description, highlighting relevant skills used and quantifiable results]
+* **Project 2 Title:** [Brief Description, highlighting relevant skills used and quantifiable results]
+* **Project 3 Title:** [Brief Description, highlighting relevant skills used and quantifiable results]
 
 
-**Awards and Recognition**
+**Awards and Recognition** (Optional)
 
-*(List any relevant awards or recognitions here.)*
+*(List any relevant awards or recognitions here)*
 
 
-**Note:**  While this resume highlights your strengths, the job description emphasizes 3-5 or 5-7 years of experience in an Agile environment, which you currently lack.  To compensate for this, focus on showcasing your skills and projects in a way that demonstrates your potential and quick learning ability.  Highlight any projects that closely resemble the tasks outlined in the job description.  Consider tailoring your resume further to emphasize the skills most relevant to the specific requirements.  Consider adding a cover letter to explain your enthusiasm and potential despite the lack of direct experience.
+**Note:**  This resume highlights your strengths and addresses the job description as best as possible given your limited professional experience.  Focus on showcasing your skills and eagerness to learn.  The lack of 3-5 years of experience is a significant hurdle, but your strong academic background and enthusiasm can compensate. Consider tailoring this resume further to emphasize the specific aspects of the job description that you *can* fulfill.  For example, explicitly mention projects that demonstrate your understanding of object-oriented design patterns or Agile principles.  You can also add a cover letter to further explain your situation and express your strong interest in the position.
