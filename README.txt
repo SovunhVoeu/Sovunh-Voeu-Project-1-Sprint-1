@@ -1,5 +1,5 @@
 Before you run this program paste your API key into the YOUR_API_KEY.txt
-(WARNING: MAKE SURE THAT YOU ONLY HAVE ONE LINE FOR THE API. DO NOT HAVE AN EXTRA LINE OR IT WILL NOT RUN)
+(WARNING: MAKE SURE THAT YOU ONLY HAVE ONE LINE IN THE .TXT FOR THE API. DO NOT HAVE AN EXTRA LINE OR IT WILL NOT RUN)
 The program will read your .txt file and allow you to use the AI/LLM.
 In order to get started you must input the question into the prompt code line since the descriptions are hard coded.
 Example: Hello, can you create a resume for me using these descriptions?
