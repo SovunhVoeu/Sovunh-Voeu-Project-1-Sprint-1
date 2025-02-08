@@ -49,8 +49,8 @@ CREATE TABLE IF NOT EXISTS users (
     company_num_employees INTEGER,
     company_revenue DECIMAL(100000, 2),
     company_description TEXT,
-    logo_photo_url TEXT,
-    banner_photo_url TEXT,
+    logo_photo_url TEXT DEFAULT '',
+    banner_photo_url TEXT DEFAULT '',
     ceo_name VARCHAR(255),
     ceo_photo_url TEXT
 )
@@ -62,21 +62,24 @@ conn.commit()
 
 # Insert data into the table
 for data in data_list:
-    cursor.execute('''
-        INSERT INTO users (id, site, job_url, job_url_direct, title, company, location, job_type, date_posted,
-        salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function, company_industry,
-        listing_type, emails, description, company_url, company_url_direct, company_addresses, company_num_employees,
-        company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (
-        data['id'], data['site'], data['job_url'], data['job_url_direct'], data['title'], data['company'],
-        data['location'], data['job_type'], data['date_posted'], data['salary_source'], data['interval'],
-        data['min_amount'], data['max_amount'], data['currency'], data['is_remote'], data['job_level'],
-        data['job_function'], data['company_industry'], data['listing_type'], data['emails'], data['description'],
-        data['company_url'], data['company_url_direct'], data['company_addresses'], data['company_num_employees'],
-        data['company_revenue'], data['company_description'], data['logo_photo_url'], data['banner_photo_url'],
-        data['ceo_name'], data['ceo_photo_url']
-    ))
+    try:
+        cursor.execute('''
+            INSERT OR IGNORE INTO users (id, site, job_url, job_url_direct, title, company, location, job_type, date_posted,
+            salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function, company_industry,
+            listing_type, emails, description, company_url, company_url_direct, company_addresses, company_num_employees,
+            company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ''', (
+            data['id'], data['site'], data['job_url'], data['job_url_direct'], data['title'], data['company'],
+            data['location'], data['job_type'], data['date_posted'], data['salary_source'], data['interval'],
+            data['min_amount'], data['max_amount'], data['currency'], data['is_remote'], data['job_level'],
+            data['job_function'], data['company_industry'], data['listing_type'], data['emails'], data['description'],
+            data['company_url'], data['company_url_direct'], data['company_addresses'], data['company_num_employees'],
+            data['company_revenue'], data['company_description'], data['logo_photo_url'], data['banner_photo_url'],
+            data['ceo_name'], data['ceo_photo_url']
+        ))
+    except KeyError as e:
+        print(f"Missing key: {e}")
 
 # Commits the data
 conn.commit()
