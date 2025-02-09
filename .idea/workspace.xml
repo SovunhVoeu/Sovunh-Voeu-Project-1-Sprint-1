@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added datatypes to the creation of SQL table">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="databases is now created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
@@ -395,11 +395,18 @@
       <option name="project" value="LOCAL" />
       <updated>1738871138379</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="databases is now created">
+      <option name="closed" value="true" />
+      <created>1739047769956</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1739047769956</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix main.py according to linting" />
     <MESSAGE value="pip install pytest implemented" />
     <MESSAGE value="fix yml" />
     <MESSAGE value="creating a pass def to fix the yml glitch" />
@@ -424,6 +431,7 @@
     <MESSAGE value="update the README.txt" />
     <MESSAGE value="Sprint 2 Implemented" />
     <MESSAGE value="added datatypes to the creation of SQL table" />
-    <option name="LAST_COMMIT_MESSAGE" value="added datatypes to the creation of SQL table" />
+    <MESSAGE value="databases is now created" />
+    <option name="LAST_COMMIT_MESSAGE" value="databases is now created" />
   </component>
 </project>
