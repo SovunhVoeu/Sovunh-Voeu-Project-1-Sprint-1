@@ -9,7 +9,7 @@ import json
 
 def test_read_rapidResults(file_path):
     data = []
-    with open('rapidResults.json', 'r') as file:
+    with open(file_path, 'r') as file:
         for line in file:
             data_strip = json.loads(line.strip())
             data.append(data_strip)
@@ -17,7 +17,7 @@ def test_read_rapidResults(file_path):
 
 
 def test_connect_db_rapidResults(db_path='jobs.db'):
-    conn = sqlite3.connect('jobs.db')
+    conn = sqlite3.connect(db_path)
     return conn
 
 
@@ -90,7 +90,7 @@ def test_insert_data_rapidResults(conn, data):
 
 def test_read_json_rapidJobs(file_path):
     data = []
-    with open('rapid_jobs2.json', 'r') as file:
+    with open(file_path, 'r') as file:
         for line in file:
             data.extend(json.loads(line))
     return data
