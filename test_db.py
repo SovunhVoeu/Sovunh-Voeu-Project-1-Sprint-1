@@ -16,7 +16,7 @@ def test_read_rapidResults(file_path):
     return data
 
 
-def test_connect_db_rapidResults(db_path='jobs.db'):
+def test_connect_db(db_path='jobs.db'):
     conn = sqlite3.connect(db_path)
     return conn
 
@@ -96,9 +96,9 @@ def test_read_json_rapidJobs(file_path):
     return data
 
 
-def connect_db_rapidJobs(db_path='jobs.db'):
-    conn = sqlite3.connect(db_path)
-    return conn
+# def connect_db_rapidJobs(db_path='jobs.db'):
+#     conn = sqlite3.connect(db_path)
+#     return conn
 
 
 def test_create_table_rapidJobs(cursor):
@@ -146,12 +146,12 @@ def test_main():
     db_path = "jobs.db"
 
     data = test_read_rapidResults(json_file)
-    conn = test_connect_db_rapidResults(db_path)
+    conn = test_connect_db(db_path)
     test_create_table_rapidResults(conn)
     test_insert_data_rapidResults(conn, data)
 
     data2 = test_read_json_rapidJobs(json_file_2)
-    conn2 = connect_db_rapidJobs(db_path)
+    conn2 = test_connect_db(db_path)
     test_create_table_rapidJobs(conn2)
     test_insert_data_rapidJobs(conn2, data2)
 
