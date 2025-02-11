@@ -61,26 +61,30 @@ def rapid_results():
     for data in data_list:
         try:
             cursor.execute('''
-                INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location, job_type, date_posted,
-                salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function, company_industry,
-                listing_type, emails, description, company_url, company_url_direct, company_addresses, company_num_employees,
+                INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location, 
+                job_type, date_posted,
+                salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function, 
+                company_industry,
+                listing_type, emails, description, company_url, company_url_direct, company_addresses, 
+                company_num_employees,
                 company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (
                 data['id'], data['site'], data['job_url'], data['job_url_direct'], data['title'], data['company'],
                 data['location'], data['job_type'], data['date_posted'], data['salary_source'], data['interval'],
                 data['min_amount'], data['max_amount'], data['currency'], data['is_remote'], data['job_level'],
-                data['job_function'], data['company_industry'], data['listing_type'], data['emails'], data['description'],
-                data['company_url'], data['company_url_direct'], data['company_addresses'], data['company_num_employees'],
-                data['company_revenue'], data['company_description'], data['logo_photo_url'], data['banner_photo_url'],
-                data['ceo_name'], data['ceo_photo_url']
+                data['job_function'], data['company_industry'], data['listing_type'],
+                data['emails'], data['description'],
+                data['company_url'], data['company_url_direct'], data['company_addresses'],
+                data['company_num_employees'],
+                data['company_revenue'], data['company_description'], data['logo_photo_url'],
+                data['banner_photo_url'], data['ceo_name'], data['ceo_photo_url']
             ))
         except KeyError as e:
             print(f"Missing key: {e}")
 
     conn.commit() # Commits the data
     conn.close() # Closes the connection
-
 
 def rapid_jobs2():
     data = [] # Creates a list for JSON objects
@@ -110,11 +114,11 @@ def rapid_jobs2():
     )
     ''')
 
-
     # Insert data into the table
     for item in data:
         cursor.execute('''
-            INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image, location, datePosted, salaryRange, description, employmentType)
+            INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image, 
+            location, datePosted, salaryRange, description, employmentType)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
             item['id'],
