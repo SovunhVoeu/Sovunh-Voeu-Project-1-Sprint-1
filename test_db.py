@@ -33,8 +33,8 @@ def rapid_results():
         interval VARCHAR(255),
         min_amount DECIMAL(100000, 1),
         max_amount DECIMAL(100000, 2),
-        currency VARCHAR(255), 
-        is_remote BOOLEAN, 
+        currency VARCHAR(255),
+        is_remote BOOLEAN,
         job_level VARCHAR(255),
         job_function VARCHAR(255),
         company_industry VARCHAR(255),
@@ -57,13 +57,13 @@ def rapid_results():
     for data in data_list:
         try:
             cursor.execute('''
-                INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location, 
+                INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location,
                 job_type, date_posted,
-                salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function, 
+                salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function,
                 company_industry,
-                listing_type, emails, description, company_url, company_url_direct, company_addresses, 
+                listing_type, emails, description, company_url, company_url_direct, company_addresses,
                 company_num_employees,
-                company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url) 
+                company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (
                 data['id'], data['site'], data['job_url'], data['job_url_direct'], data['title'], data['company'],
@@ -109,7 +109,7 @@ def rapid_jobs2():
 
     for item in data:
         cursor.execute('''
-            INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image, 
+            INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image,
             location, datePosted, salaryRange, description, employmentType)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
