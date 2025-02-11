@@ -8,20 +8,16 @@ import json
 
 
 def rapid_results():
-    data_list = [] # Creates a list for JSON objects
+    data_list = []
 
     with open('rapidResults.json', 'r') as file:
         for line in file:
             data = json.loads(line.strip())
             data_list.append(data)
 
-
-    # Connects to the SQLite db
     conn = sqlite3.connect('jobs.db')
     cursor = conn.cursor()
 
-
-    # Creates the table if it does not already exist
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
@@ -58,8 +54,6 @@ def rapid_results():
     )
     ''')
 
-
-    # Insert data into the table
     for data in data_list:
         try:
             cursor.execute('''
@@ -85,24 +79,19 @@ def rapid_results():
         except KeyError as e:
             print(f"Missing key: {e}")
 
-    conn.commit() # Commits the data
-    conn.close() # Closes the connection
+    conn.commit()
+    conn.close()
 
 
 def rapid_jobs2():
-    data = [] # Creates a list for JSON objects
+    data = []
     with open('rapid_jobs2.json', 'r') as file:
         for line in file:
             data.extend(json.loads(line))
-            # data.append(json.loads(line))
 
-
-    # Connects to the SQLite db
     conn = sqlite3.connect('jobs.db')
     cursor = conn.cursor()
 
-
-    # Creates the table if it does not already exist
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
@@ -118,8 +107,6 @@ def rapid_jobs2():
     )
     ''')
 
-
-    # Insert data into the table
     for item in data:
         cursor.execute('''
             INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image, 
@@ -139,8 +126,8 @@ def rapid_jobs2():
 
         ))
 
-    conn.commit()  # Commits the data
-    conn.close()  # Closes the connection
+    conn.commit()
+    conn.close()
 
 
 if __name__ == '__main__':

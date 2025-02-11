@@ -39,7 +39,7 @@ def api_model_and_response():
 
     # Deliver the intended prompt to the AI here
     user_input = input("Deliver the intended prompt to the AI here: "
-                    "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
+    "(Ex: Hello, can you create a resume for me using these descriptions?) \n")
 
     response = model.generate_content(user_input + self_description + job_description)
     print("\n" + response.text)
