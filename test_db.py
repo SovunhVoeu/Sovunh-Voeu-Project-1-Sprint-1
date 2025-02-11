@@ -7,9 +7,9 @@ import sqlite3
 import json
 
 
-def test_read_rapidResults(file_path):
+def test_read_rapidResults(json_file):
     data = []
-    with open(file_path, 'r') as file:
+    with open(json_file, 'r') as file:
         for line in file:
             data_strip = json.loads(line.strip())
             data.append(data_strip)
@@ -88,9 +88,9 @@ def test_insert_data_rapidResults(conn, data):
     conn.commit()
 
 
-def test_read_json_rapidJobs(file_path):
+def test_read_json_rapidJobs(json_file_2):
     data = []
-    with open(file_path, 'r') as file:
+    with open(json_file_2, 'r') as file:
         for line in file:
             data.extend(json.loads(line))
     return data
