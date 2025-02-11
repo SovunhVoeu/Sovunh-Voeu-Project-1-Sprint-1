@@ -7,7 +7,6 @@ import sqlite3
 import json
 
 
-
 def test_read_rapidResults():
     json_file = 'rapidResults.json'
     data = []
@@ -19,7 +18,7 @@ def test_read_rapidResults():
 
 
 def test_connect_db():
-    db_path='jobs.db'
+    db_path = 'jobs.db'
     conn = sqlite3.connect(db_path)
     return conn
 
