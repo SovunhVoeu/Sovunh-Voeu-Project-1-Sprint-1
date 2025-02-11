@@ -103,11 +103,6 @@ def test_read_rapidJobs():
     return data
 
 
-# def connect_db_rapidJobs(db_path='jobs.db'):
-#     conn = sqlite3.connect(db_path)
-#     return conn
-
-
 def test_create_table_rapidJobs():
     conn = test_connect_db()
     cursor = conn.cursor()
@@ -152,10 +147,6 @@ def test_insert_data_rapidJobs():
 
 
 def test_main():
-    # json_file = "rapidResults.json"
-    # json_file_2 = "rapid_jobs2.json"
-    # db_path = "jobs.db"
-
     test_read_rapidResults()
     conn = test_connect_db()
     test_create_table_rapidResults()

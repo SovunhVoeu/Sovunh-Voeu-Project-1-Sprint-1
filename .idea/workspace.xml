@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add multi functions">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix .yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
@@ -106,14 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix main.py according to linting">
-      <option name="closed" value="true" />
-      <created>1738408919650</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1738408919650</updated>
     </task>
     <task id="LOCAL-00010" summary="fix main.py according to linting">
       <option name="closed" value="true" />
@@ -499,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739245695534</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fix .yml">
+      <option name="closed" value="true" />
+      <created>1739245773219</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1739245773219</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added google to pip install" />
     <MESSAGE value="added google-generativeai to pip install" />
     <MESSAGE value="added YOUR_API_KEY.txt" />
     <MESSAGE value="added pytest -s" />
@@ -528,6 +527,7 @@
     <MESSAGE value="added functions" />
     <MESSAGE value=".yml test fix" />
     <MESSAGE value="add multi functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add multi functions" />
+    <MESSAGE value="fix .yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix .yml" />
   </component>
 </project>
