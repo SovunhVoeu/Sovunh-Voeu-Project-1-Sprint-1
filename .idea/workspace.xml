@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="revised file">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
@@ -106,14 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add rough draft README.txt">
-      <option name="closed" value="true" />
-      <created>1738197759715</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1738197759715</updated>
     </task>
     <task id="LOCAL-00003" summary="add rough draft README.txt">
       <option name="closed" value="true" />
@@ -499,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739235571727</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added functions">
+      <option name="closed" value="true" />
+      <created>1739235705559</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1739235705559</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="put .yml into the workspace directory" />
     <MESSAGE value="added test to function names" />
     <MESSAGE value="added test to main.py" />
     <MESSAGE value="added google to pip install" />
@@ -528,6 +527,7 @@
     <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
     <MESSAGE value="revised file" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised file" />
+    <MESSAGE value="added functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functions" />
   </component>
 </project>
