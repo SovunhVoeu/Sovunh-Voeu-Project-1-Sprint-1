@@ -7,7 +7,7 @@ import sqlite3
 import json
 
 
-def rapid_results():
+def test_rapid_results():
     data_list = []
 
     with open('rapidResults.json', 'r') as file:
@@ -83,7 +83,7 @@ def rapid_results():
     conn.close()
 
 
-def rapid_jobs2():
+def test_rapid_jobs2():
     data = []
     with open('rapid_jobs2.json', 'r') as file:
         for line in file:
@@ -131,5 +131,5 @@ def rapid_jobs2():
 
 
 if __name__ == '__main__':
-    rapid_results()
-    rapid_jobs2()
+    test_rapid_results()
+    test_rapid_jobs2()

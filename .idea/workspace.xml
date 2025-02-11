@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="completed jobs.db without null columns fill">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change python -m pytest to pytest -s">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739233425340</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="change python -m pytest to pytest -s">
+      <option name="closed" value="true" />
+      <created>1739233493786</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1739233493786</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add python-m pytest" />
     <MESSAGE value="add main.py to the same directory" />
     <MESSAGE value="pulled .yml into the main directory" />
     <MESSAGE value="put .yml into the workspace directory" />
@@ -511,6 +519,7 @@
     <MESSAGE value="changed the test function and name for .py file" />
     <MESSAGE value=".yml fixes" />
     <MESSAGE value="completed jobs.db without null columns fill" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed jobs.db without null columns fill" />
+    <MESSAGE value="change python -m pytest to pytest -s" />
+    <option name="LAST_COMMIT_MESSAGE" value="change python -m pytest to pytest -s" />
   </component>
 </project>
