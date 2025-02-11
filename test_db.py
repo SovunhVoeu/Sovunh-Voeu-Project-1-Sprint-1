@@ -10,15 +10,16 @@ import json
 def rapid_results():
     data_list = [] # Creates a list for JSON objects
 
-    # Open and reads the JSON file
     with open('rapidResults.json', 'r') as file:
         for line in file:
             data = json.loads(line.strip())
             data_list.append(data)
 
+
     # Connects to the SQLite db
     conn = sqlite3.connect('jobs.db')
     cursor = conn.cursor()
+
 
     # Creates the table if it does not already exist
     cursor.execute('''
@@ -57,6 +58,7 @@ def rapid_results():
     )
     ''')
 
+
     # Insert data into the table
     for data in data_list:
         try:
@@ -86,17 +88,19 @@ def rapid_results():
     conn.commit() # Commits the data
     conn.close() # Closes the connection
 
+
 def rapid_jobs2():
     data = [] # Creates a list for JSON objects
-    # Open and reads the JSON file
     with open('rapid_jobs2.json', 'r') as file:
         for line in file:
             data.extend(json.loads(line))
             # data.append(json.loads(line))
 
+
     # Connects to the SQLite db
     conn = sqlite3.connect('jobs.db')
     cursor = conn.cursor()
+
 
     # Creates the table if it does not already exist
     cursor.execute('''
@@ -113,6 +117,7 @@ def rapid_jobs2():
         employmentType TEXT
     )
     ''')
+
 
     # Insert data into the table
     for item in data:
