@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="rename functions to test_">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="revised file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
@@ -106,14 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Google Gemini added with prompt">
-      <option name="closed" value="true" />
-      <created>1738197264230</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1738197264230</updated>
     </task>
     <task id="LOCAL-00002" summary="add rough draft README.txt">
       <option name="closed" value="true" />
@@ -499,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739233732456</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="revised file">
+      <option name="closed" value="true" />
+      <created>1739235571727</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1739235571727</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pulled .yml into the main directory" />
     <MESSAGE value="put .yml into the workspace directory" />
     <MESSAGE value="added test to function names" />
     <MESSAGE value="added test to main.py" />
@@ -528,6 +527,7 @@
     <MESSAGE value="completed jobs.db without null columns fill" />
     <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename functions to test_" />
+    <MESSAGE value="revised file" />
+    <option name="LAST_COMMIT_MESSAGE" value="revised file" />
   </component>
 </project>

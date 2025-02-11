@@ -15,10 +15,11 @@ def test_read_rapidResults(file_path):
             data.append(data_strip)
     return data
 
+
 def connect_db_rapidResults(db_path='jobs.db'):
     conn = sqlite3.connect('jobs.db')
-    # cursor = conn.cursor()
     return conn
+
 
 def create_table_rapidResults(cursor):
     cursor.execute('''
@@ -57,6 +58,7 @@ def create_table_rapidResults(cursor):
     )
     ''')
 
+
 def insert_data_rapidResults(conn, data):
     cursor = conn.cursor()
     for data in data:
@@ -85,6 +87,7 @@ def insert_data_rapidResults(conn, data):
             print(f"Missing key: {e}")
     conn.commit()
 
+
 def test_read_json_rapid_jobs2(file_path):
     data = []
     with open('rapid_jobs2.json', 'r') as file:
@@ -92,9 +95,11 @@ def test_read_json_rapid_jobs2(file_path):
             data.extend(json.loads(line))
     return data
 
+
 def connect_db_rapid_jobs2(db_path='jobs.db'):
     conn = sqlite3.connect(db_path)
     return conn
+
 
 def create_table_rapid_jobs2(cursor):
     cursor.execute('''
@@ -111,6 +116,7 @@ def create_table_rapid_jobs2(cursor):
         employmentType TEXT
     )
     ''')
+
 
 def insert_data_rapid_jobs2(conn, data):
     cursor = conn.cursor()
@@ -143,7 +149,6 @@ def main():
     conn = connect_db_rapidResults(db_path)
     create_table_rapidResults(conn)
     insert_data_rapidResults(conn, data)
-
 
     data2 = test_read_json_rapid_jobs2(json_file_2)
     conn2 = connect_db_rapid_jobs2(db_path)
