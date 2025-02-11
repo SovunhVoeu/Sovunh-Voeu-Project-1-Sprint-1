@@ -7,7 +7,9 @@ import sqlite3
 import json
 
 
-def test_read_rapidResults(json_file):
+
+def test_read_rapidResults():
+    json_file = 'rapidResults.json'
     data = []
     with open(json_file, 'r') as file:
         for line in file:
@@ -16,12 +18,15 @@ def test_read_rapidResults(json_file):
     return data
 
 
-def test_connect_db(db_path='jobs.db'):
+def test_connect_db():
+    db_path='jobs.db'
     conn = sqlite3.connect(db_path)
     return conn
 
 
-def test_create_table_rapidResults(cursor):
+def test_create_table_rapidResults():
+    conn = test_connect_db()
+    cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
@@ -59,8 +64,10 @@ def test_create_table_rapidResults(cursor):
     ''')
 
 
-def test_insert_data_rapidResults(conn, data):
+def test_insert_data_rapidResults():
+    conn = test_connect_db()
     cursor = conn.cursor()
+    data = test_read_rapidResults()
     for data in data:
         try:
             cursor.execute('''
@@ -88,7 +95,8 @@ def test_insert_data_rapidResults(conn, data):
     conn.commit()
 
 
-def test_read_json_rapidJobs(json_file_2):
+def test_read_rapidJobs():
+    json_file_2 = 'rapid_jobs2.json'
     data = []
     with open(json_file_2, 'r') as file:
         for line in file:
@@ -101,7 +109,9 @@ def test_read_json_rapidJobs(json_file_2):
 #     return conn
 
 
-def test_create_table_rapidJobs(cursor):
+def test_create_table_rapidJobs():
+    conn = test_connect_db()
+    cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
@@ -118,8 +128,10 @@ def test_create_table_rapidJobs(cursor):
     ''')
 
 
-def test_insert_data_rapidJobs(conn, data):
+def test_insert_data_rapidJobs():
+    conn = test_connect_db()
     cursor = conn.cursor()
+    data = test_read_rapidJobs()
     for item in data:
         cursor.execute('''
             INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image,
@@ -141,19 +153,19 @@ def test_insert_data_rapidJobs(conn, data):
 
 
 def test_main():
-    json_file = "rapidResults.json"
-    json_file_2 = "rapid_jobs2.json"
-    db_path = "jobs.db"
+    # json_file = "rapidResults.json"
+    # json_file_2 = "rapid_jobs2.json"
+    # db_path = "jobs.db"
 
-    data = test_read_rapidResults(json_file)
-    conn = test_connect_db(db_path)
-    test_create_table_rapidResults(conn)
-    test_insert_data_rapidResults(conn, data)
+    test_read_rapidResults()
+    conn = test_connect_db()
+    test_create_table_rapidResults()
+    test_insert_data_rapidResults()
 
-    data2 = test_read_json_rapidJobs(json_file_2)
-    conn2 = test_connect_db(db_path)
-    test_create_table_rapidJobs(conn2)
-    test_insert_data_rapidJobs(conn2, data2)
+    test_read_rapidJobs()
+    conn2 = test_connect_db()
+    test_create_table_rapidJobs()
+    test_insert_data_rapidJobs()
 
     conn.close()
     conn2.close()
