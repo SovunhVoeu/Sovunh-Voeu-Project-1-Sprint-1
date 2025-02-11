@@ -7,17 +7,20 @@ import sqlite3
 import json
 
 
-def test_rapid_results():
-    data_list = []
-
+def test_read_rapidResults(file_path):
+    data = []
     with open('rapidResults.json', 'r') as file:
         for line in file:
-            data = json.loads(line.strip())
-            data_list.append(data)
+            data_strip = json.loads(line.strip())
+            data.append(data_strip)
+    return data
 
+def connect_db_rapidResults(db_path='jobs.db'):
     conn = sqlite3.connect('jobs.db')
-    cursor = conn.cursor()
+    # cursor = conn.cursor()
+    return conn
 
+def create_table_rapidResults(cursor):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
@@ -54,7 +57,9 @@ def test_rapid_results():
     )
     ''')
 
-    for data in data_list:
+def insert_data_rapidResults(conn, data):
+    cursor = conn.cursor()
+    for data in data:
         try:
             cursor.execute('''
                 INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location,
@@ -78,20 +83,20 @@ def test_rapid_results():
             ))
         except KeyError as e:
             print(f"Missing key: {e}")
-
     conn.commit()
-    conn.close()
 
-
-def test_rapid_jobs2():
+def test_read_json_rapid_jobs2(file_path):
     data = []
     with open('rapid_jobs2.json', 'r') as file:
         for line in file:
             data.extend(json.loads(line))
+    return data
 
-    conn = sqlite3.connect('jobs.db')
-    cursor = conn.cursor()
+def connect_db_rapid_jobs2(db_path='jobs.db'):
+    conn = sqlite3.connect(db_path)
+    return conn
 
+def create_table_rapid_jobs2(cursor):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
@@ -107,6 +112,8 @@ def test_rapid_jobs2():
     )
     ''')
 
+def insert_data_rapid_jobs2(conn, data):
+    cursor = conn.cursor()
     for item in data:
         cursor.execute('''
             INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image,
@@ -123,13 +130,28 @@ def test_rapid_jobs2():
             item['salaryRange'],
             item['description'],
             item['employmentType']
-
         ))
-
     conn.commit()
-    conn.close()
 
+
+def main():
+    json_file = "rapidResults.json"
+    json_file_2 = "rapid_jobs2.json"
+    db_path = "jobs.db"
+
+    data = test_read_rapidResults(json_file)
+    conn = connect_db_rapidResults(db_path)
+    create_table_rapidResults(conn)
+    insert_data_rapidResults(conn, data)
+
+
+    data2 = test_read_json_rapid_jobs2(json_file_2)
+    conn2 = connect_db_rapid_jobs2(db_path)
+    create_table_rapid_jobs2(conn2)
+    insert_data_rapid_jobs2(conn2, data2)
+
+    conn.close()
+    conn2.close()
 
 if __name__ == '__main__':
-    test_rapid_results()
-    test_rapid_jobs2()
+    main()

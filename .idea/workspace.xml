@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change python -m pytest to pytest -s">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="rename functions to test_">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
@@ -491,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739233493786</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="rename functions to test_">
+      <option name="closed" value="true" />
+      <created>1739233732456</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1739233732456</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add main.py to the same directory" />
     <MESSAGE value="pulled .yml into the main directory" />
     <MESSAGE value="put .yml into the workspace directory" />
     <MESSAGE value="added test to function names" />
@@ -520,6 +527,7 @@
     <MESSAGE value=".yml fixes" />
     <MESSAGE value="completed jobs.db without null columns fill" />
     <MESSAGE value="change python -m pytest to pytest -s" />
-    <option name="LAST_COMMIT_MESSAGE" value="change python -m pytest to pytest -s" />
+    <MESSAGE value="rename functions to test_" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename functions to test_" />
   </component>
 </project>
