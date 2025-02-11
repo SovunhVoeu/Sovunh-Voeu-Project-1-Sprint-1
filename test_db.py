@@ -8,8 +8,7 @@ import json
 
 
 def rapid_results():
-    # Creates a list for JSON objects
-    data_list = []
+    data_list = [] # Creates a list for JSON objects
 
     # Open and reads the JSON file
     with open('rapidResults.json', 'r') as file:
