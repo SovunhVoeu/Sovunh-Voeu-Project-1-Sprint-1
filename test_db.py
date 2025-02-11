@@ -16,12 +16,12 @@ def test_read_rapidResults(file_path):
     return data
 
 
-def connect_db_rapidResults(db_path='jobs.db'):
+def test_connect_db_rapidResults(db_path='jobs.db'):
     conn = sqlite3.connect('jobs.db')
     return conn
 
 
-def create_table_rapidResults(cursor):
+def test_create_table_rapidResults(cursor):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
@@ -59,7 +59,7 @@ def create_table_rapidResults(cursor):
     ''')
 
 
-def insert_data_rapidResults(conn, data):
+def test_insert_data_rapidResults(conn, data):
     cursor = conn.cursor()
     for data in data:
         try:
@@ -88,7 +88,7 @@ def insert_data_rapidResults(conn, data):
     conn.commit()
 
 
-def test_read_json_rapid_jobs2(file_path):
+def test_read_json_rapidJobs(file_path):
     data = []
     with open('rapid_jobs2.json', 'r') as file:
         for line in file:
@@ -96,12 +96,12 @@ def test_read_json_rapid_jobs2(file_path):
     return data
 
 
-def connect_db_rapid_jobs2(db_path='jobs.db'):
+def connect_db_rapidJobs(db_path='jobs.db'):
     conn = sqlite3.connect(db_path)
     return conn
 
 
-def create_table_rapid_jobs2(cursor):
+def test_create_table_rapidJobs(cursor):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
@@ -118,7 +118,7 @@ def create_table_rapid_jobs2(cursor):
     ''')
 
 
-def insert_data_rapid_jobs2(conn, data):
+def test_insert_data_rapidJobs(conn, data):
     cursor = conn.cursor()
     for item in data:
         cursor.execute('''
@@ -140,24 +140,24 @@ def insert_data_rapid_jobs2(conn, data):
     conn.commit()
 
 
-def main():
+def test_main():
     json_file = "rapidResults.json"
     json_file_2 = "rapid_jobs2.json"
     db_path = "jobs.db"
 
     data = test_read_rapidResults(json_file)
-    conn = connect_db_rapidResults(db_path)
-    create_table_rapidResults(conn)
-    insert_data_rapidResults(conn, data)
+    conn = test_connect_db_rapidResults(db_path)
+    test_create_table_rapidResults(conn)
+    test_insert_data_rapidResults(conn, data)
 
-    data2 = test_read_json_rapid_jobs2(json_file_2)
-    conn2 = connect_db_rapid_jobs2(db_path)
-    create_table_rapid_jobs2(conn2)
-    insert_data_rapid_jobs2(conn2, data2)
+    data2 = test_read_json_rapidJobs(json_file_2)
+    conn2 = connect_db_rapidJobs(db_path)
+    test_create_table_rapidJobs(conn2)
+    test_insert_data_rapidJobs(conn2, data2)
 
     conn.close()
     conn2.close()
 
 
 if __name__ == '__main__':
-    main()
+    test_main()
