@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="databases is now created">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment=".yml preparation">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="test_main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +81,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Brand\PycharmProjects\pythonProject\test_main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Brand\PycharmProjects\pythonProject\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,13 +403,34 @@
       <option name="project" value="LOCAL" />
       <updated>1739047769956</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Both JSON files are able to create DBs">
+      <option name="closed" value="true" />
+      <created>1739133499269</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1739133499269</updated>
+    </task>
+    <task id="LOCAL-00039" summary="renamed for the .yml test">
+      <option name="closed" value="true" />
+      <created>1739232445005</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1739232445005</updated>
+    </task>
+    <task id="LOCAL-00040" summary=".yml preparation">
+      <option name="closed" value="true" />
+      <created>1739232649269</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1739232649269</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pip install pytest implemented" />
-    <MESSAGE value="fix yml" />
-    <MESSAGE value="creating a pass def to fix the yml glitch" />
     <MESSAGE value="setting back the main.py" />
     <MESSAGE value="fix with linting" />
     <MESSAGE value="running test dummy pass to correct pytest error" />
@@ -432,6 +453,9 @@
     <MESSAGE value="Sprint 2 Implemented" />
     <MESSAGE value="added datatypes to the creation of SQL table" />
     <MESSAGE value="databases is now created" />
-    <option name="LAST_COMMIT_MESSAGE" value="databases is now created" />
+    <MESSAGE value="Both JSON files are able to create DBs" />
+    <MESSAGE value="renamed for the .yml test" />
+    <MESSAGE value=".yml preparation" />
+    <option name="LAST_COMMIT_MESSAGE" value=".yml preparation" />
   </component>
 </project>
