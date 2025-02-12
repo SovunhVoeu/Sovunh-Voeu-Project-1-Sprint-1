@@ -88,6 +88,7 @@ def test_read_rapidJobs(test_json_file_rapidJobs):
                        "job_url_direct": "https://careersatricoh.com/FO/P6IFK026203F3VBQB688NF6WN/components/"
                                          "details.html?jobId=16277&jobTitle=Customer%20Support%20Technician"}
 
+
 @pytest.fixture
 def test_db():
     test_db = 'test_db.db'
