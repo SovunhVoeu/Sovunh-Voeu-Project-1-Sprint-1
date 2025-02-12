@@ -12,7 +12,7 @@ from db import (read_rapidResults, create_table_rapidResults, insert_data_rapidR
 
 
 @pytest.fixture
-def test_json_file():
+def test_json_file_rapidResults():
     test_file = 'test_data.json'
     test_data = [{"id": "f97b4a007d08a432", "site": "indeed",
                   "job_url": "https://www.indeed.com/viewjob?jk=f97b4a007d08a432",
@@ -33,8 +33,8 @@ def test_json_file():
     #     os.remove(test_file)
 
 
-def test_read_rapidResults(test_json_file):
-    data = read_rapidResults(test_json_file)
+def test_read_rapidResults(test_json_file_rapidResults):
+    data = read_rapidResults(test_json_file_rapidResults)
 
     assert len(data) == 3, "Number of data items"
     assert data[0] == {"id": "f97b4a007d08a432", "site": "indeed",
@@ -49,6 +49,44 @@ def test_read_rapidResults(test_json_file):
                        "job_url_direct": "https://careersatricoh.com/FO/P6IFK026203F3VBQB688NF6WN/components/"
                                          "details.html?jobId=16277&jobTitle=Customer%20Support%20Technician"}
 
+
+@pytest.fixture
+def test_json_file_rapidJobs():
+    test_file = 'test_data.json'
+    test_data = [[{"id": "f97b4a007d08a432", "site": "indeed",
+                  "job_url": "https://www.indeed.com/viewjob?jk=f97b4a007d08a432",
+                  "job_url_direct": "http://www.indeed.com/job/information"
+                                    "-security-analystsr-information-security-analyst-f97b4a007d08a432"}],
+                 [{"id": "9d51f80c2334c33f", "site": "indeed",
+                  "job_url": "https://www.indeed.com/viewjob?jk=9d51f80c2334c33f",
+                  "job_url_direct": "http://www.indeed.com/job/help-desk-production-support-9d51f80c2334c33f"}],
+                 [{"id": "cee95e7fa46f8677", "site": "indeed",
+                  "job_url": "https://www.indeed.com/viewjob?jk=cee95e7fa46f8677",
+                  "job_url_direct": "https://careersatricoh.com/FO/P6IFK026203F3VBQB688NF6WN/"
+                                    "components/details.html?jobId=16277&jobTitle=Customer%20Support%20Technician"}]]
+    with open(test_file, "w") as file:
+        for item in test_data:
+            file.write(json.dumps(item) + '\n')
+    yield test_file
+    # if os.path.exists(test_file):
+    #     os.remove(test_file)
+
+
+def test_read_rapidJobs(test_json_file_rapidJobs):
+    data = read_rapidJobs(test_json_file_rapidJobs)
+
+    assert len(data) == 3, "Number of data items"
+    assert data[0] == {"id": "f97b4a007d08a432", "site": "indeed",
+                       "job_url": "https://www.indeed.com/viewjob?jk=f97b4a007d08a432",
+                       "job_url_direct": "http://www.indeed.com/job/information"
+                                         "-security-analystsr-information-security-analyst-f97b4a007d08a432"}
+    assert data[1] == {"id": "9d51f80c2334c33f", "site": "indeed",
+                       "job_url": "https://www.indeed.com/viewjob?jk=9d51f80c2334c33f",
+                       "job_url_direct": "http://www.indeed.com/job/help-desk-production-support-9d51f80c2334c33f"}
+    assert data[2] == {"id": "cee95e7fa46f8677", "site": "indeed",
+                       "job_url": "https://www.indeed.com/viewjob?jk=cee95e7fa46f8677",
+                       "job_url_direct": "https://careersatricoh.com/FO/P6IFK026203F3VBQB688NF6WN/components/"
+                                         "details.html?jobId=16277&jobTitle=Customer%20Support%20Technician"}
 
 @pytest.fixture
 def test_db():

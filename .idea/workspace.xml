@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added .db to tests">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="create a function for the rapidJobs db tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_db.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,14 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add main.py to the same directory">
-      <option name="closed" value="true" />
-      <created>1738410960293</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1738410960293</updated>
     </task>
     <task id="LOCAL-00020" summary="pulled .yml into the main directory">
       <option name="closed" value="true" />
@@ -559,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739332240441</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="create a function for the rapidJobs db tests">
+      <option name="closed" value="true" />
+      <created>1739333284186</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1739333284186</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="revise according to linting" />
     <MESSAGE value="fix the yml so that it works and updated the README.txt" />
     <MESSAGE value="revise README.txt and my_resume.md" />
     <MESSAGE value="update test_main.py and my_resume.md" />
@@ -588,6 +587,7 @@
     <MESSAGE value="automated testing complete" />
     <MESSAGE value=".yml fixes" />
     <MESSAGE value="added .db to tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .db to tests" />
+    <MESSAGE value="create a function for the rapidJobs db tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a function for the rapidJobs db tests" />
   </component>
 </project>
