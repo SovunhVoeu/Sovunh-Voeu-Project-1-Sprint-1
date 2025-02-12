@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="refactor the name of my program file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix up the db.py for params">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
     </list>
@@ -165,14 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fix yml">
-      <option name="closed" value="true" />
-      <created>1738409294911</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409294911</updated>
     </task>
     <task id="LOCAL-00013" summary="creating a pass def to fix the yml glitch">
       <option name="closed" value="true" />
@@ -558,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739326104217</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix up the db.py for params">
+      <option name="closed" value="true" />
+      <created>1739330103535</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1739330103535</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added YOUR_API_KEY.txt" />
     <MESSAGE value="added pytest -s" />
     <MESSAGE value="remove user input" />
     <MESSAGE value="revise according to linting" />
@@ -587,6 +585,7 @@
     <MESSAGE value="add multi functions" />
     <MESSAGE value="fix .yml" />
     <MESSAGE value="refactor the name of my program file" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor the name of my program file" />
+    <MESSAGE value="fix up the db.py for params" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix up the db.py for params" />
   </component>
 </project>

@@ -17,12 +17,10 @@ def read_rapidResults(json_file):
 
 def connect_db(db_path):
     conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
     return conn
 
 
 def create_table_rapidResults(cursor):
-    #cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
