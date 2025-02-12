@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="automated testing complete">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added .db to tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_db.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,38 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00015" summary="fix with linting">
-      <option name="closed" value="true" />
-      <created>1738409577306</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409577306</updated>
-    </task>
-    <task id="LOCAL-00016" summary="running test dummy pass to correct pytest error">
-      <option name="closed" value="true" />
-      <created>1738409643911</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409643911</updated>
-    </task>
-    <task id="LOCAL-00017" summary="running test dummy pass to correct pytest error">
-      <option name="closed" value="true" />
-      <created>1738409690701</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409690701</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add python-m pytest">
-      <option name="closed" value="true" />
-      <created>1738409802044</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409802044</updated>
     </task>
     <task id="LOCAL-00019" summary="add main.py to the same directory">
       <option name="closed" value="true" />
@@ -557,11 +527,42 @@
       <option name="project" value="LOCAL" />
       <updated>1739331992924</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary=".yml fixes">
+      <option name="closed" value="true" />
+      <created>1739332038345</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1739332038345</updated>
+    </task>
+    <task id="LOCAL-00065" summary=".yml fixes">
+      <option name="closed" value="true" />
+      <created>1739332102224</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1739332102224</updated>
+    </task>
+    <task id="LOCAL-00066" summary=".yml fixes">
+      <option name="closed" value="true" />
+      <created>1739332157601</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1739332157601</updated>
+    </task>
+    <task id="LOCAL-00067" summary="added .db to tests">
+      <option name="closed" value="true" />
+      <created>1739332240441</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1739332240441</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove user input" />
     <MESSAGE value="revise according to linting" />
     <MESSAGE value="fix the yml so that it works and updated the README.txt" />
     <MESSAGE value="revise README.txt and my_resume.md" />
@@ -574,7 +575,6 @@
     <MESSAGE value="renamed for the .yml test" />
     <MESSAGE value=".yml preparation" />
     <MESSAGE value="changed the test function and name for .py file" />
-    <MESSAGE value=".yml fixes" />
     <MESSAGE value="completed jobs.db without null columns fill" />
     <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
@@ -586,6 +586,8 @@
     <MESSAGE value="refactor the name of my program file" />
     <MESSAGE value="fix up the db.py for params" />
     <MESSAGE value="automated testing complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="automated testing complete" />
+    <MESSAGE value=".yml fixes" />
+    <MESSAGE value="added .db to tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .db to tests" />
   </component>
 </project>

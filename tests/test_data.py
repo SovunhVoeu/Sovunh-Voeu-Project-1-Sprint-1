@@ -5,8 +5,10 @@ Date: 2/10/2025
 # conftest.py
 import pytest
 import json
+# import os
 import sqlite3
-from db import read_rapidResults, create_table_rapidResults, insert_data_rapidResults
+from db import (read_rapidResults, create_table_rapidResults, insert_data_rapidResults,
+                read_rapidJobs, create_table_rapidJobs, insert_data_rapidJobs)
 
 
 @pytest.fixture
@@ -82,4 +84,24 @@ def test_create_table_rapidResults(test_db):
             assert result[2] == test_data[9]["job_url"]
             assert result[3] == test_data[9]["job_url_direct"]
             assert result[4] == test_data[9]["title"]
+            break
+
+
+def test_create_table_rapidJobs(test_db):
+    conn, cursor = test_db
+    create_table_rapidJobs(cursor)
+
+    json_file = 'rapid_jobs2.json'
+    test_data = read_rapidJobs(json_file)
+
+    insert_data_rapidJobs(conn, test_data)
+
+    cursor.execute("SELECT * FROM rapid_jobs2 WHERE title = 'Staff Software Engineer, Risk'")
+    result = cursor.fetchone()
+
+    assert result is not None
+    for item in test_data:
+        if item["title"] == "Staff Software Engineer, Risk":
+            assert result[0] == test_data[0]["id"]
+            assert result[1] == test_data[0]["title"]
             break
