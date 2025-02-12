@@ -21,6 +21,7 @@ os, sqlite3, json, and pytest
 
 
 Project 1 SPRINT 1:
+
 Before you run this program paste your API key into the YOUR_API_KEY.txt
 (WARNING: MAKE SURE THAT YOU ONLY HAVE ONE LINE IN THE .TXT FOR THE API. DO NOT HAVE AN EXTRA LINE OR IT WILL NOT RUN)
 The program will read your .txt file and allow you to use the AI/LLM.
