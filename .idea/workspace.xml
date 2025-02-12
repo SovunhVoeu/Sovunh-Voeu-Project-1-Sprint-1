@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="refactor the name of my program file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_db.test_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_data.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_db.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brand/PycharmProjects/pythonProject&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor": "Run",
+    "Python tests.Python tests for test_db.test_main.executor": "Run",
+    "Python tests.Python tests in test_data.py.executor": "Run",
+    "Python tests.Python tests in test_db.py.executor": "Run",
+    "Python.db.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test_db.executor": "Run",
+    "Python.test_main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Brand/PycharmProjects/pythonProject/tests"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
@@ -163,14 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00011" summary="pip install pytest implemented">
-      <option name="closed" value="true" />
-      <created>1738409214843</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409214843</updated>
     </task>
     <task id="LOCAL-00012" summary="fix yml">
       <option name="closed" value="true" />
@@ -556,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739245865380</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="refactor the name of my program file">
+      <option name="closed" value="true" />
+      <created>1739326104217</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1739326104217</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added google-generativeai to pip install" />
     <MESSAGE value="added YOUR_API_KEY.txt" />
     <MESSAGE value="added pytest -s" />
     <MESSAGE value="remove user input" />
@@ -585,6 +586,7 @@
     <MESSAGE value=".yml test fix" />
     <MESSAGE value="add multi functions" />
     <MESSAGE value="fix .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix .yml" />
+    <MESSAGE value="refactor the name of my program file" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor the name of my program file" />
   </component>
 </project>

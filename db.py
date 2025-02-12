@@ -7,7 +7,6 @@ import json
 
 
 def read_rapidResults(json_file):
-    # json_file = 'rapidResults.json'
     data = []
     with open(json_file, 'r') as file:
         for line in file:
@@ -17,13 +16,13 @@ def read_rapidResults(json_file):
 
 
 def connect_db(db_path):
-    # db_path = 'jobs.db'
     conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
     return conn
 
 
-def create_table_rapidResults(conn):
-    cursor = conn.cursor()
+def create_table_rapidResults(cursor):
+    #cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
@@ -62,38 +61,33 @@ def create_table_rapidResults(conn):
 
 
 def insert_data_rapidResults(conn, data):
-    # conn = test_connect_db()
     cursor = conn.cursor()
-    # data = test_read_rapidResults(json_file)
-    for data in data:
-        try:
-            cursor.execute('''
-                INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location,
-                job_type, date_posted,
-                salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function,
-                company_industry,
-                listing_type, emails, description, company_url, company_url_direct, company_addresses,
-                company_num_employees,
-                company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (
-                data['id'], data['site'], data['job_url'], data['job_url_direct'], data['title'], data['company'],
-                data['location'], data['job_type'], data['date_posted'], data['salary_source'], data['interval'],
-                data['min_amount'], data['max_amount'], data['currency'], data['is_remote'], data['job_level'],
-                data['job_function'], data['company_industry'], data['listing_type'],
-                data['emails'], data['description'],
-                data['company_url'], data['company_url_direct'], data['company_addresses'],
-                data['company_num_employees'],
-                data['company_revenue'], data['company_description'], data['logo_photo_url'],
-                data['banner_photo_url'], data['ceo_name'], data['ceo_photo_url']
-            ))
-        except KeyError as e:
-            print(f"Missing key: {e}")
+    sql_insert_data = '''
+        INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location,
+        job_type, date_posted,
+        salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function,
+        company_industry,
+        listing_type, emails, description, company_url, company_url_direct, company_addresses,
+        company_num_employees,
+        company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    '''
+    for item in data:
+        cursor.execute(sql_insert_data, (
+            item['id'], item['site'], item['job_url'], item['job_url_direct'], item['title'], item['company'],
+            item['location'], item['job_type'], item['date_posted'], item['salary_source'], item['interval'],
+            item['min_amount'], item['max_amount'], item['currency'], item['is_remote'], item['job_level'],
+            item['job_function'], item['company_industry'], item['listing_type'],
+            item['emails'], item['description'],
+            item['company_url'], item['company_url_direct'], item['company_addresses'],
+            item['company_num_employees'],
+            item['company_revenue'], item['company_description'], item.get('logo_photo_url', ''),
+            item.get('banner_photo_url', ''), item.get('ceo_name', ''), item.get('ceo_photo_url', '')
+        ))
     conn.commit()
 
 
 def read_rapidJobs(json_file_2):
-    # json_file_2 = 'rapid_jobs2.json'
     data = []
     with open(json_file_2, 'r') as file:
         for line in file:
@@ -102,8 +96,6 @@ def read_rapidJobs(json_file_2):
 
 
 def create_table_rapidJobs(cursor):
-    # conn = test_connect_db()
-    # cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
@@ -121,9 +113,7 @@ def create_table_rapidJobs(cursor):
 
 
 def insert_data_rapidJobs(conn, data):
-    # conn = test_connect_db()
     cursor = conn.cursor()
-    # data = test_read_rapidJobs(json_file_2)
     for item in data:
         cursor.execute('''
             INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image,
