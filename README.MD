@@ -3,10 +3,10 @@ Project 1 SPRINT 2:
 Description:
 This project reads 2 JSON files that are different from one another and creates a database where data is inserted into.
 The main program for this project is the db.py which holds the majority of the code. There is a tests directory that 
-contains a test_data.py that runs 4 tests that uses automated testing to test the grabbing the data from a file and 
-creation and insertion of a database. You can also find test files that were produced from running the program. If you
-want to get rid of them uncomment the lines of code that have # if os.path.exists(test_file): # os.remove(test_file) and
-the # import os at the top of the file. After just rerun the program so that it may go away.
+contains a test_data.py that runs 4 tests that uses automated testing to test the grabbing the data from a file that
+does the creation and insertion of a database. You can also find test files that were produced from running the program.
+If you want to get rid of them uncomment the lines of code that have if os.path.exists(test_file): os.remove(test_file) 
+and the import os at the top of the file. After just rerun the program so that it may go away.
 
 How to run this code:
 You can run this code the standard way by either clicking the green arrow next to if __name__ == '__main__': or on main
