@@ -52,7 +52,7 @@ def test_read_rapidResults(test_json_file_rapidResults):
 
 @pytest.fixture
 def test_json_file_rapidJobs():
-    test_file = 'test_data.json'
+    test_file = 'test_data2.json'
     test_data = [[{"id": "f97b4a007d08a432", "site": "indeed",
                   "job_url": "https://www.indeed.com/viewjob?jk=f97b4a007d08a432",
                   "job_url_direct": "http://www.indeed.com/job/information"
