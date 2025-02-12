@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix up the db.py for params">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="automated testing complete">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00014" summary="setting back the main.py">
-      <option name="closed" value="true" />
-      <created>1738409523471</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1738409523471</updated>
     </task>
     <task id="LOCAL-00015" summary="fix with linting">
       <option name="closed" value="true" />
@@ -557,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739330207489</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="automated testing complete">
+      <option name="closed" value="true" />
+      <created>1739331992924</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1739331992924</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added pytest -s" />
     <MESSAGE value="remove user input" />
     <MESSAGE value="revise according to linting" />
     <MESSAGE value="fix the yml so that it works and updated the README.txt" />
@@ -586,6 +585,7 @@
     <MESSAGE value="fix .yml" />
     <MESSAGE value="refactor the name of my program file" />
     <MESSAGE value="fix up the db.py for params" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix up the db.py for params" />
+    <MESSAGE value="automated testing complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="automated testing complete" />
   </component>
 </project>

@@ -5,7 +5,6 @@ Date: 2/10/2025
 # conftest.py
 import pytest
 import json
-import os
 import sqlite3
 from db import read_rapidResults, create_table_rapidResults, insert_data_rapidResults
 
