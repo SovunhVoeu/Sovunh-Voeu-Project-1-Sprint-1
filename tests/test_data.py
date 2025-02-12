@@ -60,9 +60,9 @@ def test_db():
 
 
 """ Used Copilot to solve the assert issue, it kept having an error w/ dicts and lists and str errors """
+
+
 def test_create_table_rapidResults(test_db):
-
-
     conn, cursor = test_db
     create_table_rapidResults(cursor)
 
