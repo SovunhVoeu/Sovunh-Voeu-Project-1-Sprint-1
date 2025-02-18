@@ -2,13 +2,14 @@
 Author: Sovunh Voeu
 Date: 2/6/2025
 """
+
 import sqlite3
 import json
 
 
 def read_rapidResults(json_file):
     data = []
-    with open(json_file, 'r') as file:
+    with open(json_file, "r") as file:
         for line in file:
             data_strip = json.loads(line.strip())
             data.append(data_strip)
@@ -21,7 +22,8 @@ def connect_db(db_path):
 
 
 def create_table_rapidResults(cursor):
-    cursor.execute('''
+    cursor.execute(
+        """
     CREATE TABLE IF NOT EXISTS rapidResults (
         id VARCHAR(32) PRIMARY KEY,
         site VARCHAR(255) NOT NULL,
@@ -55,12 +57,13 @@ def create_table_rapidResults(cursor):
         ceo_name VARCHAR(255),
         ceo_photo_url TEXT
     )
-    ''')
+    """
+    )
 
 
 def insert_data_rapidResults(conn, data):
     cursor = conn.cursor()
-    sql_insert_data = '''
+    sql_insert_data = """
         INSERT OR IGNORE INTO rapidResults (id, site, job_url, job_url_direct, title, company, location,
         job_type, date_posted,
         salary_source, interval, min_amount, max_amount, currency, is_remote, job_level, job_function,
@@ -69,32 +72,58 @@ def insert_data_rapidResults(conn, data):
         company_num_employees,
         company_revenue, company_description, logo_photo_url, banner_photo_url, ceo_name, ceo_photo_url)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    '''
+    """
     for item in data:
-        cursor.execute(sql_insert_data, (
-            item['id'], item['site'], item['job_url'], item['job_url_direct'], item['title'], item['company'],
-            item['location'], item['job_type'], item['date_posted'], item['salary_source'], item['interval'],
-            item['min_amount'], item['max_amount'], item['currency'], item['is_remote'], item['job_level'],
-            item['job_function'], item['company_industry'], item['listing_type'],
-            item['emails'], item['description'],
-            item['company_url'], item['company_url_direct'], item['company_addresses'],
-            item['company_num_employees'],
-            item['company_revenue'], item['company_description'], item.get('logo_photo_url', ''),
-            item.get('banner_photo_url', ''), item.get('ceo_name', ''), item.get('ceo_photo_url', '')
-        ))
+        cursor.execute(
+            sql_insert_data,
+            (
+                item["id"],
+                item["site"],
+                item["job_url"],
+                item["job_url_direct"],
+                item["title"],
+                item["company"],
+                item["location"],
+                item["job_type"],
+                item["date_posted"],
+                item["salary_source"],
+                item["interval"],
+                item["min_amount"],
+                item["max_amount"],
+                item["currency"],
+                item["is_remote"],
+                item["job_level"],
+                item["job_function"],
+                item["company_industry"],
+                item["listing_type"],
+                item["emails"],
+                item["description"],
+                item["company_url"],
+                item["company_url_direct"],
+                item["company_addresses"],
+                item["company_num_employees"],
+                item["company_revenue"],
+                item["company_description"],
+                item.get("logo_photo_url", ""),
+                item.get("banner_photo_url", ""),
+                item.get("ceo_name", ""),
+                item.get("ceo_photo_url", ""),
+            ),
+        )
     conn.commit()
 
 
 def read_rapidJobs(json_file_2):
     data = []
-    with open(json_file_2, 'r') as file:
+    with open(json_file_2, "r") as file:
         for line in file:
             data.extend(json.loads(line))
     return data
 
 
 def create_table_rapidJobs(cursor):
-    cursor.execute('''
+    cursor.execute(
+        """
     CREATE TABLE IF NOT EXISTS rapid_jobs2 (
         id VARCHAR(32) PRIMARY KEY,
         title VARCHAR(255),
@@ -107,35 +136,41 @@ def create_table_rapidJobs(cursor):
         description TEXT,
         employmentType TEXT
     )
-    ''')
+    """
+    )
 
 
 def insert_data_rapidJobs(conn, data):
     cursor = conn.cursor()
     for item in data:
-        cursor.execute('''
+        cursor.execute(
+            """
             INSERT OR IGNORE INTO rapid_jobs2 (id, title, jobProviders, company, image,
             location, datePosted, salaryRange, description, employmentType)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (
-            item['id'],
-            item['title'],
-            ", ".join(provider["jobProvider"] for provider in item.get('jobProviders', [])),
-            item['company'],
-            item['image'],
-            item['location'],
-            item['datePosted'],
-            item['salaryRange'],
-            item['description'],
-            item['employmentType']
-        ))
+            """,
+            (
+                item["id"],
+                item["title"],
+                ", ".join(
+                    provider["jobProvider"] for provider in item.get("jobProviders", [])
+                ),
+                item["company"],
+                item["image"],
+                item["location"],
+                item["datePosted"],
+                item["salaryRange"],
+                item["description"],
+                item["employmentType"],
+            ),
+        )
     conn.commit()
 
 
 def main():
-    json_file = 'rapidResults.json'
-    json_file_2 = 'rapid_jobs2.json'
-    db_path = 'jobs.db'
+    json_file = "rapidResults.json"
+    json_file_2 = "rapid_jobs2.json"
+    db_path = "jobs.db"
 
     data = read_rapidResults(json_file)
     conn = connect_db(db_path)
@@ -151,5 +186,5 @@ def main():
     conn2.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
