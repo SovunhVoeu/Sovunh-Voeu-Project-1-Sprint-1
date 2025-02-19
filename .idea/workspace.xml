@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix indentation per .yml request">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="wrote the README.MD for sprint 2 details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/db.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     "Python tests.Python tests in test_data.py.executor": "Run",
     "Python tests.Python tests in test_db.py.executor": "Run",
     "Python.db.executor": "Run",
+    "Python.gui.executor": "Run",
     "Python.main.executor": "Run",
     "Python.test_db.executor": "Run",
     "Python.test_main.executor": "Run",
@@ -74,7 +75,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.db">
+  <component name="RunManager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -188,30 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added google-generativeai to pip install">
-      <option name="closed" value="true" />
-      <created>1738412044403</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1738412044403</updated>
-    </task>
-    <task id="LOCAL-00027" summary="added YOUR_API_KEY.txt">
-      <option name="closed" value="true" />
-      <created>1738412120562</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1738412120562</updated>
-    </task>
-    <task id="LOCAL-00028" summary="added pytest -s">
-      <option name="closed" value="true" />
-      <created>1738412265549</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1738412265549</updated>
     </task>
     <task id="LOCAL-00029" summary="remove user input">
       <option name="closed" value="true" />
@@ -581,11 +558,34 @@
       <option name="project" value="LOCAL" />
       <updated>1739333961800</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="wrote the README.MD for sprint 2 details">
+      <option name="closed" value="true" />
+      <created>1739334885238</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1739334885238</updated>
+    </task>
+    <task id="LOCAL-00076" summary="wrote the README.MD for sprint 2 details">
+      <option name="closed" value="true" />
+      <created>1739334921667</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1739334921667</updated>
+    </task>
+    <task id="LOCAL-00077" summary="wrote the README.MD for sprint 2 details">
+      <option name="closed" value="true" />
+      <created>1739335047079</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1739335047079</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sprint 2 Implemented" />
     <MESSAGE value="added datatypes to the creation of SQL table" />
     <MESSAGE value="databases is now created" />
     <MESSAGE value="Both JSON files are able to create DBs" />
@@ -610,6 +610,7 @@
     <MESSAGE value="fix the json being overwritten by rapidJobs func" />
     <MESSAGE value="add double space for .yml fix" />
     <MESSAGE value="fix indentation per .yml request" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix indentation per .yml request" />
+    <MESSAGE value="wrote the README.MD for sprint 2 details" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrote the README.MD for sprint 2 details" />
   </component>
 </project>
