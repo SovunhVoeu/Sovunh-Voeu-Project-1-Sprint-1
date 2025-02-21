@@ -11,32 +11,44 @@ from PyQt6.QtCore import Qt
 
 
 class SecondWindow(QWidget):
-    def __init__(self, main_window):
+    def __init__(self, db):
         super().__init__()
-        self.main_window = main_window
-        self.setWindowTitle("User Input Window")
+
+        self.db = db
+        self.setWindowTitle("User Profile Input Window")
         self.setGeometry(1000, 100, 800, 600)
 
         layout = QVBoxLayout()
 
         form_layout = QFormLayout()
+        self.name_input = QLineEdit()
+        self.email_input = QLineEdit()
+        self.phone_input = QLineEdit()
+        self.github_input = QLineEdit()
+        self.linkedin_input = QLineEdit()
+        self.projects_input = QTextEdit()
+        self.classes_input = QTextEdit()
+        self.other_input = QTextEdit()
 
-        self.search_input = QLineEdit()
-        form_layout.addRow("Search:", self.search_input)
+        form_layout.addRow("Name:", self.name_input)
+        form_layout.addRow("Email:", self.email_input)
+        form_layout.addRow("Phone:", self.phone_input)
+        form_layout.addRow("Github:", self.github_input)
+        form_layout.addRow("LinkedIn:", self.linkedin_input)
+        form_layout.addRow("Projects:", self.projects_input)
+        form_layout.addRow("Classes:", self.classes_input)
+        form_layout.addRow("Other:", self.other_input)
 
-        add_button = QPushButton("Search in rapidResults")
-        add_button.clicked.connect(self.search_table1)
+        layout.addLayout(form_layout)
 
-        input_layout = QHBoxLayout()
-        input_layout.addLayout(form_layout)
-        input_layout.addWidget(add_button)
-
-        layout.addLayout(input_layout)
+        self.save_button = QPushButton("Save Information")
+        self.save_button.clicked.connect(self.save_user_info)
+        layout.addWidget(self.save_button)
 
         self.setLayout(layout)
 
-
-    def search_table1(self):
+# REVISE THIS INTO THE SAVE INFO
+    def save_user_info(self):
         search_term = self.search_input.text()
         if search_term:
             self.main_window.search_table1(search_term)

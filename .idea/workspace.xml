@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="laid down the framework for the GUI">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Fix the error with the Jobs details not showing. Also added loops to iterate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
@@ -189,14 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00030" summary="revise according to linting">
-      <option name="closed" value="true" />
-      <created>1738412469341</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1738412469341</updated>
     </task>
     <task id="LOCAL-00031" summary="fix the yml so that it works and updated the README.txt">
       <option name="closed" value="true" />
@@ -582,7 +574,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739990511523</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Fix the error with the Jobs details not showing. Also added loops to iterate">
+      <option name="closed" value="true" />
+      <created>1740107907204</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1740107907204</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="databases is now created" />
     <MESSAGE value="Both JSON files are able to create DBs" />
     <MESSAGE value="renamed for the .yml test" />
     <MESSAGE value=".yml preparation" />
@@ -622,6 +621,7 @@
     <MESSAGE value="fix indentation per .yml request" />
     <MESSAGE value="wrote the README.MD for sprint 2 details" />
     <MESSAGE value="laid down the framework for the GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="laid down the framework for the GUI" />
+    <MESSAGE value="Fix the error with the Jobs details not showing. Also added loops to iterate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix the error with the Jobs details not showing. Also added loops to iterate" />
   </component>
 </project>
