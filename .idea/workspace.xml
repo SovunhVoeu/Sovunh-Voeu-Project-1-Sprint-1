@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="wrote the README.MD for sprint 2 details">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="laid down the framework for the GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor": "Run",
-    "Python tests.Python tests for test_db.test_main.executor": "Run",
-    "Python tests.Python tests in test_data.py.executor": "Run",
-    "Python tests.Python tests in test_db.py.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.gui.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test_db.executor": "Run",
-    "Python.test_main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Brand/PycharmProjects/pythonProject/tests"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_db.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_data.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brand/PycharmProjects/pythonProject/tests&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
@@ -189,14 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00029" summary="remove user input">
-      <option name="closed" value="true" />
-      <created>1738412405491</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1738412405491</updated>
     </task>
     <task id="LOCAL-00030" summary="revise according to linting">
       <option name="closed" value="true" />
@@ -582,11 +574,29 @@
       <option name="project" value="LOCAL" />
       <updated>1739335047079</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="laid down the framework for the GUI">
+      <option name="closed" value="true" />
+      <created>1739990511523</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1739990511523</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added datatypes to the creation of SQL table" />
     <MESSAGE value="databases is now created" />
     <MESSAGE value="Both JSON files are able to create DBs" />
     <MESSAGE value="renamed for the .yml test" />
@@ -611,6 +621,7 @@
     <MESSAGE value="add double space for .yml fix" />
     <MESSAGE value="fix indentation per .yml request" />
     <MESSAGE value="wrote the README.MD for sprint 2 details" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote the README.MD for sprint 2 details" />
+    <MESSAGE value="laid down the framework for the GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="laid down the framework for the GUI" />
   </component>
 </project>
