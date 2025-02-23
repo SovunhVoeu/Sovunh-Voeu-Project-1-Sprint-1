@@ -49,7 +49,6 @@ class SecondWindow(QWidget):
 
         self.setLayout(layout)
 
-
     def save_user_data(self):
         name = self.name_input.text()
         email = self.email_input.text()
@@ -139,7 +138,6 @@ class MainWindow(QMainWindow):
         self.user_data_button.clicked.connect(self.open_second_window)
         layout.addWidget(self.user_data_button)
 
-
     def create_user_data_table(self):
         query = QSqlQuery(self.db)
         query.exec("""
@@ -156,11 +154,9 @@ class MainWindow(QMainWindow):
         )
         """)
 
-
     def open_second_window(self):
         self.user_data_window = SecondWindow(self.db)
         self.user_data_window.show()
-
 
     def display_details1(self, index):
         row = index.row()
@@ -170,7 +166,6 @@ class MainWindow(QMainWindow):
             column_value = self.model1.data(self.model1.index(row, col))
             job_details.append(f"{column_name}: {column_value}")
         self.details_text.setText("\n".join(job_details))
-
 
     def display_details2(self, index):
         row = index.row()

@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Created and properly test the first test function">
-      <change afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Project is complete and operational. The README.MD has also update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_gui.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/db.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -235,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00034" summary="update the README.txt">
-      <option name="closed" value="true" />
-      <created>1738507621679</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1738507621679</updated>
     </task>
     <task id="LOCAL-00035" summary="Sprint 2 Implemented">
       <option name="closed" value="true" />
@@ -628,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740338715620</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Project is complete and operational. The README.MD has also update.">
+      <option name="closed" value="true" />
+      <created>1740344818037</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1740344818037</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -643,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed the test function and name for .py file" />
     <MESSAGE value="completed jobs.db without null columns fill" />
     <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
@@ -668,6 +663,7 @@
     <MESSAGE value="Refactor the Search function into the Save function. Also Second Window is now properly implement" />
     <MESSAGE value="Implemented the save and creation of the user data table" />
     <MESSAGE value="Created and properly test the first test function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created and properly test the first test function" />
+    <MESSAGE value="Project is complete and operational. The README.MD has also update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project is complete and operational. The README.MD has also update." />
   </component>
 </project>
