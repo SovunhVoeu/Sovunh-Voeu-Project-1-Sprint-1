@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00066" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739332157601</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1739332157601</updated>
     </task>
     <task id="LOCAL-00067" summary="added .db to tests">
       <option name="closed" value="true" />
@@ -623,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740350930963</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="attempts to fix PyQt5 missing xcb error">
+      <option name="closed" value="true" />
+      <created>1740351043124</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1740351043124</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
