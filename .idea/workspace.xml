@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove the zero out of flake8">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gui.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,22 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00054" summary=".yml test fix">
-      <option name="closed" value="true" />
-      <created>1739244048453</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1739244048453</updated>
-    </task>
-    <task id="LOCAL-00055" summary=".yml test fix">
-      <option name="closed" value="true" />
-      <created>1739244236742</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1739244236742</updated>
     </task>
     <task id="LOCAL-00056" summary=".yml test fix">
       <option name="closed" value="true" />
@@ -623,7 +608,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740349073484</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="replace .yml">
+      <option name="closed" value="true" />
+      <created>1740349153486</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1740349153486</updated>
+    </task>
+    <task id="LOCAL-00104" summary="remove the zero out of flake8">
+      <option name="closed" value="true" />
+      <created>1740349179998</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1740349179998</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="laid down the framework for the GUI" />
-    <MESSAGE value="Fix the error with the Jobs details not showing. Also added loops to iterate" />
     <MESSAGE value="Refactor the Search function into the Save function. Also Second Window is now properly implement" />
     <MESSAGE value="Implemented the save and creation of the user data table" />
     <MESSAGE value="Created and properly test the first test function" />
@@ -663,6 +662,8 @@
     <MESSAGE value="delete python-package.yml" />
     <MESSAGE value="new .yml to attempt error fix" />
     <MESSAGE value="remove .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .yml" />
+    <MESSAGE value="replace .yml" />
+    <MESSAGE value="remove the zero out of flake8" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove the zero out of flake8" />
   </component>
 </project>
