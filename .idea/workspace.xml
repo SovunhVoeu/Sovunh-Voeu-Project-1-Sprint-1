@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="install libegl1 added more">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="install libegl1 and add more to correct xcb issues">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00046" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739233362549</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1739233362549</updated>
     </task>
     <task id="LOCAL-00047" summary="completed jobs.db without null columns fill">
       <option name="closed" value="true" />
@@ -623,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740347907759</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="install libegl1 and add more to correct xcb issues">
+      <option name="closed" value="true" />
+      <created>1740348046671</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348046671</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".yml fixes" />
     <MESSAGE value="added .db to tests" />
     <MESSAGE value="create a function for the rapidJobs db tests" />
     <MESSAGE value="add the read and write for the rapid_jobs2 to tests dir" />
@@ -663,6 +661,7 @@
     <MESSAGE value="retrying Python Path to run tests without production code in dir" />
     <MESSAGE value="install libegl1" />
     <MESSAGE value="install libegl1 added more" />
-    <option name="LAST_COMMIT_MESSAGE" value="install libegl1 added more" />
+    <MESSAGE value="install libegl1 and add more to correct xcb issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="install libegl1 and add more to correct xcb issues" />
   </component>
 </project>
