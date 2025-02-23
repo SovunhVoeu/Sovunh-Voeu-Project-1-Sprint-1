@@ -3,10 +3,10 @@ Author: Sovunh Voeu
 Date: 2/18/2025
 """
 import sys
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QWidget, QTableView, QPushButton,
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QWidget, QTableView, QPushButton,
                              QLineEdit, QFormLayout, QMessageBox, QLabel, QTextEdit)
-from PyQt6.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
-from PyQt6.QtCore import Qt
+from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
+from PyQt5.QtCore import Qt
 
 
 class SecondWindow(QWidget):

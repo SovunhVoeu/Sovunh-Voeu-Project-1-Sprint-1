@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempting to fix libegl errors">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove app-get autoclean">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -230,22 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00058" summary="fix .yml">
-      <option name="closed" value="true" />
-      <created>1739245773219</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1739245773219</updated>
-    </task>
-    <task id="LOCAL-00059" summary="fix .yml">
-      <option name="closed" value="true" />
-      <created>1739245865380</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1739245865380</updated>
     </task>
     <task id="LOCAL-00060" summary="refactor the name of my program file">
       <option name="closed" value="true" />
@@ -623,7 +609,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740349396162</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="PyQt error fix">
+      <option name="closed" value="true" />
+      <created>1740349706113</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1740349706113</updated>
+    </task>
+    <task id="LOCAL-00108" summary="remove app-get autoclean">
+      <option name="closed" value="true" />
+      <created>1740349776992</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1740349776992</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented the save and creation of the user data table" />
-    <MESSAGE value="Created and properly test the first test function" />
     <MESSAGE value="Project is complete and operational. The README.MD has also update." />
     <MESSAGE value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
     <MESSAGE value="fix the unexpected spaces after keywords" />
@@ -663,6 +663,8 @@
     <MESSAGE value="replace .yml" />
     <MESSAGE value="remove the zero out of flake8" />
     <MESSAGE value="attempting to fix libegl errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting to fix libegl errors" />
+    <MESSAGE value="PyQt error fix" />
+    <MESSAGE value="remove app-get autoclean" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove app-get autoclean" />
   </component>
 </project>

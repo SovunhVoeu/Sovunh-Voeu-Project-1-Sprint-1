@@ -5,10 +5,10 @@ Date: 2/22/2025
 # conftest.py
 import pytest
 from gui import MainWindow, SecondWindow
-from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery
-from PyQt6.QtTest import QTest
-from PyQt6.QtCore import Qt
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtSql import QSqlQuery
+from PyQt5.QtTest import QTest
+from PyQt5.QtCore import Qt
 
 
 @pytest.fixture(scope="session")
