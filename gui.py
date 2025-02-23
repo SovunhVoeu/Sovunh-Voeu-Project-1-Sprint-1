@@ -42,18 +42,41 @@ class SecondWindow(QWidget):
         layout.addLayout(form_layout)
 
         self.save_button = QPushButton("Save Information")
-        self.save_button.clicked.connect(self.save_user_info)
+        self.save_button.clicked.connect(self.save_user_data)
         layout.addWidget(self.save_button)
 
         self.setLayout(layout)
 
-# REVISE THIS INTO THE SAVE INFO
-    def save_user_info(self):
-        search_term = self.search_input.text()
-        if search_term:
-            self.main_window.search_table1(search_term)
+
+    def save_user_data(self):
+        name = self.name_input.text()
+        email = self.email_input.text()
+        phone = self.phone_input.text()
+        github = self.github_input.text()
+        linkedin = self.linkedin_input.text()
+        projects = self.projects_input.toPlainText()
+        classes = self.classes_input.toPlainText()
+        other = self.other_input.toPlainText()
+
+        query = QSqlQuery(self.db)
+        query.prepare("""
+            INSERT INTO user_data (name, email, phone, github, linkedin, projects, classes, other)
+            VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+        """)
+
+        query.addBindValue(name)
+        query.addBindValue(email)
+        query.addBindValue(phone)
+        query.addBindValue(github)
+        query.addBindValue(linkedin)
+        query.addBindValue(projects)
+        query.addBindValue(classes)
+        query.addBindValue(other)
+
+        if query.exec():
+            QMessageBox.information(self, "Successful", "The User Information was saved")
         else:
-            QMessageBox.warning(self, "Input Error", "Search term cannot be left empty.")
+            QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
 
 class MainWindow(QMainWindow):
@@ -98,23 +121,33 @@ class MainWindow(QMainWindow):
         self.table_view2.clicked.connect(self.display_details2)
         layout.addWidget(self.table_view2)
 
-        button = QPushButton("Open Search Window")
-        button.clicked.connect(self.open_second_window)
-        layout.addWidget(button)
+        self.create_user_data_table()
 
-        self.second_window = None
+        self.user_data_button = QPushButton("Open User Data")
+        self.user_data_button.clicked.connect(self.open_second_window)
+        layout.addWidget(self.user_data_button)
+
+
+    def create_user_data_table(self):
+        query = QSqlQuery(self.db)
+        query.exec("""
+        CREATE TABLE IF NOT EXISTS user_data (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name VARCHAR(255),
+        email VARCHAR(255),
+        phone VARCHAR(255),
+        github VARCHAR(255),
+        linkedin VARCHAR(255),
+        projects VARCHAR(255),
+        classes VARCHAR(255),
+        other VARCHAR(255)
+        )
+        """)
 
 
     def open_second_window(self):
-        if self.second_window is None:
-            self.second_window = SecondWindow(self)
-        self.second_window.show()
-
-
-    # def search_table1(self, search_term):
-    #     query = f"site LIKE '%{search_term}%'"
-    #     self.model1.setFilter(query)
-    #     self.model1.select()
+        self.user_data_window = SecondWindow(self.db)
+        self.user_data_window.show()
 
 
     def display_details1(self, index):
