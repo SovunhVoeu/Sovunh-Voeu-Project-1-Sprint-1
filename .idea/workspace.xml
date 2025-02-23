@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add gui.py to tests dir">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove PYTHON PATH">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00050" summary="revised file">
-      <option name="closed" value="true" />
-      <created>1739235571727</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1739235571727</updated>
     </task>
     <task id="LOCAL-00051" summary="added functions">
       <option name="closed" value="true" />
@@ -623,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740348413396</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="remove PYTHON PATH">
+      <option name="closed" value="true" />
+      <created>1740348478900</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348478900</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix the json being overwritten by rapidJobs func" />
     <MESSAGE value="add double space for .yml fix" />
     <MESSAGE value="fix indentation per .yml request" />
     <MESSAGE value="wrote the README.MD for sprint 2 details" />
@@ -663,6 +662,7 @@
     <MESSAGE value="install libgl1-mesa-glx and add more to correct xcb issues" />
     <MESSAGE value="removed libegl and add python -m pytest" />
     <MESSAGE value="add gui.py to tests dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gui.py to tests dir" />
+    <MESSAGE value="remove PYTHON PATH" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove PYTHON PATH" />
   </component>
 </project>
