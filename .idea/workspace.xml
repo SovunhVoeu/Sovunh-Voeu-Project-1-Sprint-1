@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Switch from PyQt6 to PyQt5 to counter the testing errors">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove packages that involve PyQt6">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,22 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00061" summary="fix up the db.py for params">
-      <option name="closed" value="true" />
-      <created>1739330103535</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1739330103535</updated>
-    </task>
-    <task id="LOCAL-00062" summary="fix up the db.py for params">
-      <option name="closed" value="true" />
-      <created>1739330207489</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1739330207489</updated>
     </task>
     <task id="LOCAL-00063" summary="automated testing complete">
       <option name="closed" value="true" />
@@ -622,7 +605,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740350170109</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="PyQt5 requirements.txt change">
+      <option name="closed" value="true" />
+      <created>1740350260672</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1740350260672</updated>
+    </task>
+    <task id="LOCAL-00111" summary="remove packages that involve PyQt6">
+      <option name="closed" value="true" />
+      <created>1740350355927</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1740350355928</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,8 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
-    <MESSAGE value="fix the unexpected spaces after keywords" />
     <MESSAGE value="add whitespace after comma" />
     <MESSAGE value="create a requirements.txt" />
     <MESSAGE value="set the PYTHON PATH" />
@@ -662,6 +659,8 @@
     <MESSAGE value="PyQt error fix" />
     <MESSAGE value="remove app-get autoclean" />
     <MESSAGE value="Switch from PyQt6 to PyQt5 to counter the testing errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switch from PyQt6 to PyQt5 to counter the testing errors" />
+    <MESSAGE value="PyQt5 requirements.txt change" />
+    <MESSAGE value="remove packages that involve PyQt6" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove packages that involve PyQt6" />
   </component>
 </project>
