@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Uninstall PyQt6">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempts to fix PyQt5 missing xcb error">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -230,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00064" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739332038345</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1739332038345</updated>
-    </task>
-    <task id="LOCAL-00065" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739332102224</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1739332102224</updated>
     </task>
     <task id="LOCAL-00066" summary=".yml fixes">
       <option name="closed" value="true" />
@@ -623,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740350606245</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="refix .yml">
+      <option name="closed" value="true" />
+      <created>1740350757331</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1740350757331</updated>
+    </task>
+    <task id="LOCAL-00114" summary="attempts to fix PyQt5 missing xcb error">
+      <option name="closed" value="true" />
+      <created>1740350930963</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1740350930963</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a requirements.txt" />
-    <MESSAGE value="set the PYTHON PATH" />
     <MESSAGE value="sudo apt-get libegl1-mesa" />
     <MESSAGE value="refix sudo apt-get libegl1-mesa" />
     <MESSAGE value="remove PYTHON PATH in .yml" />
@@ -663,6 +661,8 @@
     <MESSAGE value="PyQt5 requirements.txt change" />
     <MESSAGE value="remove packages that involve PyQt6" />
     <MESSAGE value="Uninstall PyQt6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uninstall PyQt6" />
+    <MESSAGE value="refix .yml" />
+    <MESSAGE value="attempts to fix PyQt5 missing xcb error" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempts to fix PyQt5 missing xcb error" />
   </component>
 </project>
