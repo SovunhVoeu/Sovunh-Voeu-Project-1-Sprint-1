@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempt fix for missing dependency in .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove from tests dir">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +71,9 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\src" />
-      <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
@@ -173,7 +174,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_gui.test_job_select_return" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_gui.test_job_select_return" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,7 +185,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_gui.test_job_select_return&quot;" />
+      <option name="_new_target" value="&quot;tests.test_gui.test_job_select_return&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -206,7 +207,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.gui" />
-        <item itemvalue="Python tests.Python tests for test_gui.test_job_select_return" />
+        <item itemvalue="Python tests.Python tests for tests.test_gui.test_job_select_return" />
         <item itemvalue="Python.db" />
         <item itemvalue="Python tests.Python tests for db" />
         <item itemvalue="Python tests.Python tests for db" />
@@ -228,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00072" summary="add double space for .yml fix">
-      <option name="closed" value="true" />
-      <created>1739333806506</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1739333806506</updated>
     </task>
     <task id="LOCAL-00073" summary="fix indentation per .yml request">
       <option name="closed" value="true" />
@@ -621,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740351436109</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="remove from tests dir">
+      <option name="closed" value="true" />
+      <created>1740351513381</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1740351513381</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="retrying Python Path to run tests without production code in dir" />
     <MESSAGE value="install libegl1" />
     <MESSAGE value="install libegl1 added more" />
     <MESSAGE value="install libegl1 and add more to correct xcb issues" />
@@ -661,6 +661,7 @@
     <MESSAGE value="Remove VD" />
     <MESSAGE value="checking to remove error" />
     <MESSAGE value="attempt fix for missing dependency in .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt fix for missing dependency in .yml" />
+    <MESSAGE value="remove from tests dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove from tests dir" />
   </component>
 </project>
