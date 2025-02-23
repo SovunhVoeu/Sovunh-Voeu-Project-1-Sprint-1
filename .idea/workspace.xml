@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove PYTHON PATH in .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="retrying Python Path to run tests without production code in dir">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00043" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739232979891</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1739232979891</updated>
     </task>
     <task id="LOCAL-00044" summary=".yml fixes">
       <option name="closed" value="true" />
@@ -625,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740347066308</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="retrying Python Path to run tests without production code in dir">
+      <option name="closed" value="true" />
+      <created>1740347504785</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1740347504785</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor the name of my program file" />
     <MESSAGE value="fix up the db.py for params" />
     <MESSAGE value="automated testing complete" />
     <MESSAGE value=".yml fixes" />
@@ -665,6 +661,7 @@
     <MESSAGE value="sudo apt-get libegl1-mesa" />
     <MESSAGE value="refix sudo apt-get libegl1-mesa" />
     <MESSAGE value="remove PYTHON PATH in .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove PYTHON PATH in .yml" />
+    <MESSAGE value="retrying Python Path to run tests without production code in dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="retrying Python Path to run tests without production code in dir" />
   </component>
 </project>
