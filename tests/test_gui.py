@@ -2,6 +2,7 @@
 Author: Sovunh Voeu
 Date: 2/22/2025
 """
+# conftest.py
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
