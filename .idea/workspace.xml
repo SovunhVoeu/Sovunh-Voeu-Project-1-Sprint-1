@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Refactor the Search function into the Save function. Also Second Window is now properly implement">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Implemented the save and creation of the user data table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +51,10 @@
   &quot;keyToString&quot;: {
     &quot;Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_db.test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_gui.test_job_select_return.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_data.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_gui.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.db.executor&quot;: &quot;Run&quot;,
     &quot;Python.gui.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
@@ -71,9 +72,9 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
-      <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,6 +152,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_gui.test_job_select_return" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SV Project 1 Sprint 1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_gui.test_job_select_return&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in db.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -168,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_gui.test_job_select_return" />
         <item itemvalue="Python.db" />
         <item itemvalue="Python tests.Python tests for db" />
         <item itemvalue="Python tests.Python tests for db" />
@@ -190,14 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00032" summary="revise README.txt and my_resume.md">
-      <option name="closed" value="true" />
-      <created>1738413152773</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1738413152773</updated>
     </task>
     <task id="LOCAL-00033" summary="update test_main.py and my_resume.md">
       <option name="closed" value="true" />
@@ -583,7 +592,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740113640145</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Implemented the save and creation of the user data table">
+      <option name="closed" value="true" />
+      <created>1740285741258</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1740285741258</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -598,7 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="renamed for the .yml test" />
     <MESSAGE value=".yml preparation" />
     <MESSAGE value="changed the test function and name for .py file" />
     <MESSAGE value="completed jobs.db without null columns fill" />
@@ -623,6 +639,7 @@
     <MESSAGE value="laid down the framework for the GUI" />
     <MESSAGE value="Fix the error with the Jobs details not showing. Also added loops to iterate" />
     <MESSAGE value="Refactor the Search function into the Save function. Also Second Window is now properly implement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor the Search function into the Save function. Also Second Window is now properly implement" />
+    <MESSAGE value="Implemented the save and creation of the user data table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the save and creation of the user data table" />
   </component>
 </project>

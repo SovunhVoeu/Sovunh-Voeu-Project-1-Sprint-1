@@ -74,7 +74,7 @@ class SecondWindow(QWidget):
         query.addBindValue(other)
 
         if query.exec():
-            QMessageBox.information(self, "Successful", "The User Information was saved")
+            QMessageBox.information(self, "Successful", "The User Information was saved, Refresh the db for updated info.")
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
@@ -96,11 +96,13 @@ class MainWindow(QMainWindow):
             QMessageBox.critical(self, "Database Error", "Unable to open database")
             return
 
+        # ADD TEXT TO LET PEOPLE KNOW WHAT THEY NEED TO DO EX: SELECT JOBS FOR DETAILS
         self.details_text = QTextEdit()
         self.details_text.setReadOnly(True)
         self.details_text.setLineWrapMode(QTextEdit.LineWrapMode.WidgetWidth)
         layout.addWidget(self.details_text)
 
+        # IN ORDER TO GET THE TESTS RUNNING CORRECTLY YOU MIGHT NEED TO BREAK THINGS DOWN INTO FUNCTIONS
         self.table_view1 = QTableView()
         self.model1 = QSqlQueryModel()
         self.model1.setQuery("SELECT * FROM rapidResults", self.db)
@@ -123,7 +125,7 @@ class MainWindow(QMainWindow):
 
         self.create_user_data_table()
 
-        self.user_data_button = QPushButton("Open User Data")
+        self.user_data_button = QPushButton("Open User Input Data")
         self.user_data_button.clicked.connect(self.open_second_window)
         layout.addWidget(self.user_data_button)
 
