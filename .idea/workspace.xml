@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="create a requirements.txt">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="set the PYTHON PATH">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -229,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00039" summary="renamed for the .yml test">
-      <option name="closed" value="true" />
-      <created>1739232445005</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1739232445005</updated>
     </task>
     <task id="LOCAL-00040" summary=".yml preparation">
       <option name="closed" value="true" />
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740345823894</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="set the PYTHON PATH">
+      <option name="closed" value="true" />
+      <created>1740346333933</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1740346333933</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added functions" />
     <MESSAGE value=".yml test fix" />
     <MESSAGE value="add multi functions" />
     <MESSAGE value="fix .yml" />
@@ -662,6 +661,7 @@
     <MESSAGE value="fix the unexpected spaces after keywords" />
     <MESSAGE value="add whitespace after comma" />
     <MESSAGE value="create a requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a requirements.txt" />
+    <MESSAGE value="set the PYTHON PATH" />
+    <option name="LAST_COMMIT_MESSAGE" value="set the PYTHON PATH" />
   </component>
 </project>
