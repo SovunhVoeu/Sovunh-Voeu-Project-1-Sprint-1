@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="install libgl1-mesa-glx and add more to correct xcb issues">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add gui.py to tests dir">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -230,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00048" summary="change python -m pytest to pytest -s">
-      <option name="closed" value="true" />
-      <created>1739233493786</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1739233493786</updated>
-    </task>
-    <task id="LOCAL-00049" summary="rename functions to test_">
-      <option name="closed" value="true" />
-      <created>1739233732456</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1739233732456</updated>
     </task>
     <task id="LOCAL-00050" summary="revised file">
       <option name="closed" value="true" />
@@ -623,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740348218983</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="removed libegl and add python -m pytest">
+      <option name="closed" value="true" />
+      <created>1740348318243</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348318243</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add gui.py to tests dir">
+      <option name="closed" value="true" />
+      <created>1740348413396</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348413396</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a function for the rapidJobs db tests" />
-    <MESSAGE value="add the read and write for the rapid_jobs2 to tests dir" />
     <MESSAGE value="fix the json being overwritten by rapidJobs func" />
     <MESSAGE value="add double space for .yml fix" />
     <MESSAGE value="fix indentation per .yml request" />
@@ -663,6 +661,8 @@
     <MESSAGE value="install libegl1 added more" />
     <MESSAGE value="install libegl1 and add more to correct xcb issues" />
     <MESSAGE value="install libgl1-mesa-glx and add more to correct xcb issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="install libgl1-mesa-glx and add more to correct xcb issues" />
+    <MESSAGE value="removed libegl and add python -m pytest" />
+    <MESSAGE value="add gui.py to tests dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gui.py to tests dir" />
   </component>
 </project>
