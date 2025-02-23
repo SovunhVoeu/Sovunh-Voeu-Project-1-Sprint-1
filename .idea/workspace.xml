@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Project is complete and operational. The README.MD has also update.">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Sprint 2 Implemented">
-      <option name="closed" value="true" />
-      <created>1738870769326</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1738870769326</updated>
     </task>
     <task id="LOCAL-00036" summary="added datatypes to the creation of SQL table">
       <option name="closed" value="true" />
@@ -624,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740344818037</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator.">
+      <option name="closed" value="true" />
+      <created>1740345299284</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1740345299284</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed jobs.db without null columns fill" />
     <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
     <MESSAGE value="revised file" />
@@ -664,6 +661,7 @@
     <MESSAGE value="Implemented the save and creation of the user data table" />
     <MESSAGE value="Created and properly test the first test function" />
     <MESSAGE value="Project is complete and operational. The README.MD has also update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project is complete and operational. The README.MD has also update." />
+    <MESSAGE value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
+    <option name="LAST_COMMIT_MESSAGE" value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
   </component>
 </project>
