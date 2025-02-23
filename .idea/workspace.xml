@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="install libegl1">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="install libegl1 added more">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00045" summary=".yml fixes">
-      <option name="closed" value="true" />
-      <created>1739233205585</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1739233205585</updated>
     </task>
     <task id="LOCAL-00046" summary=".yml fixes">
       <option name="closed" value="true" />
@@ -623,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740347780316</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="install libegl1 added more">
+      <option name="closed" value="true" />
+      <created>1740347907759</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1740347907759</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="automated testing complete" />
     <MESSAGE value=".yml fixes" />
     <MESSAGE value="added .db to tests" />
     <MESSAGE value="create a function for the rapidJobs db tests" />
@@ -663,6 +662,7 @@
     <MESSAGE value="remove PYTHON PATH in .yml" />
     <MESSAGE value="retrying Python Path to run tests without production code in dir" />
     <MESSAGE value="install libegl1" />
-    <option name="LAST_COMMIT_MESSAGE" value="install libegl1" />
+    <MESSAGE value="install libegl1 added more" />
+    <option name="LAST_COMMIT_MESSAGE" value="install libegl1 added more" />
   </component>
 </project>
