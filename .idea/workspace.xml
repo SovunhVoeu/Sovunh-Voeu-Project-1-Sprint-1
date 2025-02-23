@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="sudo apt-get libegl1-mesa">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="refix sudo apt-get libegl1-mesa">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -229,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00041" summary=".yml preparation">
-      <option name="closed" value="true" />
-      <created>1739232768921</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1739232768921</updated>
     </task>
     <task id="LOCAL-00042" summary="changed the test function and name for .py file">
       <option name="closed" value="true" />
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740346533037</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="refix sudo apt-get libegl1-mesa">
+      <option name="closed" value="true" />
+      <created>1740346675259</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1740346675259</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add multi functions" />
     <MESSAGE value="fix .yml" />
     <MESSAGE value="refactor the name of my program file" />
     <MESSAGE value="fix up the db.py for params" />
@@ -662,6 +661,7 @@
     <MESSAGE value="create a requirements.txt" />
     <MESSAGE value="set the PYTHON PATH" />
     <MESSAGE value="sudo apt-get libegl1-mesa" />
-    <option name="LAST_COMMIT_MESSAGE" value="sudo apt-get libegl1-mesa" />
+    <MESSAGE value="refix sudo apt-get libegl1-mesa" />
+    <option name="LAST_COMMIT_MESSAGE" value="refix sudo apt-get libegl1-mesa" />
   </component>
 </project>
