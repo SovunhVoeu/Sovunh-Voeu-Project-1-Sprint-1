@@ -2,11 +2,10 @@
 Author: Sovunh Voeu
 Date: 2/18/2025
 """
-import sqlite3
 import sys
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QWidget, QTableView, QPushButton,
-                             QLineEdit, QFormLayout, QHBoxLayout, QMessageBox, QLabel, QTextEdit)
-from PyQt6.QtSql import QSqlDatabase, QSqlTableModel, QSqlQueryModel, QSqlQuery
+                             QLineEdit, QFormLayout, QMessageBox, QLabel, QTextEdit)
+from PyQt6.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
 from PyQt6.QtCore import Qt
 
 
@@ -19,6 +18,9 @@ class SecondWindow(QWidget):
         self.setGeometry(1000, 100, 800, 600)
 
         layout = QVBoxLayout()
+        self.details_label = QLabel("Add your information to the boxes that apply to you. Once each box is filled or "
+                                    "left blank you may click the Save Information button at the bottom of the page.")
+        layout.addWidget(self.details_label)
 
         form_layout = QFormLayout()
         self.name_input = QLineEdit()
@@ -74,7 +76,8 @@ class SecondWindow(QWidget):
         query.addBindValue(other)
 
         if query.exec():
-            QMessageBox.information(self, "Successful", "The User Information was saved, Refresh the db for updated info.")
+            QMessageBox.information(self, "Successful", "The User Information was saved, "
+                                                        "Refresh the db for updated info.")
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
@@ -90,19 +93,26 @@ class MainWindow(QMainWindow):
         layout = QVBoxLayout(central_widget)
         self.setCentralWidget(central_widget)
 
+        self.details_label = QLabel("Select a job title from either two of the lists to view the full details. "
+                                    "There may be two jobs with the same title but they are from different companies.\n"
+                                    "You can expand the title to see the full job by dragging the right side of the "
+                                    "title box or by double clicking the right side of the title box .\n"
+                                    "Use the scroll bar or scroll wheel to navigate through the list. "
+                                    "Full screen the window for the best view of the data. \n"
+                                    "To save information about yourself click the Open User Input Data button.")
+        layout.addWidget(self.details_label)
+
         self.db = QSqlDatabase.addDatabase('QSQLITE')
         self.db.setDatabaseName('jobs.db')
         if not self.db.open():
             QMessageBox.critical(self, "Database Error", "Unable to open database")
             return
 
-        # ADD TEXT TO LET PEOPLE KNOW WHAT THEY NEED TO DO EX: SELECT JOBS FOR DETAILS
         self.details_text = QTextEdit()
         self.details_text.setReadOnly(True)
         self.details_text.setLineWrapMode(QTextEdit.LineWrapMode.WidgetWidth)
         layout.addWidget(self.details_text)
 
-        # IN ORDER TO GET THE TESTS RUNNING CORRECTLY YOU MIGHT NEED TO BREAK THINGS DOWN INTO FUNCTIONS
         self.table_view1 = QTableView()
         self.model1 = QSqlQueryModel()
         self.model1.setQuery("SELECT * FROM rapidResults", self.db)

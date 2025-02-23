@@ -1,3 +1,26 @@
+Project 1 SPRINT 3:
+
+Description:
+This project opens a gui that allows the user to view 2 lists of jobs that can be selected to see the details that are
+gathered from the jobs.db. There is also a second window that appears once the Open User Input Data button is clicked,
+this window will all for the user information to be stored within the jobs.db under a table called user_data. There is
+also a pytest created called test_gui.py under the tests folder directory. In order to see what the test_gui.py spat out
+you will need to open the user_data table in the jobs.db under the test dir since it operates separately. The functions
+within the test_gui.py that are intended to cover the cases are test_job_select_return, test_job_select_return2, and
+test_user_data_entry_save. The test_job_select_return cover the rapidResults table, while the test_job_select_return2
+covers the rapid_jobs2 table. The test_user_data_entry_save is one long function that covers all the user input data.
+
+Files Used or created:
+test_gui.py, gui.py, and jobs.db
+
+How to run this code:
+To run this code you can just run the gui.py file regularly or click the run next to if __name__ == "__main__":.
+There are more details within the gui that allows for a better navigation of the program itself.
+
+Libraries used: 
+pytest and PyQt6
+
+
 Project 1 SPRINT 2:
 
 Description:
