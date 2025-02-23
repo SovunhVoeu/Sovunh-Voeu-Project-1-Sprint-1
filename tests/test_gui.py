@@ -51,7 +51,7 @@ def test_job_select_return2(main_window):
 
     assert job_list_view.model().rowCount() > 0, "There are no jobs available for selection"
 
-    index = job_list_view.model().index(0,0)
+    index = job_list_view.model().index(0, 0)
     QTest.mouseClick(job_list_view.viewport(), Qt.MouseButton.LeftButton, pos=job_list_view.visualRect(index).center())
 
     main_window.display_details2(index)

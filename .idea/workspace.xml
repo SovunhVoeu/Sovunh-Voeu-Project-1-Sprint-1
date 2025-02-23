@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fix the unexpected spaces after keywords">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
@@ -229,14 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00036" summary="added datatypes to the creation of SQL table">
-      <option name="closed" value="true" />
-      <created>1738871138379</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1738871138379</updated>
     </task>
     <task id="LOCAL-00037" summary="databases is now created">
       <option name="closed" value="true" />
@@ -622,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740345299284</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="fix the unexpected spaces after keywords">
+      <option name="closed" value="true" />
+      <created>1740345433593</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1740345433593</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change python -m pytest to pytest -s" />
     <MESSAGE value="rename functions to test_" />
     <MESSAGE value="revised file" />
     <MESSAGE value="added functions" />
@@ -662,6 +660,7 @@
     <MESSAGE value="Created and properly test the first test function" />
     <MESSAGE value="Project is complete and operational. The README.MD has also update." />
     <MESSAGE value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
-    <option name="LAST_COMMIT_MESSAGE" value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
+    <MESSAGE value="fix the unexpected spaces after keywords" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the unexpected spaces after keywords" />
   </component>
 </project>
