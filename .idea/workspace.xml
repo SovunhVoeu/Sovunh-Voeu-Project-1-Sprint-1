@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="delete python-package.yml">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove .yml">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
@@ -230,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00052" summary=".yml test fix">
-      <option name="closed" value="true" />
-      <created>1739235768211</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1739235768211</updated>
-    </task>
-    <task id="LOCAL-00053" summary=".yml test fix">
-      <option name="closed" value="true" />
-      <created>1739243954830</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1739243954830</updated>
     </task>
     <task id="LOCAL-00054" summary=".yml test fix">
       <option name="closed" value="true" />
@@ -623,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740348773932</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="new .yml to attempt error fix">
+      <option name="closed" value="true" />
+      <created>1740348988844</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348988844</updated>
+    </task>
+    <task id="LOCAL-00102" summary="remove .yml">
+      <option name="closed" value="true" />
+      <created>1740349073484</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1740349073484</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix indentation per .yml request" />
-    <MESSAGE value="wrote the README.MD for sprint 2 details" />
     <MESSAGE value="laid down the framework for the GUI" />
     <MESSAGE value="Fix the error with the Jobs details not showing. Also added loops to iterate" />
     <MESSAGE value="Refactor the Search function into the Save function. Also Second Window is now properly implement" />
@@ -663,6 +661,8 @@
     <MESSAGE value="add gui.py to tests dir" />
     <MESSAGE value="remove PYTHON PATH" />
     <MESSAGE value="delete python-package.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete python-package.yml" />
+    <MESSAGE value="new .yml to attempt error fix" />
+    <MESSAGE value="remove .yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove .yml" />
   </component>
 </project>
