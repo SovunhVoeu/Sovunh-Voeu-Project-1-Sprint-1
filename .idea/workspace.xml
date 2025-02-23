@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempts to fix PyQt5 missing xcb error">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Remove VD">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00067" summary="added .db to tests">
-      <option name="closed" value="true" />
-      <created>1739332240441</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1739332240441</updated>
     </task>
     <task id="LOCAL-00068" summary="create a function for the rapidJobs db tests">
       <option name="closed" value="true" />
@@ -624,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740351043124</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Remove VD">
+      <option name="closed" value="true" />
+      <created>1740351158786</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1740351158786</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sudo apt-get libegl1-mesa" />
     <MESSAGE value="refix sudo apt-get libegl1-mesa" />
     <MESSAGE value="remove PYTHON PATH in .yml" />
     <MESSAGE value="retrying Python Path to run tests without production code in dir" />
@@ -664,6 +661,7 @@
     <MESSAGE value="Uninstall PyQt6" />
     <MESSAGE value="refix .yml" />
     <MESSAGE value="attempts to fix PyQt5 missing xcb error" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempts to fix PyQt5 missing xcb error" />
+    <MESSAGE value="Remove VD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove VD" />
   </component>
 </project>
