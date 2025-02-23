@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove app-get autoclean">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Switch from PyQt6 to PyQt5 to counter the testing errors">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00060" summary="refactor the name of my program file">
-      <option name="closed" value="true" />
-      <created>1739326104217</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1739326104217</updated>
     </task>
     <task id="LOCAL-00061" summary="fix up the db.py for params">
       <option name="closed" value="true" />
@@ -625,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740349776992</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Switch from PyQt6 to PyQt5 to counter the testing errors">
+      <option name="closed" value="true" />
+      <created>1740350170109</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1740350170109</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project is complete and operational. The README.MD has also update." />
     <MESSAGE value="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator." />
     <MESSAGE value="fix the unexpected spaces after keywords" />
     <MESSAGE value="add whitespace after comma" />
@@ -665,6 +661,7 @@
     <MESSAGE value="attempting to fix libegl errors" />
     <MESSAGE value="PyQt error fix" />
     <MESSAGE value="remove app-get autoclean" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove app-get autoclean" />
+    <MESSAGE value="Switch from PyQt6 to PyQt5 to counter the testing errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switch from PyQt6 to PyQt5 to counter the testing errors" />
   </component>
 </project>
