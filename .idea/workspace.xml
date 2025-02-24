@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="rewrote the .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add the new line from professor to the .yml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Refactor the Search function into the Save function. Also Second Window is now properly implement">
-      <option name="closed" value="true" />
-      <created>1740113640144</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1740113640145</updated>
     </task>
     <task id="LOCAL-00081" summary="Implemented the save and creation of the user data table">
       <option name="closed" value="true" />
@@ -623,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740431505383</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="add the new line from professor to the .yml">
+      <option name="closed" value="true" />
+      <created>1740431719351</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1740431719351</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete python-package.yml" />
     <MESSAGE value="new .yml to attempt error fix" />
     <MESSAGE value="remove .yml" />
     <MESSAGE value="replace .yml" />
@@ -663,6 +661,7 @@
     <MESSAGE value="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6." />
     <MESSAGE value="add prod code to tests dir to test" />
     <MESSAGE value="rewrote the .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="rewrote the .yml" />
+    <MESSAGE value="add the new line from professor to the .yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the new line from professor to the .yml" />
   </component>
 </project>

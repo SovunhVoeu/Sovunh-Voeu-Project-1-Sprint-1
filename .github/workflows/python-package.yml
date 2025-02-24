@@ -37,10 +37,7 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
+      env:
+        QT_QPA_PLATFORM: offscreen
       run: |
-        disp=:8
-        screen=0
-        geom=640x480x24
-        exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
-        export DISPLAY=:8
         python -m pytest -s tests/*.py
