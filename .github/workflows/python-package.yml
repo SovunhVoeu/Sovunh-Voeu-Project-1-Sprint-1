@@ -40,5 +40,4 @@ jobs:
 
     - name: Test with pytest (Using Virtual Display)
       run: |
-        export QT_DEBUG_PLUGINS=1
         pytest -s
