@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="undo remove from tests dir">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="reupdated .yml to remove debugging line">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -78,7 +78,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -230,30 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00074" summary="fix indentation per .yml request">
-      <option name="closed" value="true" />
-      <created>1739333961800</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1739333961800</updated>
-    </task>
-    <task id="LOCAL-00075" summary="wrote the README.MD for sprint 2 details">
-      <option name="closed" value="true" />
-      <created>1739334885238</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1739334885238</updated>
-    </task>
-    <task id="LOCAL-00076" summary="wrote the README.MD for sprint 2 details">
-      <option name="closed" value="true" />
-      <created>1739334921667</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1739334921667</updated>
     </task>
     <task id="LOCAL-00077" summary="wrote the README.MD for sprint 2 details">
       <option name="closed" value="true" />
@@ -623,7 +599,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740351587890</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="removing dependencies from .yml">
+      <option name="closed" value="true" />
+      <created>1740428796930</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1740428796931</updated>
+    </task>
+    <task id="LOCAL-00124" summary="pasted production code into tests dir to show a better example of the bug">
+      <option name="closed" value="true" />
+      <created>1740428890331</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1740428890331</updated>
+    </task>
+    <task id="LOCAL-00125" summary="reupdated .yml to remove debugging line">
+      <option name="closed" value="true" />
+      <created>1740429016246</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1740429016246</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,9 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install libegl1 added more" />
-    <MESSAGE value="install libegl1 and add more to correct xcb issues" />
-    <MESSAGE value="install libgl1-mesa-glx and add more to correct xcb issues" />
     <MESSAGE value="removed libegl and add python -m pytest" />
     <MESSAGE value="add gui.py to tests dir" />
     <MESSAGE value="remove PYTHON PATH" />
@@ -663,6 +660,9 @@
     <MESSAGE value="attempt fix for missing dependency in .yml" />
     <MESSAGE value="remove from tests dir" />
     <MESSAGE value="undo remove from tests dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="undo remove from tests dir" />
+    <MESSAGE value="removing dependencies from .yml" />
+    <MESSAGE value="pasted production code into tests dir to show a better example of the bug" />
+    <MESSAGE value="reupdated .yml to remove debugging line" />
+    <option name="LAST_COMMIT_MESSAGE" value="reupdated .yml to remove debugging line" />
   </component>
 </project>
