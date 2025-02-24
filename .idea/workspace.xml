@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="reupdated .yml to remove debugging line">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6.">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,14 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00077" summary="wrote the README.MD for sprint 2 details">
-      <option name="closed" value="true" />
-      <created>1739335047079</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1739335047079</updated>
     </task>
     <task id="LOCAL-00078" summary="laid down the framework for the GUI">
       <option name="closed" value="true" />
@@ -623,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740429016246</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6.">
+      <option name="closed" value="true" />
+      <created>1740430923997</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1740430923997</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed libegl and add python -m pytest" />
     <MESSAGE value="add gui.py to tests dir" />
     <MESSAGE value="remove PYTHON PATH" />
     <MESSAGE value="delete python-package.yml" />
@@ -663,6 +660,7 @@
     <MESSAGE value="removing dependencies from .yml" />
     <MESSAGE value="pasted production code into tests dir to show a better example of the bug" />
     <MESSAGE value="reupdated .yml to remove debugging line" />
-    <option name="LAST_COMMIT_MESSAGE" value="reupdated .yml to remove debugging line" />
+    <MESSAGE value="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6." />
   </component>
 </project>
