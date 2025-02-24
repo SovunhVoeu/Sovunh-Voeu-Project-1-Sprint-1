@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove from tests dir">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="undo remove from tests dir">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -229,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00073" summary="fix indentation per .yml request">
-      <option name="closed" value="true" />
-      <created>1739333894610</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1739333894610</updated>
     </task>
     <task id="LOCAL-00074" summary="fix indentation per .yml request">
       <option name="closed" value="true" />
@@ -622,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740351513381</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="undo remove from tests dir">
+      <option name="closed" value="true" />
+      <created>1740351587890</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1740351587890</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="install libegl1" />
     <MESSAGE value="install libegl1 added more" />
     <MESSAGE value="install libegl1 and add more to correct xcb issues" />
     <MESSAGE value="install libgl1-mesa-glx and add more to correct xcb issues" />
@@ -662,6 +662,7 @@
     <MESSAGE value="checking to remove error" />
     <MESSAGE value="attempt fix for missing dependency in .yml" />
     <MESSAGE value="remove from tests dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove from tests dir" />
+    <MESSAGE value="undo remove from tests dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="undo remove from tests dir" />
   </component>
 </project>

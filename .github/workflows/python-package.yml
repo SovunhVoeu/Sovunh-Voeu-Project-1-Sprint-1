@@ -25,14 +25,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Set PYTHONPATH
-      run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
-
-    - name: Install dependencies for PyQt5
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libxkbcommon-x11-0 libxcb-xinerama0 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-shape0 libxcb-xfixes0 libxcb-render-util0
-
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
