@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempting fix data leak">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add a kill to xvfb">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,14 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00121" summary="remove from tests dir">
-      <option name="closed" value="true" />
-      <created>1740351513381</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351513381</updated>
     </task>
     <task id="LOCAL-00122" summary="undo remove from tests dir">
       <option name="closed" value="true" />
@@ -621,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740527302013</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="add a kill to xvfb">
+      <option name="closed" value="true" />
+      <created>1740527622717</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1740527622717</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 blanks line for linting" />
     <MESSAGE value="rename program with proper naming" />
     <MESSAGE value="change the main window and second window functions" />
     <MESSAGE value="add os offscreen" />
@@ -661,6 +660,7 @@
     <MESSAGE value="testing professor's recommended .yml sudo libgl" />
     <MESSAGE value="Using my libgl that works" />
     <MESSAGE value="attempting fix data leak" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting fix data leak" />
+    <MESSAGE value="add a kill to xvfb" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a kill to xvfb" />
   </component>
 </project>
