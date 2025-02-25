@@ -62,42 +62,67 @@ def test_job_select_return2(main_window):
     assert len(displayed_text) > 10, "Displayed details is short"
 
 
-""" Got from Copilot since my previous function kept giving me errors """
+def test_user_data_entry_save(second_window):
+    name_input = second_window.name_input
+    email_input = second_window.email_input
+    phone_input = second_window.phone_input
+    github_input = second_window.github_input
+    linkedin_input = second_window.linkedin_input
+    projects_input = second_window.projects_input
+    classes_input = second_window.classes_input
+    other_input = second_window.other_input
+    save_button = second_window.save_button
 
+    test_data = {
+        "name": "Program Tester",
+        "email": "ProgramTester@example.com",
+        "phone": "123-456-7890",
+        "github": "github.com/tester",
+        "linkedin": "linkedin.com/in/tester",
+        "projects": "Project 1 Sprint 1, Project 2 Sprint 2",
+        "classes": "COMP 490-003 Senior Design & Development S25",
+        "other": "Interned as an IT at Bridgewater State University"
+    }
 
-def test_user_data_entry(second_window):
-    """Test to ensure user-entered data is properly stored in the database."""
-    if not QSqlDatabase.contains("qt_sql_default_connection"):
-        db = QSqlDatabase.addDatabase('QSQLITE')
-        db.setDatabaseName('jobs.db')
-    else:
-        db = QSqlDatabase.database("qt_sql_default_connection")
-    # Simulate user input
-    QTest.keyClicks(second_window.name_input, "John Doe")
-    QTest.keyClicks(second_window.email_input, "johndoe@example.com")
-    QTest.keyClicks(second_window.phone_input, "123-456-7890")
-    QTest.keyClicks(second_window.github_input, "github.com/johndoe")
-    QTest.keyClicks(second_window.linkedin_input, "linkedin.com/in/johndoe")
-    QTest.keyClicks(second_window.projects_input, "Project A, Project B")
-    QTest.keyClicks(second_window.classes_input, "Class 101, Class 102")
-    QTest.keyClicks(second_window.other_input, "Additional details")
+    name_input.setText(test_data["name"])
+    email_input.setText(test_data["email"])
+    phone_input.setText(test_data["phone"])
+    github_input.setText(test_data["github"])
+    linkedin_input.setText(test_data["linkedin"])
+    projects_input.setPlainText(test_data["projects"])
+    classes_input.setPlainText(test_data["classes"])
+    other_input.setPlainText(test_data["other"])
 
-    # Click the save button
-    QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
+    QTest.mouseClick(save_button, Qt.MouseButton.LeftButton)
+    QApplication.processEvents()
 
-    # Query the database to verify insertion
     query = QSqlQuery(second_window.db)
-    query.prepare(
-        "SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE email = ?")
-    query.addBindValue("johndoe@example.com")
-    query.exec()
+    query.prepare("SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE name = ?")
+    query.addBindValue(test_data["name"])
 
-    assert query.next(), "No data found in database"
-    assert query.value(0) == "John Doe"
-    assert query.value(1) == "johndoe@example.com"
-    assert query.value(2) == "123-456-7890"
-    assert query.value(3) == "github.com/johndoe"
-    assert query.value(4) == "linkedin.com/in/johndoe"
-    assert query.value(5) == "Project A, Project B"
-    assert query.value(6) == "Class 101, Class 102"
-    assert query.value(7) == "Additional details"
+    assert query.exec(), f"Query execution failed: {query.lastError().text()}"
+    assert query.next(), "No data was found in the database"
+
+    saved_data = (
+        query.value(0),
+        query.value(1),
+        query.value(2),
+        query.value(3),
+        query.value(4),
+        query.value(5),
+        query.value(6),
+        query.value(7)
+    )
+
+    expected_data = (
+        test_data["name"],
+        test_data["email"],
+        test_data["phone"],
+        test_data["github"],
+        test_data["linkedin"],
+        test_data["projects"],
+        test_data["classes"],
+        test_data["other"]
+    )
+
+    assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"

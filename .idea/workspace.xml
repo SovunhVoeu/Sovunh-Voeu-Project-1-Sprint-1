@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempt fix for test_user_data_entry_save function. It is the function with the problems">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to renew the fix">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,30 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00102" summary="remove .yml">
-      <option name="closed" value="true" />
-      <created>1740349073484</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349073484</updated>
-    </task>
-    <task id="LOCAL-00103" summary="replace .yml">
-      <option name="closed" value="true" />
-      <created>1740349153486</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349153486</updated>
-    </task>
-    <task id="LOCAL-00104" summary="remove the zero out of flake8">
-      <option name="closed" value="true" />
-      <created>1740349179998</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349179998</updated>
     </task>
     <task id="LOCAL-00105" summary="attempting to fix libegl errors">
       <option name="closed" value="true" />
@@ -625,7 +599,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740520009185</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting">
+      <option name="closed" value="true" />
+      <created>1740520377484</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520377484</updated>
+    </task>
+    <task id="LOCAL-00152" summary="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting. Linting by removing import">
+      <option name="closed" value="true" />
+      <created>1740520483373</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520483373</updated>
+    </task>
+    <task id="LOCAL-00153" summary="trying to renew the fix">
+      <option name="closed" value="true" />
+      <created>1740520628083</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520628083</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,9 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removing dependencies from .yml" />
-    <MESSAGE value="pasted production code into tests dir to show a better example of the bug" />
-    <MESSAGE value="reupdated .yml to remove debugging line" />
     <MESSAGE value="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6." />
     <MESSAGE value="add prod code to tests dir to test" />
     <MESSAGE value="rewrote the .yml" />
@@ -665,6 +660,9 @@
     <MESSAGE value="add new lines" />
     <MESSAGE value="testing to see if one of my functions is breaking the pytest" />
     <MESSAGE value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
+    <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting" />
+    <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting. Linting by removing import" />
+    <MESSAGE value="trying to renew the fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to renew the fix" />
   </component>
 </project>
