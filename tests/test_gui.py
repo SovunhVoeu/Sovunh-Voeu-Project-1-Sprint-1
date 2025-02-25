@@ -13,7 +13,9 @@ from PyQt6.QtCore import Qt
 
 @pytest.fixture(scope="session")
 def app():
-    return QApplication(sys.argv)
+    app = QApplication(sys.argv)
+    yield app
+    app.quit()
 
 
 @pytest.fixture

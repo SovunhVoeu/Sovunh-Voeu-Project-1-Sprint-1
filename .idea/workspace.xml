@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to renew the fix">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add a close to the db at the end of file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
@@ -230,46 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00105" summary="attempting to fix libegl errors">
-      <option name="closed" value="true" />
-      <created>1740349306458</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349306458</updated>
-    </task>
-    <task id="LOCAL-00106" summary="attempting to fix libegl errors">
-      <option name="closed" value="true" />
-      <created>1740349396162</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349396162</updated>
-    </task>
-    <task id="LOCAL-00107" summary="PyQt error fix">
-      <option name="closed" value="true" />
-      <created>1740349706113</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349706113</updated>
-    </task>
-    <task id="LOCAL-00108" summary="remove app-get autoclean">
-      <option name="closed" value="true" />
-      <created>1740349776992</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1740349776992</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Switch from PyQt6 to PyQt5 to counter the testing errors">
-      <option name="closed" value="true" />
-      <created>1740350170109</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350170109</updated>
     </task>
     <task id="LOCAL-00110" summary="PyQt5 requirements.txt change">
       <option name="closed" value="true" />
@@ -623,7 +584,47 @@
       <option name="project" value="LOCAL" />
       <updated>1740520628083</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="reverted to my old function since copilot function had the same pytest issue">
+      <option name="closed" value="true" />
+      <created>1740520725452</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520725452</updated>
+    </task>
+    <task id="LOCAL-00155" summary="attempt to fix .yml in case it is a .yml error">
+      <option name="closed" value="true" />
+      <created>1740520766462</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520766462</updated>
+    </task>
+    <task id="LOCAL-00156" summary="remove and import an add headless">
+      <option name="closed" value="true" />
+      <created>1740520847911</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520847911</updated>
+    </task>
+    <task id="LOCAL-00157" summary="trying to fix .yml errors: Duplicate db">
+      <option name="closed" value="true" />
+      <created>1740521093551</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1740521093552</updated>
+    </task>
+    <task id="LOCAL-00158" summary="add a close to the db at the end of file">
+      <option name="closed" value="true" />
+      <created>1740521384714</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1740521384715</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,11 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6." />
-    <MESSAGE value="add prod code to tests dir to test" />
-    <MESSAGE value="rewrote the .yml" />
-    <MESSAGE value="add the new line from professor to the .yml" />
-    <MESSAGE value="fixing the .yml by testing an off screen" />
     <MESSAGE value="remove the old .yml" />
     <MESSAGE value="trying new .yml" />
     <MESSAGE value="attempting to fix PyQt issues" />
@@ -663,6 +659,11 @@
     <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting" />
     <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting. Linting by removing import" />
     <MESSAGE value="trying to renew the fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to renew the fix" />
+    <MESSAGE value="reverted to my old function since copilot function had the same pytest issue" />
+    <MESSAGE value="attempt to fix .yml in case it is a .yml error" />
+    <MESSAGE value="remove and import an add headless" />
+    <MESSAGE value="trying to fix .yml errors: Duplicate db" />
+    <MESSAGE value="add a close to the db at the end of file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a close to the db at the end of file" />
   </component>
 </project>
