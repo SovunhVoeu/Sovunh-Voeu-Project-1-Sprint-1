@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change the main window and second window functions">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add new lines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
@@ -232,22 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00098" summary="add gui.py to tests dir">
-      <option name="closed" value="true" />
-      <created>1740348413396</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348413396</updated>
-    </task>
-    <task id="LOCAL-00099" summary="remove PYTHON PATH">
-      <option name="closed" value="true" />
-      <created>1740348478900</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348478900</updated>
     </task>
     <task id="LOCAL-00100" summary="delete python-package.yml">
       <option name="closed" value="true" />
@@ -625,7 +609,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740518026689</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="add os offscreen">
+      <option name="closed" value="true" />
+      <created>1740518887761</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1740518887761</updated>
+    </task>
+    <task id="LOCAL-00148" summary="add new lines">
+      <option name="closed" value="true" />
+      <created>1740519032313</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1740519032313</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,8 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="checking to remove error" />
-    <MESSAGE value="attempt fix for missing dependency in .yml" />
     <MESSAGE value="remove from tests dir" />
     <MESSAGE value="undo remove from tests dir" />
     <MESSAGE value="removing dependencies from .yml" />
@@ -665,6 +663,8 @@
     <MESSAGE value="2 blanks line for linting" />
     <MESSAGE value="rename program with proper naming" />
     <MESSAGE value="change the main window and second window functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the main window and second window functions" />
+    <MESSAGE value="add os offscreen" />
+    <MESSAGE value="add new lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new lines" />
   </component>
 </project>
