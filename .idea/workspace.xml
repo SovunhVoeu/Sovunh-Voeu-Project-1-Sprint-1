@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to exit the file to stop it from hanging">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added proper clean up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -229,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00115" summary="attempts to fix PyQt5 missing xcb error">
-      <option name="closed" value="true" />
-      <created>1740351043124</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351043124</updated>
     </task>
     <task id="LOCAL-00116" summary="Remove VD">
       <option name="closed" value="true" />
@@ -622,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740522501745</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="added proper clean up">
+      <option name="closed" value="true" />
+      <created>1740525366358</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1740525366358</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added possible function fixes" />
     <MESSAGE value="add flake8 blank line" />
     <MESSAGE value="add 2 new funcs to test" />
     <MESSAGE value="add blank line for flake8" />
@@ -662,6 +663,7 @@
     <MESSAGE value="remove production code from our libraries" />
     <MESSAGE value="took out the tests/test_Data.py" />
     <MESSAGE value="trying to exit the file to stop it from hanging" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to exit the file to stop it from hanging" />
+    <MESSAGE value="added proper clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="added proper clean up" />
   </component>
 </project>

@@ -13,7 +13,12 @@ class SecondWindow(QWidget):
     def __init__(self, db):
         super().__init__()
 
-        self.db = db
+        if QSqlDatabase.contains("qt_sql_default_connection"):
+            self.db = QSqlDatabase.database("qt_sql_default_connection")
+        else:
+            self.db = QSqlDatabase.addDatabase("QSQLITE")
+            self.db.setDatabaseName("jobs.db")
+
         self.setWindowTitle("User Profile Input Window")
         self.setGeometry(1000, 100, 800, 600)
 
@@ -50,20 +55,19 @@ class SecondWindow(QWidget):
         self.setLayout(layout)
 
     def save_user_data(self):
-        name = self.name_input.text()
-        email = self.email_input.text()
-        phone = self.phone_input.text()
-        github = self.github_input.text()
-        linkedin = self.linkedin_input.text()
-        projects = self.projects_input.toPlainText()
-        classes = self.classes_input.toPlainText()
-        other = self.other_input.toPlainText()
-
         query = QSqlQuery(self.db)
         query.prepare("""
-            INSERT INTO user_data (name, email, phone, github, linkedin, projects, classes, other)
-            VALUES(?, ?, ?, ?, ?, ?, ?, ?)
-        """)
+                INSERT INTO user_data (name, email, phone, github, linkedin, projects, classes, other)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """)
+        name = self.name_input.text().strip()
+        email = self.email_input.text().strip()
+        phone = self.phone_input.text().strip()
+        github = self.github_input.text().strip()
+        linkedin = self.linkedin_input.text().strip()
+        projects = self.projects_input.toPlainText().strip()
+        classes = self.classes_input.toPlainText().strip()
+        other = self.other_input.toPlainText().strip()
 
         query.addBindValue(name)
         query.addBindValue(email)
@@ -152,9 +156,9 @@ class MainWindow(QMainWindow):
         phone VARCHAR(255),
         github VARCHAR(255),
         linkedin VARCHAR(255),
-        projects VARCHAR(255),
-        classes VARCHAR(255),
-        other VARCHAR(255)
+        projects TEXT,
+        classes TEXT,
+        other TEXT
         )
         """)
 
