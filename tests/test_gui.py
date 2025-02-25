@@ -6,14 +6,31 @@ Date: 2/22/2025
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery
+from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
 
+# @pytest.fixture(scope="session")
+# def app():
+#     return QApplication([])
+""" USED COPILOT TO FIX ERROR WITH DEF APP FUNCTION"""
 @pytest.fixture(scope="session")
 def app():
+    # Remove the existing default connection if it exists
+    if QSqlDatabase.contains("qt_sql_default_connection"):
+        QSqlDatabase.removeDatabase("qt_sql_default_connection")
+
+    # Create and return the QApplication instance
     return QApplication([])
+
+
+@pytest.fixture(scope="session")
+def database():
+    # Create and configure the database connection
+    db = QSqlDatabase.addDatabase('QSQLITE', 'qt_sql_default_connection')
+    db.setDatabaseName(':memory:')
+    return
 
 
 @pytest.fixture
