@@ -6,7 +6,7 @@ import sys
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery
+from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
@@ -126,3 +126,10 @@ def test_user_data_entry_save(second_window):
     )
 
     assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"
+
+
+def close_db():
+    db = QSqlDatabase.database("qt_sql_default_connection")
+    if db.isOpen():
+        db.close()
+    QSqlDatabase.removeDatabase("qt_sql_default_connection")
