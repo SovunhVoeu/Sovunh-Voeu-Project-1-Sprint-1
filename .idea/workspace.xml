@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="testing to see if one of my functions is breaking the pytest">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempt fix for test_user_data_entry_save function. It is the function with the problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
@@ -232,14 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00101" summary="new .yml to attempt error fix">
-      <option name="closed" value="true" />
-      <created>1740348988844</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348988844</updated>
     </task>
     <task id="LOCAL-00102" summary="remove .yml">
       <option name="closed" value="true" />
@@ -625,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740519150134</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="attempt fix for test_user_data_entry_save function. It is the function with the problems">
+      <option name="closed" value="true" />
+      <created>1740520009185</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1740520009185</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="undo remove from tests dir" />
     <MESSAGE value="removing dependencies from .yml" />
     <MESSAGE value="pasted production code into tests dir to show a better example of the bug" />
     <MESSAGE value="reupdated .yml to remove debugging line" />
@@ -665,6 +664,7 @@
     <MESSAGE value="add os offscreen" />
     <MESSAGE value="add new lines" />
     <MESSAGE value="testing to see if one of my functions is breaking the pytest" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing to see if one of my functions is breaking the pytest" />
+    <MESSAGE value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
   </component>
 </project>
