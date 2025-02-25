@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="tried to add app.quit but it is not working">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="took out the tests/test_Data.py">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -232,22 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Uninstall PyQt6">
-      <option name="closed" value="true" />
-      <created>1740350606245</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350606245</updated>
-    </task>
-    <task id="LOCAL-00113" summary="refix .yml">
-      <option name="closed" value="true" />
-      <created>1740350757331</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350757331</updated>
     </task>
     <task id="LOCAL-00114" summary="attempts to fix PyQt5 missing xcb error">
       <option name="closed" value="true" />
@@ -625,7 +609,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740521954309</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="remove production code from our libraries">
+      <option name="closed" value="true" />
+      <created>1740522013428</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522013428</updated>
+    </task>
+    <task id="LOCAL-00162" summary="took out the tests/test_Data.py">
+      <option name="closed" value="true" />
+      <created>1740522264137</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522264137</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,8 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="attempting to fix PyQt issues" />
-    <MESSAGE value="updates" />
     <MESSAGE value="added flake8 blank lines" />
     <MESSAGE value="added possible function fixes" />
     <MESSAGE value="add flake8 blank line" />
@@ -665,6 +663,8 @@
     <MESSAGE value="add a close to the db at the end of file" />
     <MESSAGE value="trying out ways to close the connection to continue workflow" />
     <MESSAGE value="tried to add app.quit but it is not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried to add app.quit but it is not working" />
+    <MESSAGE value="remove production code from our libraries" />
+    <MESSAGE value="took out the tests/test_Data.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="took out the tests/test_Data.py" />
   </component>
 </project>

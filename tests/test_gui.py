@@ -15,7 +15,7 @@ from PyQt6.QtCore import Qt
 def app():
     app = QApplication(sys.argv)
     yield app
-    app.quit()
+    app.exit()
 
 
 @pytest.fixture
