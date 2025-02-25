@@ -15,6 +15,8 @@ import uuid
 """ USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
 # NEED TO REVAMP THIS TEST FILE AND DO THROUGH TESTING
 # THINKING OF REMOVING APP FUNC AND ADDING IT TO THE MAIN WINDOW AND SECCOND WINDOW
+
+
 @pytest.fixture(scope="session")
 def test_app():
     app_instance = QApplication.instance()
