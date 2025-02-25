@@ -8,7 +8,7 @@ from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QCoreApplication
 
 
 # @pytest.fixture(scope="session")
@@ -19,20 +19,21 @@ from PyQt6.QtCore import Qt
 
 @pytest.fixture(scope="session")
 def app():
-    # Remove the existing default connection if it exists
-    if QSqlDatabase.contains("qt_sql_default_connection"):
-        QSqlDatabase.removeDatabase("qt_sql_default_connection")
-
-    # Create and return the QApplication instance
-    return QApplication([])
-
+    # Check if a QCoreApplication instance already exists
+    if QCoreApplication.instance() is None:
+        app = QApplication([])
+    else:
+        app = QCoreApplication.instance()
+    return app
 
 @pytest.fixture(scope="session")
-def database():
-    # Create and configure the database connection
+def database(app):
+    # Ensure the QCoreApplication is initialized before database operations
+    if QSqlDatabase.contains("qt_sql_default_connection"):
+        QSqlDatabase.removeDatabase("qt_sql_default_connection")
     db = QSqlDatabase.addDatabase('QSQLITE', 'qt_sql_default_connection')
     db.setDatabaseName(':memory:')
-    return
+    return db
 
 
 @pytest.fixture
