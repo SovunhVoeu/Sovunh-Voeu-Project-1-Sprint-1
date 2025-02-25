@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="testing professor's recommended .yml sudo libgl">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Using my libgl that works">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00118" summary="checking to remove error">
-      <option name="closed" value="true" />
-      <created>1740351215473</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351215473</updated>
-    </task>
-    <task id="LOCAL-00119" summary="attempt fix for missing dependency in .yml">
-      <option name="closed" value="true" />
-      <created>1740351355550</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351355550</updated>
     </task>
     <task id="LOCAL-00120" summary="attempt fix for missing dependency in .yml">
       <option name="closed" value="true" />
@@ -623,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740526424189</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="testing professor's recommended .yml sudo libgl">
+      <option name="closed" value="true" />
+      <created>1740526512145</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1740526512145</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Using my libgl that works">
+      <option name="closed" value="true" />
+      <created>1740526617575</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1740526617575</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add blank line for flake8" />
     <MESSAGE value="working on changing function names in test file" />
     <MESSAGE value="2 blanks line for linting" />
     <MESSAGE value="rename program with proper naming" />
@@ -663,6 +662,7 @@
     <MESSAGE value="added proper clean up" />
     <MESSAGE value="made fixes as per professor suggestions" />
     <MESSAGE value="testing professor's recommended .yml sudo libgl" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing professor's recommended .yml sudo libgl" />
+    <MESSAGE value="Using my libgl that works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using my libgl that works" />
   </component>
 </project>
