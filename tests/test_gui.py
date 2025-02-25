@@ -26,6 +26,7 @@ def app():
         app = QCoreApplication.instance()
     return app
 
+
 @pytest.fixture(scope="session")
 def database(app):
     # Ensure the QCoreApplication is initialized before database operations
