@@ -6,7 +6,7 @@ import sys
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery
+from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
@@ -67,6 +67,11 @@ def test_job_select_return2(main_window):
 
 def test_user_data_entry(second_window):
     """Test to ensure user-entered data is properly stored in the database."""
+    if not QSqlDatabase.contains("qt_sql_default_connection"):
+        db = QSqlDatabase.addDatabase('QSQLITE')
+        db.setDatabaseName('jobs.db')
+    else:
+        db = QSqlDatabase.database("qt_sql_default_connection")
     # Simulate user input
     QTest.keyClicks(second_window.name_input, "John Doe")
     QTest.keyClicks(second_window.email_input, "johndoe@example.com")
