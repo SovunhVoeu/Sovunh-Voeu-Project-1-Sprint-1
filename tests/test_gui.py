@@ -11,7 +11,9 @@ from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 import uuid
 
+
 """ USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
+
 
 @pytest.fixture(scope="session")
 def app():
