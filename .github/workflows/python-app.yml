@@ -47,3 +47,6 @@ jobs:
         exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
         export DISPLAY=:8
         python -m pytest -s tests/*.py
+    - name: Kill Xvfb if hanging
+      run: |
+        pkill -f Xvfb || true
