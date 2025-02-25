@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add the new line from professor to the .yml">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-package.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fixing the .yml by testing an off screen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Implemented the save and creation of the user data table">
-      <option name="closed" value="true" />
-      <created>1740285741258</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1740285741258</updated>
     </task>
     <task id="LOCAL-00082" summary="Created and properly test the first test function">
       <option name="closed" value="true" />
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740431719351</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="fixing the .yml by testing an off screen">
+      <option name="closed" value="true" />
+      <created>1740431907405</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1740431907405</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new .yml to attempt error fix" />
     <MESSAGE value="remove .yml" />
     <MESSAGE value="replace .yml" />
     <MESSAGE value="remove the zero out of flake8" />
@@ -662,6 +661,7 @@
     <MESSAGE value="add prod code to tests dir to test" />
     <MESSAGE value="rewrote the .yml" />
     <MESSAGE value="add the new line from professor to the .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the new line from professor to the .yml" />
+    <MESSAGE value="fixing the .yml by testing an off screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing the .yml by testing an off screen" />
   </component>
 </project>
