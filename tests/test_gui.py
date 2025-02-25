@@ -8,39 +8,28 @@ from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
-from PyQt6.QtCore import Qt, QCoreApplication
+from PyQt6.QtCore import Qt
+import uuid
 
-
-# @pytest.fixture(scope="session")
-# def app():
-#     return QApplication([])
-""" USED COPILOT TO FIX ERROR WITH DEF APP FUNCTION """
-
+""" USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
 
 @pytest.fixture(scope="session")
 def app():
-    # Check if a QCoreApplication instance already exists
-    if QCoreApplication.instance() is None:
-        app = QApplication([])
-    else:
-        app = QCoreApplication.instance()
-    return app
-
-
-@pytest.fixture(scope="session")
-def database(app):
-    # Ensure the QCoreApplication is initialized before database operations
-    if QSqlDatabase.contains("qt_sql_default_connection"):
-        QSqlDatabase.removeDatabase("qt_sql_default_connection")
-    db = QSqlDatabase.addDatabase('QSQLITE', 'qt_sql_default_connection')
-    db.setDatabaseName(':memory:')
-    return db
-
+    app_instance = QApplication.instance()
+    if app_instance is None:
+        app_instance = QApplication([])
+    return app_instance
 
 @pytest.fixture
 def second_window(app):
-    db = 'jobs.db'
-    window = SecondWindow(db)
+    if QSqlDatabase.contains("qt_sql_default_connection"):
+        QSqlDatabase.removeDatabase("qt_sql_default_connection")
+    connection_name = str(uuid.uuid4())
+    db = QSqlDatabase.addDatabase('QSQLITE', connection_name)
+    db.setDatabaseName('jobs.db')
+    if not db.open():
+        raise Exception(f"Failed to open the database: {db.lastError().text()}")
+    window = SecondWindow('jobs.db')
     window.show()
     return window
 

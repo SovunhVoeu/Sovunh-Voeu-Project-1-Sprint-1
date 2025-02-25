@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added flake8 blank lines">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add flake8 blank line">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
@@ -229,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00089" summary="sudo apt-get libegl1-mesa">
-      <option name="closed" value="true" />
-      <created>1740346533037</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1740346533037</updated>
-    </task>
-    <task id="LOCAL-00090" summary="refix sudo apt-get libegl1-mesa">
-      <option name="closed" value="true" />
-      <created>1740346675259</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1740346675259</updated>
     </task>
     <task id="LOCAL-00091" summary="remove PYTHON PATH in .yml">
       <option name="closed" value="true" />
@@ -622,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740452419192</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="added possible function fixes">
+      <option name="closed" value="true" />
+      <created>1740452594838</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1740452594838</updated>
+    </task>
+    <task id="LOCAL-00139" summary="add flake8 blank line">
+      <option name="closed" value="true" />
+      <created>1740452690627</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1740452690627</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove app-get autoclean" />
-    <MESSAGE value="Switch from PyQt6 to PyQt5 to counter the testing errors" />
     <MESSAGE value="PyQt5 requirements.txt change" />
     <MESSAGE value="remove packages that involve PyQt6" />
     <MESSAGE value="Uninstall PyQt6" />
@@ -662,6 +661,8 @@
     <MESSAGE value="attempting to fix PyQt issues" />
     <MESSAGE value="updates" />
     <MESSAGE value="added flake8 blank lines" />
-    <option name="LAST_COMMIT_MESSAGE" value="added flake8 blank lines" />
+    <MESSAGE value="added possible function fixes" />
+    <MESSAGE value="add flake8 blank line" />
+    <option name="LAST_COMMIT_MESSAGE" value="add flake8 blank line" />
   </component>
 </project>
