@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying new .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="attempting to fix PyQt issues">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00085" summary="fix the unexpected spaces after keywords">
-      <option name="closed" value="true" />
-      <created>1740345433593</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1740345433593</updated>
     </task>
     <task id="LOCAL-00086" summary="add whitespace after comma">
       <option name="closed" value="true" />
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740451668252</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="attempting to fix PyQt issues">
+      <option name="closed" value="true" />
+      <created>1740451907140</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1740451907140</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove the zero out of flake8" />
     <MESSAGE value="attempting to fix libegl errors" />
     <MESSAGE value="PyQt error fix" />
     <MESSAGE value="remove app-get autoclean" />
@@ -662,6 +661,7 @@
     <MESSAGE value="fixing the .yml by testing an off screen" />
     <MESSAGE value="remove the old .yml" />
     <MESSAGE value="trying new .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying new .yml" />
+    <MESSAGE value="attempting to fix PyQt issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting to fix PyQt issues" />
   </component>
 </project>
