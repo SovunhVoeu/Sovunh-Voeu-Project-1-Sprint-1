@@ -101,8 +101,12 @@ class MainWindow(QMainWindow):
                                     "To save information about yourself click the Open User Input Data button.")
         layout.addWidget(self.details_label)
 
-        self.db = QSqlDatabase.addDatabase('QSQLITE')
-        self.db.setDatabaseName('jobs.db')
+        if QSqlDatabase.contains("qt_sql_default_connection"):
+            self.db = QSqlDatabase.database("qt_sql_default_connection")
+        else:
+            self.db = QSqlDatabase.addDatabase('QSQLITE')
+            self.db.setDatabaseName('jobs.db')
+
         if not self.db.open():
             QMessageBox.critical(self, "Database Error", "Unable to open database")
             return
