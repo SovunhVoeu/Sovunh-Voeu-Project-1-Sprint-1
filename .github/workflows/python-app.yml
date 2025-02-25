@@ -43,7 +43,8 @@ jobs:
       run: |
         disp=:8
         screen=0
-        geom=640x480x24
-        exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
+        geom=1024x768x24  # Use a larger virtual screen size
+        Xvfb $disp -screen $screen $geom &  # Start Xvfb in the background
         export DISPLAY=:8
+        sleep 3  # Wait for Xvfb to initialize
         python -m pytest -s tests/*.py
