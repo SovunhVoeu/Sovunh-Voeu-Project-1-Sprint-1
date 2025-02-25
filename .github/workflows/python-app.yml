@@ -23,6 +23,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
     - name: Install dependencies
       run: |
         sudo apt update && sudo apt install --yes libgl1-mesa-dev libxkbcommon-x11-0 xvfb libxcb-xinerama0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 qt6-base-dev qt6-qpa-plugins libxcb-cursor0

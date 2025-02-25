@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add a close to the db at the end of file">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="tried to add app.quit but it is not working">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
@@ -79,7 +80,7 @@
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SV Project 1 Sprint 1" />
       <option name="ENV_FILES" value="" />
@@ -231,22 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00110" summary="PyQt5 requirements.txt change">
-      <option name="closed" value="true" />
-      <created>1740350260672</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350260672</updated>
-    </task>
-    <task id="LOCAL-00111" summary="remove packages that involve PyQt6">
-      <option name="closed" value="true" />
-      <created>1740350355927</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350355928</updated>
     </task>
     <task id="LOCAL-00112" summary="Uninstall PyQt6">
       <option name="closed" value="true" />
@@ -624,7 +609,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740521384715</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="trying out ways to close the connection to continue workflow">
+      <option name="closed" value="true" />
+      <created>1740521635572</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1740521635572</updated>
+    </task>
+    <task id="LOCAL-00160" summary="tried to add app.quit but it is not working">
+      <option name="closed" value="true" />
+      <created>1740521954309</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1740521954309</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,8 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove the old .yml" />
-    <MESSAGE value="trying new .yml" />
     <MESSAGE value="attempting to fix PyQt issues" />
     <MESSAGE value="updates" />
     <MESSAGE value="added flake8 blank lines" />
@@ -664,6 +663,8 @@
     <MESSAGE value="remove and import an add headless" />
     <MESSAGE value="trying to fix .yml errors: Duplicate db" />
     <MESSAGE value="add a close to the db at the end of file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a close to the db at the end of file" />
+    <MESSAGE value="trying out ways to close the connection to continue workflow" />
+    <MESSAGE value="tried to add app.quit but it is not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried to add app.quit but it is not working" />
   </component>
 </project>
