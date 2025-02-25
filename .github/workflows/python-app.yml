@@ -37,5 +37,9 @@ jobs:
         flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        export QT_QPA_PLATFORM=offscreen
+        disp=:8
+        screen=0
+        geom=640x480x24
+        exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
+        export DISPLAY=:8
         python -m pytest -s tests/*.py
