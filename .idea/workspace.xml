@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="took out the tests/test_Data.py">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to exit the file to stop it from hanging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00114" summary="attempts to fix PyQt5 missing xcb error">
-      <option name="closed" value="true" />
-      <created>1740350930963</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1740350930963</updated>
     </task>
     <task id="LOCAL-00115" summary="attempts to fix PyQt5 missing xcb error">
       <option name="closed" value="true" />
@@ -625,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740522264137</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="trying to exit the file to stop it from hanging">
+      <option name="closed" value="true" />
+      <created>1740522501745</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522501745</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added flake8 blank lines" />
     <MESSAGE value="added possible function fixes" />
     <MESSAGE value="add flake8 blank line" />
     <MESSAGE value="add 2 new funcs to test" />
@@ -665,6 +661,7 @@
     <MESSAGE value="tried to add app.quit but it is not working" />
     <MESSAGE value="remove production code from our libraries" />
     <MESSAGE value="took out the tests/test_Data.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="took out the tests/test_Data.py" />
+    <MESSAGE value="trying to exit the file to stop it from hanging" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to exit the file to stop it from hanging" />
   </component>
 </project>

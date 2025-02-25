@@ -15,21 +15,22 @@ from PyQt6.QtCore import Qt
 def app():
     app = QApplication(sys.argv)
     yield app
-    app.exit()
+    app.quit()
 
 
 @pytest.fixture
 def second_window(app):
     window = SecondWindow("jobs.db")
     window.show()
-    return window
+    yield window
+    window.db.close()
 
 
 @pytest.fixture
 def main_window(app):
     window = MainWindow()
-    window.show()
-    return window
+    yield window
+    window.close()
 
 
 def test_job_select_return(main_window):
