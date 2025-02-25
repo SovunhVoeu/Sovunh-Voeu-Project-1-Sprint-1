@@ -14,6 +14,7 @@ from PyQt6.QtCore import Qt
 
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
+
 @pytest.fixture(scope="session")
 def app():
     return QApplication(sys.argv)
