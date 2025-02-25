@@ -20,6 +20,7 @@ def app():
         app_instance = QApplication([])
     return app_instance
 
+
 @pytest.fixture
 def second_window(app):
     if QSqlDatabase.contains("qt_sql_default_connection"):
