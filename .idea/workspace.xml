@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add a kill to xvfb">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying different runs">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,22 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00122" summary="undo remove from tests dir">
-      <option name="closed" value="true" />
-      <created>1740351587890</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351587890</updated>
-    </task>
-    <task id="LOCAL-00123" summary="removing dependencies from .yml">
-      <option name="closed" value="true" />
-      <created>1740428796930</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1740428796931</updated>
     </task>
     <task id="LOCAL-00124" summary="pasted production code into tests dir to show a better example of the bug">
       <option name="closed" value="true" />
@@ -621,7 +606,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740527622717</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="reverted the kill switch">
+      <option name="closed" value="true" />
+      <created>1740527740582</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1740527740582</updated>
+    </task>
+    <task id="LOCAL-00172" summary="trying different runs">
+      <option name="closed" value="true" />
+      <created>1740527796683</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1740527796683</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,8 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rename program with proper naming" />
-    <MESSAGE value="change the main window and second window functions" />
     <MESSAGE value="add os offscreen" />
     <MESSAGE value="add new lines" />
     <MESSAGE value="testing to see if one of my functions is breaking the pytest" />
@@ -661,6 +660,8 @@
     <MESSAGE value="Using my libgl that works" />
     <MESSAGE value="attempting fix data leak" />
     <MESSAGE value="add a kill to xvfb" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a kill to xvfb" />
+    <MESSAGE value="reverted the kill switch" />
+    <MESSAGE value="trying different runs" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying different runs" />
   </component>
 </project>
