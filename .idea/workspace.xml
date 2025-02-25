@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add blank line for flake8">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="rename program with proper naming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
@@ -230,30 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00094" summary="install libegl1 added more">
-      <option name="closed" value="true" />
-      <created>1740347907759</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1740347907759</updated>
-    </task>
-    <task id="LOCAL-00095" summary="install libegl1 and add more to correct xcb issues">
-      <option name="closed" value="true" />
-      <created>1740348046671</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348046671</updated>
-    </task>
-    <task id="LOCAL-00096" summary="install libgl1-mesa-glx and add more to correct xcb issues">
-      <option name="closed" value="true" />
-      <created>1740348218983</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348218983</updated>
     </task>
     <task id="LOCAL-00097" summary="removed libegl and add python -m pytest">
       <option name="closed" value="true" />
@@ -623,7 +599,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740453094445</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="working on changing function names in test file">
+      <option name="closed" value="true" />
+      <created>1740517436117</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1740517436117</updated>
+    </task>
+    <task id="LOCAL-00144" summary="2 blanks line for linting">
+      <option name="closed" value="true" />
+      <created>1740517521042</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1740517521050</updated>
+    </task>
+    <task id="LOCAL-00145" summary="rename program with proper naming">
+      <option name="closed" value="true" />
+      <created>1740517659239</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1740517659239</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,9 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Uninstall PyQt6" />
-    <MESSAGE value="refix .yml" />
-    <MESSAGE value="attempts to fix PyQt5 missing xcb error" />
     <MESSAGE value="Remove VD" />
     <MESSAGE value="checking to remove error" />
     <MESSAGE value="attempt fix for missing dependency in .yml" />
@@ -663,6 +660,9 @@
     <MESSAGE value="add flake8 blank line" />
     <MESSAGE value="add 2 new funcs to test" />
     <MESSAGE value="add blank line for flake8" />
-    <option name="LAST_COMMIT_MESSAGE" value="add blank line for flake8" />
+    <MESSAGE value="working on changing function names in test file" />
+    <MESSAGE value="2 blanks line for linting" />
+    <MESSAGE value="rename program with proper naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename program with proper naming" />
   </component>
 </project>

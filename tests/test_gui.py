@@ -3,13 +3,14 @@ Author: Sovunh Voeu
 Date: 2/22/2025
 """
 # conftest.py
+import sys
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery, QSqlDatabase
+from PyQt6.QtSql import QSqlQuery
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
-import uuid
+# import uuid
 
 
 """ USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
@@ -17,77 +18,87 @@ import uuid
 # THINKING OF REMOVING APP FUNC AND ADDING IT TO THE MAIN WINDOW AND SECCOND WINDOW
 
 
+# @pytest.fixture(scope="session")
+# def app():
+#     app_instance = QApplication.instance()
+#     if app_instance is None:
+#         app_instance = QApplication([])
+#     return app_instance
+
+
+# @pytest.fixture(scope="session")
+# def second_window(app):
+#     if QSqlDatabase.contains("qt_sql_default_connection"):
+#         QSqlDatabase.removeDatabase("qt_sql_default_connection")
+#     connection_name = str(uuid.uuid4())
+#     db = QSqlDatabase.addDatabase('QSQLITE', connection_name)
+#     db.setDatabaseName('jobs.db')
+#     if not db.open():
+#         raise Exception(f"Failed to open the database: {db.lastError().text()}")
+#     window = SecondWindow('jobs.db')
+#     window.show()
+#     return window
+
+
 @pytest.fixture(scope="session")
-def test_app():
-    app_instance = QApplication.instance()
-    if app_instance is None:
-        app_instance = QApplication([])
-    return app_instance
-
-
-@pytest.fixture
-def test_second_window(test_app):
-    if QSqlDatabase.contains("qt_sql_default_connection"):
-        QSqlDatabase.removeDatabase("qt_sql_default_connection")
-    connection_name = str(uuid.uuid4())
-    db = QSqlDatabase.addDatabase('QSQLITE', connection_name)
-    db.setDatabaseName('jobs.db')
-    if not db.open():
-        raise Exception(f"Failed to open the database: {db.lastError().text()}")
-    window = SecondWindow('jobs.db')
+def second_window(app):
+    app = QApplication(sys.argv)
+    db = 'jobs.db'
+    window = SecondWindow(db)
     window.show()
     return window
 
 
-@pytest.fixture
-def test_main_window(test_app):
+@pytest.fixture(scope="session")
+def main_window(app):
+    app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
     return window
 
 
-def test_job_select_return(test_main_window):
-    job_list_view = test_main_window.table_view1
+def test_job_select_return(main_window):
+    job_list_view = main_window.table_view1
 
     assert job_list_view.model().rowCount() > 0, "There are no jobs available for selection"
 
     index = job_list_view.model().index(0, 0)
     QTest.mouseClick(job_list_view.viewport(), Qt.MouseButton.LeftButton, pos=job_list_view.visualRect(index).center())
 
-    test_main_window.display_details1(index)
+    main_window.display_details1(index)
 
-    displayed_text = test_main_window.details_text.toPlainText()
+    displayed_text = main_window.details_text.toPlainText()
     assert "title:" in displayed_text, "Job title is missing"
     assert "site:" in displayed_text, "site is missing"
     assert len(displayed_text) > 10, "Displayed details is short"
 
 
-def test_job_select_return2(test_main_window):
-    job_list_view = test_main_window.table_view2
+def test_job_select_return2(main_window):
+    job_list_view = main_window.table_view2
 
     assert job_list_view.model().rowCount() > 0, "There are no jobs available for selection"
 
     index = job_list_view.model().index(0, 0)
     QTest.mouseClick(job_list_view.viewport(), Qt.MouseButton.LeftButton, pos=job_list_view.visualRect(index).center())
 
-    test_main_window.display_details2(index)
+    main_window.display_details2(index)
 
-    displayed_text = test_main_window.details_text.toPlainText()
+    displayed_text = main_window.details_text.toPlainText()
     assert "title:" in displayed_text, "Job title is missing"
     assert "jobProviders:" in displayed_text, "jobProviders is missing"
     assert len(displayed_text) > 10, "Displayed details is short"
 
 
-def test_user_data_entry_save(test_second_window):
-    name_input = test_second_window.name_input
-    email_input = test_second_window.email_input
-    phone_input = test_second_window.phone_input
-    github_input = test_second_window.github_input
-    linkedin_input = test_second_window.linkedin_input
-    projects_input = test_second_window.projects_input
-    classes_input = test_second_window.classes_input
-    other_input = test_second_window.other_input
-    save_button = test_second_window.save_button
+def test_user_data_entry_save(second_window):
+    name_input = second_window.name_input
+    email_input = second_window.email_input
+    phone_input = second_window.phone_input
+    github_input = second_window.github_input
+    linkedin_input = second_window.linkedin_input
+    projects_input = second_window.projects_input
+    classes_input = second_window.classes_input
+    other_input = second_window.other_input
+    save_button = second_window.save_button
 
     test_data = {
         "name": "Program Tester",
@@ -112,7 +123,7 @@ def test_user_data_entry_save(test_second_window):
     QTest.mouseClick(save_button, Qt.MouseButton.LeftButton)
     QApplication.processEvents()
 
-    query = QSqlQuery(test_second_window.db)
+    query = QSqlQuery(second_window.db)
     query.prepare("SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE name = ?")
     query.addBindValue(test_data["name"])
 
