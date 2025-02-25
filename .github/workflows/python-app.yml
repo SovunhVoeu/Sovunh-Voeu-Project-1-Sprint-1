@@ -25,7 +25,7 @@ jobs:
         python-version: "3.10"
     - name: Install dependencies
       run: |
-        sudo apt update && sudo apt install --yes libgl1-mesa-dev libxkbcommon-x11-0 xvfb libxcb-xinerama0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 qt6-base-dev
+        sudo apt update && sudo apt install --yes libgl1-mesa-dev libxkbcommon-x11-0 xvfb libxcb-xinerama0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 qt6-base-dev qt6-qpa-plugins libxcb-cursor0
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
@@ -37,4 +37,5 @@ jobs:
         flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+        export QT_QPA_PLATFORM=offscreen
         python -m pytest -s tests/*.py

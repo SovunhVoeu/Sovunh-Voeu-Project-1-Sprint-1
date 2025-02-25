@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove the old .yml">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying new .yml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Project is complete and operational. The README.MD has also update.">
-      <option name="closed" value="true" />
-      <created>1740344818037</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1740344818037</updated>
     </task>
     <task id="LOCAL-00084" summary="In gui.py. Removed extra blank lines. In test_gui removed whitespaces after operator.">
       <option name="closed" value="true" />
@@ -623,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740451331852</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="trying new .yml">
+      <option name="closed" value="true" />
+      <created>1740451438744</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1740451438744</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replace .yml" />
     <MESSAGE value="remove the zero out of flake8" />
     <MESSAGE value="attempting to fix libegl errors" />
     <MESSAGE value="PyQt error fix" />
@@ -663,6 +662,7 @@
     <MESSAGE value="add the new line from professor to the .yml" />
     <MESSAGE value="fixing the .yml by testing an off screen" />
     <MESSAGE value="remove the old .yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove the old .yml" />
+    <MESSAGE value="trying new .yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying new .yml" />
   </component>
 </project>
