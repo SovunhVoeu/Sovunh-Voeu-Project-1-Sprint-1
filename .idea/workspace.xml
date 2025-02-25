@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="rename program with proper naming">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change the main window and second window functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,14 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00097" summary="removed libegl and add python -m pytest">
-      <option name="closed" value="true" />
-      <created>1740348318243</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348318243</updated>
     </task>
     <task id="LOCAL-00098" summary="add gui.py to tests dir">
       <option name="closed" value="true" />
@@ -623,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740517659239</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="change the main window and second window functions">
+      <option name="closed" value="true" />
+      <created>1740518026689</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1740518026689</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove VD" />
     <MESSAGE value="checking to remove error" />
     <MESSAGE value="attempt fix for missing dependency in .yml" />
     <MESSAGE value="remove from tests dir" />
@@ -663,6 +664,7 @@
     <MESSAGE value="working on changing function names in test file" />
     <MESSAGE value="2 blanks line for linting" />
     <MESSAGE value="rename program with proper naming" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename program with proper naming" />
+    <MESSAGE value="change the main window and second window functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the main window and second window functions" />
   </component>
 </project>

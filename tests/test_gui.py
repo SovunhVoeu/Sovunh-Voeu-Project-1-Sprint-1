@@ -2,7 +2,8 @@
 Author: Sovunh Voeu
 Date: 2/22/2025
 """
-# conftest.py
+import os
+# os.environ["QT_QPA_PLATFORM"] = "offscreen"
 import sys
 import pytest
 from gui import MainWindow, SecondWindow
@@ -10,48 +11,24 @@ from PyQt6.QtWidgets import QApplication
 from PyQt6.QtSql import QSqlQuery
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
-# import uuid
 
-
-""" USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
-# NEED TO REVAMP THIS TEST FILE AND DO THROUGH TESTING
-# THINKING OF REMOVING APP FUNC AND ADDING IT TO THE MAIN WINDOW AND SECCOND WINDOW
-
-
-# @pytest.fixture(scope="session")
-# def app():
-#     app_instance = QApplication.instance()
-#     if app_instance is None:
-#         app_instance = QApplication([])
-#     return app_instance
-
-
-# @pytest.fixture(scope="session")
-# def second_window(app):
-#     if QSqlDatabase.contains("qt_sql_default_connection"):
-#         QSqlDatabase.removeDatabase("qt_sql_default_connection")
-#     connection_name = str(uuid.uuid4())
-#     db = QSqlDatabase.addDatabase('QSQLITE', connection_name)
-#     db.setDatabaseName('jobs.db')
-#     if not db.open():
-#         raise Exception(f"Failed to open the database: {db.lastError().text()}")
-#     window = SecondWindow('jobs.db')
-#     window.show()
-#     return window
-
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
 @pytest.fixture(scope="session")
+def app():
+    return QApplication(sys.argv)
+
+
+@pytest.fixture
 def second_window(app):
-    app = QApplication(sys.argv)
     db = 'jobs.db'
     window = SecondWindow(db)
     window.show()
     return window
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture
 def main_window(app):
-    app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
     return window
