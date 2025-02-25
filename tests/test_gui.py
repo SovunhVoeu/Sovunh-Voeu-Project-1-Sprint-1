@@ -13,10 +13,10 @@ import uuid
 
 
 """ USED COPILOT FOR APP FUNC AND SECOND WINDOW FUNC """
-
-
+# NEED TO REVAMP THIS TEST FILE AND DO THROUGH TESTING
+# THINKING OF REMOVING APP FUNC AND ADDING IT TO THE MAIN WINDOW AND SECCOND WINDOW
 @pytest.fixture(scope="session")
-def app():
+def test_app():
     app_instance = QApplication.instance()
     if app_instance is None:
         app_instance = QApplication([])
@@ -24,7 +24,7 @@ def app():
 
 
 @pytest.fixture
-def second_window(app):
+def test_second_window(test_app):
     if QSqlDatabase.contains("qt_sql_default_connection"):
         QSqlDatabase.removeDatabase("qt_sql_default_connection")
     connection_name = str(uuid.uuid4())
@@ -38,7 +38,7 @@ def second_window(app):
 
 
 @pytest.fixture
-def main_window(app):
+def test_main_window(test_app):
     window = MainWindow()
     window.show()
     return window

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add flake8 blank line">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add blank line for flake8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
@@ -230,30 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00091" summary="remove PYTHON PATH in .yml">
-      <option name="closed" value="true" />
-      <created>1740347066308</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1740347066308</updated>
-    </task>
-    <task id="LOCAL-00092" summary="retrying Python Path to run tests without production code in dir">
-      <option name="closed" value="true" />
-      <created>1740347504785</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1740347504785</updated>
-    </task>
-    <task id="LOCAL-00093" summary="install libegl1">
-      <option name="closed" value="true" />
-      <created>1740347780315</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1740347780316</updated>
     </task>
     <task id="LOCAL-00094" summary="install libegl1 added more">
       <option name="closed" value="true" />
@@ -623,7 +599,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740452690627</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="add 2 new funcs to test">
+      <option name="closed" value="true" />
+      <created>1740452948954</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1740452948954</updated>
+    </task>
+    <task id="LOCAL-00141" summary="add blank line for flake8">
+      <option name="closed" value="true" />
+      <created>1740453013061</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1740453013061</updated>
+    </task>
+    <task id="LOCAL-00142" summary="add blank line for flake8">
+      <option name="closed" value="true" />
+      <created>1740453094445</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1740453094445</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PyQt5 requirements.txt change" />
-    <MESSAGE value="remove packages that involve PyQt6" />
     <MESSAGE value="Uninstall PyQt6" />
     <MESSAGE value="refix .yml" />
     <MESSAGE value="attempts to fix PyQt5 missing xcb error" />
@@ -663,6 +661,8 @@
     <MESSAGE value="added flake8 blank lines" />
     <MESSAGE value="added possible function fixes" />
     <MESSAGE value="add flake8 blank line" />
-    <option name="LAST_COMMIT_MESSAGE" value="add flake8 blank line" />
+    <MESSAGE value="add 2 new funcs to test" />
+    <MESSAGE value="add blank line for flake8" />
+    <option name="LAST_COMMIT_MESSAGE" value="add blank line for flake8" />
   </component>
 </project>
