@@ -14,7 +14,9 @@ from PyQt6.QtCore import Qt
 # @pytest.fixture(scope="session")
 # def app():
 #     return QApplication([])
-""" USED COPILOT TO FIX ERROR WITH DEF APP FUNCTION"""
+""" USED COPILOT TO FIX ERROR WITH DEF APP FUNCTION """
+
+
 @pytest.fixture(scope="session")
 def app():
     # Remove the existing default connection if it exists
