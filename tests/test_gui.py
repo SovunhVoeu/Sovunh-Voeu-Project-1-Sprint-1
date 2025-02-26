@@ -101,7 +101,7 @@ def test_user_data_entry_save(second_window):
     classes_input.setPlainText(test_data["classes"])
     other_input.setPlainText(test_data["other"])
 
-    QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
+    QTest.mouseClick(save_button, Qt.MouseButton.LeftButton)
     QApplication.processEvents()
 
     query = QSqlQuery(second_window.db)
