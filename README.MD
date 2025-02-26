@@ -18,7 +18,7 @@ To run this code you can just run the gui.py file regularly or click the run nex
 There are more details within the gui that allows for a better navigation of the program itself.
 
 Libraries used: 
-pytest and PyQt6
+sys, pytest and PyQt6
 
 
 Project 1 SPRINT 2:
