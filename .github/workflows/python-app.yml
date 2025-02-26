@@ -47,4 +47,4 @@ jobs:
         exec Xvfb $disp -screen $screen $geom 2>/tmp/Xvfb.log &
         export DISPLAY=:8
         sleep 3  # Wait for Xvfb to initialize
-        pytest -s tests/*.py
+        python -m pytest -s tests/*.py
