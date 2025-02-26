@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="return the python -m">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add new line at end of file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
@@ -232,30 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00126" summary="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6.">
-      <option name="closed" value="true" />
-      <created>1740430923997</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1740430923997</updated>
-    </task>
-    <task id="LOCAL-00127" summary="add prod code to tests dir to test">
-      <option name="closed" value="true" />
-      <created>1740431139778</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1740431139778</updated>
-    </task>
-    <task id="LOCAL-00128" summary="rewrote the .yml">
-      <option name="closed" value="true" />
-      <created>1740431505382</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1740431505383</updated>
     </task>
     <task id="LOCAL-00129" summary="add the new line from professor to the .yml">
       <option name="closed" value="true" />
@@ -625,7 +601,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740528069238</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="testing import os">
+      <option name="closed" value="true" />
+      <created>1740538431450</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1740538431450</updated>
+    </task>
+    <task id="LOCAL-00176" summary="fix a missing variable">
+      <option name="closed" value="true" />
+      <created>1740538544086</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1740538544086</updated>
+    </task>
+    <task id="LOCAL-00177" summary="add new line at end of file">
+      <option name="closed" value="true" />
+      <created>1740538647916</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1740538647916</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -640,9 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing to see if one of my functions is breaking the pytest" />
-    <MESSAGE value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
-    <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting" />
     <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting. Linting by removing import" />
     <MESSAGE value="trying to renew the fix" />
     <MESSAGE value="reverted to my old function since copilot function had the same pytest issue" />
@@ -665,6 +662,9 @@
     <MESSAGE value="trying different runs" />
     <MESSAGE value="change the run features again" />
     <MESSAGE value="return the python -m" />
-    <option name="LAST_COMMIT_MESSAGE" value="return the python -m" />
+    <MESSAGE value="testing import os" />
+    <MESSAGE value="fix a missing variable" />
+    <MESSAGE value="add new line at end of file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new line at end of file" />
   </component>
 </project>
