@@ -2,6 +2,11 @@
 Author: Sovunh Voeu
 Date: 2/22/2025
 """
+import os
+
+if "GITHUB_ACTIONS" in os.environ:
+    os.environ["QT_QPA_PLATFORM"] = "offscreen"
+
 import sys
 import pytest
 from gui import MainWindow, SecondWindow
@@ -96,7 +101,7 @@ def test_user_data_entry_save(second_window):
     classes_input.setPlainText(test_data["classes"])
     other_input.setPlainText(test_data["other"])
 
-    QTest.mouseClick(save_button, Qt.MouseButton.LeftButton)
+    QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
     QApplication.processEvents()
 
     query = QSqlQuery(second_window.db)
@@ -130,4 +135,4 @@ def test_user_data_entry_save(second_window):
 
     assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"
     second_window.db.close()
-    QSqlDatabase.removeDatabase("qt_sql_default_connection")
+    QSqlDatabase.database().removeDatabase(QSqlDatabase.database().connectionName())

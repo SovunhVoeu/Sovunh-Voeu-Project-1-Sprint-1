@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying different runs">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="return the python -m">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jobs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,22 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00124" summary="pasted production code into tests dir to show a better example of the bug">
-      <option name="closed" value="true" />
-      <created>1740428890331</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1740428890331</updated>
-    </task>
-    <task id="LOCAL-00125" summary="reupdated .yml to remove debugging line">
-      <option name="closed" value="true" />
-      <created>1740429016246</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1740429016246</updated>
     </task>
     <task id="LOCAL-00126" summary="updated .yml with the proper .yml library. Also reverted the PyQt5 to PyQt6.">
       <option name="closed" value="true" />
@@ -622,7 +609,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740527796683</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="change the run features again">
+      <option name="closed" value="true" />
+      <created>1740527894965</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1740527894966</updated>
+    </task>
+    <task id="LOCAL-00174" summary="return the python -m">
+      <option name="closed" value="true" />
+      <created>1740528069238</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1740528069238</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,8 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add os offscreen" />
-    <MESSAGE value="add new lines" />
     <MESSAGE value="testing to see if one of my functions is breaking the pytest" />
     <MESSAGE value="attempt fix for test_user_data_entry_save function. It is the function with the problems" />
     <MESSAGE value="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting" />
@@ -662,6 +663,8 @@
     <MESSAGE value="add a kill to xvfb" />
     <MESSAGE value="reverted the kill switch" />
     <MESSAGE value="trying different runs" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying different runs" />
+    <MESSAGE value="change the run features again" />
+    <MESSAGE value="return the python -m" />
+    <option name="LAST_COMMIT_MESSAGE" value="return the python -m" />
   </component>
 </project>
