@@ -20,6 +20,10 @@ def app():
 
 @pytest.fixture
 def second_window(app):
+    db = QSqlDatabase.addDatabase("QSQLITE")
+    db.setDatabaseName("jobs.db")
+    assert db.open(), "Database failed to open"
+
     window = SecondWindow("jobs.db")
     window.show()
     yield window
@@ -66,15 +70,9 @@ def test_job_select_return2(main_window):
 
 
 def test_user_data_entry_save(second_window):
-    name_input = second_window.name_input
-    email_input = second_window.email_input
-    phone_input = second_window.phone_input
-    github_input = second_window.github_input
-    linkedin_input = second_window.linkedin_input
-    projects_input = second_window.projects_input
-    classes_input = second_window.classes_input
-    other_input = second_window.other_input
-    save_button = second_window.save_button
+    db = second_window.db
+
+    second_window = SecondWindow(db)
 
     test_data = {
         "name": "Program Tester",
@@ -87,19 +85,19 @@ def test_user_data_entry_save(second_window):
         "other": "Interned as an IT at Bridgewater State University"
     }
 
-    name_input.setText(test_data["name"])
-    email_input.setText(test_data["email"])
-    phone_input.setText(test_data["phone"])
-    github_input.setText(test_data["github"])
-    linkedin_input.setText(test_data["linkedin"])
-    projects_input.setPlainText(test_data["projects"])
-    classes_input.setPlainText(test_data["classes"])
-    other_input.setPlainText(test_data["other"])
+    second_window.name_input.setText(test_data["name"])
+    second_window.email_input.setText(test_data["email"])
+    second_window.phone_input.setText(test_data["phone"])
+    second_window.github_input.setText(test_data["github"])
+    second_window.linkedin_input.setText(test_data["linkedin"])
+    second_window.projects_input.setPlainText(test_data["projects"])
+    second_window.classes_input.setPlainText(test_data["classes"])
+    second_window.other_input.setPlainText(test_data["other"])
 
-    QTest.mouseClick(save_button, Qt.MouseButton.LeftButton)
+    QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
     QApplication.processEvents()
 
-    query = QSqlQuery(second_window.db)
+    query = QSqlQuery(db)
     query.prepare("SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE name = ?")
     query.addBindValue(test_data["name"])
 
@@ -107,27 +105,16 @@ def test_user_data_entry_save(second_window):
     assert query.next(), "No data was found in the database"
 
     saved_data = (
-        query.value(0),
-        query.value(1),
-        query.value(2),
-        query.value(3),
-        query.value(4),
-        query.value(5),
-        query.value(6),
-        query.value(7)
+        query.value(0), query.value(1), query.value(2), query.value(3),
+        query.value(4), query.value(5), query.value(6), query.value(7)
     )
 
     expected_data = (
-        test_data["name"],
-        test_data["email"],
-        test_data["phone"],
-        test_data["github"],
-        test_data["linkedin"],
-        test_data["projects"],
-        test_data["classes"],
-        test_data["other"]
+        test_data["name"], test_data["email"], test_data["phone"], test_data["github"],
+        test_data["linkedin"], test_data["projects"], test_data["classes"], test_data["other"]
     )
 
     assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"
-    second_window.db.close()
+
+    db.close()
     QSqlDatabase.removeDatabase("qt_sql_default_connection")
