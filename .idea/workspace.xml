@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change app function to QApplication([])">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove QApplication">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
@@ -229,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00144" summary="2 blanks line for linting">
-      <option name="closed" value="true" />
-      <created>1740517521042</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1740517521050</updated>
-    </task>
-    <task id="LOCAL-00145" summary="rename program with proper naming">
-      <option name="closed" value="true" />
-      <created>1740517659239</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1740517659239</updated>
     </task>
     <task id="LOCAL-00146" summary="change the main window and second window functions">
       <option name="closed" value="true" />
@@ -622,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741049280324</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="remove import sys">
+      <option name="closed" value="true" />
+      <created>1741049361543</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1741049361543</updated>
+    </task>
+    <task id="LOCAL-00194" summary="remove QApplication">
+      <option name="closed" value="true" />
+      <created>1741049527641</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1741049527641</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Using my libgl that works" />
-    <MESSAGE value="attempting fix data leak" />
     <MESSAGE value="add a kill to xvfb" />
     <MESSAGE value="reverted the kill switch" />
     <MESSAGE value="trying different runs" />
@@ -662,6 +661,8 @@
     <MESSAGE value="revising the function" />
     <MESSAGE value="add export offscreen" />
     <MESSAGE value="change app function to QApplication([])" />
-    <option name="LAST_COMMIT_MESSAGE" value="change app function to QApplication([])" />
+    <MESSAGE value="remove import sys" />
+    <MESSAGE value="remove QApplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove QApplication" />
   </component>
 </project>

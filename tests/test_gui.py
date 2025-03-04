@@ -158,9 +158,13 @@ def test_user_data_entry_save(app, test_db):
     second_window.classes_input.setPlainText("Test Class")
     second_window.other_input.setPlainText("Test Other")
 
-    # QApplication.processEvents()
+    second_window.repaint()
+    QApplication.processEvents()
 
     second_window.save_user_data()
+
+    test_db.transaction()
+    test_db.commit()
 
     query = QSqlQuery(test_db)
     if not query.exec("SELECT * FROM user_data WHERE name = 'Test User'"):
