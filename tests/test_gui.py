@@ -69,118 +69,53 @@ def test_job_select_return2(main_window):
     assert "jobProviders:" in displayed_text, "jobProviders is missing"
     assert len(displayed_text) > 10, "Displayed details is short"
 
-# def test_user_data_entry_save(second_window):
-#     db = second_window.db
-#
-#     assert db.isOpen(), "Database is not open"
-#
-#     test_data = {
-#         "name": "Program Tester",
-#         "email": "ProgramTester@example.com",
-#         "phone": "123-456-7890",
-#         "github": "github.com/tester",
-#         "linkedin": "linkedin.com/in/tester",
-#         "projects": "Project 1 Sprint 1, Project 2 Sprint 2",
-#         "classes": "COMP 490-003 Senior Design & Development S25",
-#         "other": "Interned as an IT at Bridgewater State University"
-#     }
-#
-#     second_window.name_input.setText(test_data["name"])
-#     second_window.email_input.setText(test_data["email"])
-#     second_window.phone_input.setText(test_data["phone"])
-#     second_window.github_input.setText(test_data["github"])
-#     second_window.linkedin_input.setText(test_data["linkedin"])
-#     second_window.projects_input.setPlainText(test_data["projects"])
-#     second_window.classes_input.setPlainText(test_data["classes"])
-#     second_window.other_input.setPlainText(test_data["other"])
-#
-#     QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
-#     QApplication.processEvents()
-#
-#     query = QSqlQuery(db)
-#     query.prepare("SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE name = ?")
-#     query.addBindValue(test_data["name"])
-#
-#     assert query.exec(), f"Query execution failed: {query.lastError().text()}"
-#     assert query.next(), "No data was found in the database"
-#
-#     saved_data = (
-#         query.value(0), query.value(1), query.value(2), query.value(3),
-#         query.value(4), query.value(5), query.value(6), query.value(7)
-#     )
-#
-#     expected_data = (
-#         test_data["name"], test_data["email"], test_data["phone"], test_data["github"],
-#         test_data["linkedin"], test_data["projects"], test_data["classes"], test_data["other"]
-#     )
-#
-#     assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"
-#
-#     db.close()
-#     QSqlDatabase.removeDatabase("qt_sql_default_connection")
 
+def test_user_data_entry_save(second_window):
+    db = second_window.db
 
-@pytest.fixture
-def test_db():
-    conn_name = "test_connection"
+    assert db.isOpen(), "Database is not open"
 
-    if QSqlDatabase.contains(conn_name):
-        QSqlDatabase.removeDatabase(conn_name)
+    test_data = {
+        "name": "Program Tester",
+        "email": "ProgramTester@example.com",
+        "phone": "123-456-7890",
+        "github": "github.com/tester",
+        "linkedin": "linkedin.com/in/tester",
+        "projects": "Project 1 Sprint 1, Project 2 Sprint 2",
+        "classes": "COMP 490-003 Senior Design & Development S25",
+        "other": "Interned as an IT at Bridgewater State University"
+    }
 
-    db = QSqlDatabase.addDatabase("QSQLITE", conn_name)
-    db.setDatabaseName(":memory:")
+    second_window.name_input.setText(test_data["name"])
+    second_window.email_input.setText(test_data["email"])
+    second_window.phone_input.setText(test_data["phone"])
+    second_window.github_input.setText(test_data["github"])
+    second_window.linkedin_input.setText(test_data["linkedin"])
+    second_window.projects_input.setPlainText(test_data["projects"])
+    second_window.classes_input.setPlainText(test_data["classes"])
+    second_window.other_input.setPlainText(test_data["other"])
 
-    if not db.open():
-        pytest.fail("Database failed to open")
-
-    query = QSqlQuery(db)
-    if not query.exec("""
-        CREATE TABLE user_data (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name VARCHAR(255),
-            email VARCHAR(255),
-            phone VARCHAR(255),
-            github VARCHAR(255),
-            linkedin VARCHAR(255),
-            projects TEXT,
-            classes TEXT,
-            other TEXT
-        )
-    """):
-        pytest.fail(f"Table creation failed: {query.lastError().text()}")
-
-    yield db
-    db.close()
-
-
-def test_user_data_entry_save(app, test_db):
-    second_window = SecondWindow(test_db)
-
-    second_window.name_input.setText("Test User")
-    second_window.email_input.setText("test@example.com")
-    second_window.phone_input.setText("123-456-7890")
-    second_window.github_input.setText("testgithub")
-    second_window.linkedin_input.setText("testlinkedin")
-    second_window.projects_input.setPlainText("Test Project")
-    second_window.classes_input.setPlainText("Test Class")
-    second_window.other_input.setPlainText("Test Other")
-
-    second_window.repaint()
+    QTest.mouseClick(second_window.save_button, Qt.MouseButton.LeftButton)
     QApplication.processEvents()
 
-    second_window.save_user_data()
+    query = QSqlQuery(db)
+    query.prepare("SELECT name, email, phone, github, linkedin, projects, classes, other FROM user_data WHERE name = ?")
+    query.addBindValue(test_data["name"])
 
-    test_db.transaction()
-    test_db.commit()
+    assert query.exec(), f"Query execution failed: {query.lastError().text()}"
+    assert query.next(), "No data was found in the database"
 
-    query = QSqlQuery(test_db)
-    if not query.exec("SELECT * FROM user_data WHERE name = 'Test User'"):
-        pytest.fail(f"Database query failed: {query.lastError().text()}")
+    saved_data = (
+        query.value(0), query.value(1), query.value(2), query.value(3),
+        query.value(4), query.value(5), query.value(6), query.value(7)
+    )
 
-    assert query.next(), "User data was not saved in the database"
+    expected_data = (
+        test_data["name"], test_data["email"], test_data["phone"], test_data["github"],
+        test_data["linkedin"], test_data["projects"], test_data["classes"], test_data["other"]
+    )
 
-    saved_name = query.value(1)
-    saved_email = query.value(2)
+    assert saved_data == expected_data, f"Saved data does not match: {saved_data} != {expected_data}"
 
-    assert saved_name == "Test User"
-    assert saved_email == "test@example.com"
+    db.close()
+    QSqlDatabase.removeDatabase("qt_sql_default_connection")
