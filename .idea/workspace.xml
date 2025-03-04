@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to fix the hang loop">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="Took out 3rd function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,22 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00134" summary="attempting to fix PyQt issues">
-      <option name="closed" value="true" />
-      <created>1740451907140</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1740451907140</updated>
-    </task>
-    <task id="LOCAL-00135" summary="updates">
-      <option name="closed" value="true" />
-      <created>1740452333703</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1740452333703</updated>
     </task>
     <task id="LOCAL-00136" summary="updates">
       <option name="closed" value="true" />
@@ -622,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741046941055</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="testing functions by handling missing data">
+      <option name="closed" value="true" />
+      <created>1741047243517</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1741047243517</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Took out 3rd function">
+      <option name="closed" value="true" />
+      <created>1741047475813</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1741047475813</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,8 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to fix .yml errors: Duplicate db" />
-    <MESSAGE value="add a close to the db at the end of file" />
     <MESSAGE value="trying out ways to close the connection to continue workflow" />
     <MESSAGE value="tried to add app.quit but it is not working" />
     <MESSAGE value="remove production code from our libraries" />
@@ -662,6 +661,8 @@
     <MESSAGE value="fixes use from sprint 3 solution" />
     <MESSAGE value="trying to fix the headless mode" />
     <MESSAGE value="trying to fix the hang loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the hang loop" />
+    <MESSAGE value="testing functions by handling missing data" />
+    <MESSAGE value="Took out 3rd function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Took out 3rd function" />
   </component>
 </project>
