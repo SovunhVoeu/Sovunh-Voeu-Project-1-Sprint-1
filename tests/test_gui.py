@@ -121,8 +121,11 @@ def test_job_select_return2(main_window):
 
 @pytest.fixture
 def test_db():
-    db = QSqlDatabase.addDatabase("QSQLITE")
-    db.setDatabaseName(":memory:")
+    db = QSqlDatabase.database("qt_sql_default_connection")
+    if not db.isValid():
+        db = QSqlDatabase.addDatabase("QSQLITE", "qt_sql_default_connection")
+        db.setDatabaseName(":memory:")
+
     assert db.open(), "Database failed to open"
 
     query = QSqlQuery(db)
@@ -141,7 +144,9 @@ def test_db():
     """)
 
     yield db
+
     db.close()
+    QSqlDatabase.removeDatabase("qt_sql_default_connection")
 
 
 def test_user_data_entry_save(app, test_db):
@@ -161,12 +166,14 @@ def test_user_data_entry_save(app, test_db):
     second_window.save_user_data()
 
     query = QSqlQuery(test_db)
-    query.exec("SELECT * FROM user_data WHERE name = 'Test User'")
+    query.exec("SELECT name, email FROM user_data WHERE name = 'Test User'")
 
     assert query.next(), "User data was not saved in the database"
 
-    saved_name = query.value(1)
-    saved_email = query.value(2)
+    saved_name = query.value(0)
+    saved_email = query.value(1)
 
-    assert saved_name == "Test User"
-    assert saved_email == "test@example.com"
+    assert saved_name == "Test User", f"Expected 'Test User', got '{saved_name}'"
+    assert saved_email == "test@example.com", f"Expected 'test@example.com', got '{saved_email}'"
+
+    second_window.close()
