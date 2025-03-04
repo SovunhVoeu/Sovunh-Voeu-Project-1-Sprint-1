@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="remove calling the QSQLITE">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="revert second_window function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,30 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00154" summary="reverted to my old function since copilot function had the same pytest issue">
-      <option name="closed" value="true" />
-      <created>1740520725452</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1740520725452</updated>
-    </task>
-    <task id="LOCAL-00155" summary="attempt to fix .yml in case it is a .yml error">
-      <option name="closed" value="true" />
-      <created>1740520766462</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1740520766462</updated>
-    </task>
-    <task id="LOCAL-00156" summary="remove and import an add headless">
-      <option name="closed" value="true" />
-      <created>1740520847911</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1740520847911</updated>
     </task>
     <task id="LOCAL-00157" summary="trying to fix .yml errors: Duplicate db">
       <option name="closed" value="true" />
@@ -622,7 +600,31 @@
       <option name="project" value="LOCAL" />
       <updated>1741051258877</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="adding fix">
+      <option name="closed" value="true" />
+      <created>1741051483514</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1741051483514</updated>
+    </task>
+    <task id="LOCAL-00204" summary="fix extra blank line">
+      <option name="closed" value="true" />
+      <created>1741051534245</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1741051534245</updated>
+    </task>
+    <task id="LOCAL-00205" summary="revert second_window function">
+      <option name="closed" value="true" />
+      <created>1741051687190</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1741051687191</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,9 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing import os" />
-    <MESSAGE value="fix a missing variable" />
-    <MESSAGE value="add new line at end of file" />
     <MESSAGE value="revert changes made, this is the finalize for the project 1 Sprint 3" />
     <MESSAGE value="finalize Project 1 Sprint 3 changes" />
     <MESSAGE value="fixes use from sprint 3 solution" />
@@ -662,6 +661,9 @@
     <MESSAGE value="adding to test_db" />
     <MESSAGE value="reverted debugging changes" />
     <MESSAGE value="remove calling the QSQLITE" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove calling the QSQLITE" />
+    <MESSAGE value="adding fix" />
+    <MESSAGE value="fix extra blank line" />
+    <MESSAGE value="revert second_window function" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert second_window function" />
   </component>
 </project>

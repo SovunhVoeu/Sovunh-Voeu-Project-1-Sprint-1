@@ -21,7 +21,7 @@ def second_window(app):
     db.setDatabaseName("jobs.db")
     assert db.open(), "Database failed to open"
 
-    window = SecondWindow("jobs.db")
+    window = SecondWindow(db)
     window.show()
     yield window
     window.db.close()

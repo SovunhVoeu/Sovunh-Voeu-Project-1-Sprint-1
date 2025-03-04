@@ -10,7 +10,7 @@ from PyQt6.QtCore import Qt
 
 
 class SecondWindow(QWidget):
-    def __init__(self, db):
+    def __init__(self, db: QSqlDatabase):
         super().__init__()
         self.db = db
         # if QSqlDatabase.contains("qt_sql_default_connection"):
