@@ -15,7 +15,6 @@ def app():
     return QApplication([])
 
 
-
 @pytest.fixture
 def second_window(app):
     db = QSqlDatabase.addDatabase("QSQLITE", "test_connection")
