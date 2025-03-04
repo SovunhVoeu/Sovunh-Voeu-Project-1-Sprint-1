@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to fix the headless mode">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to fix the hang loop">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00133" summary="trying new .yml">
-      <option name="closed" value="true" />
-      <created>1740451668252</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1740451668252</updated>
     </task>
     <task id="LOCAL-00134" summary="attempting to fix PyQt issues">
       <option name="closed" value="true" />
@@ -623,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741046582752</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="trying to fix the hang loop">
+      <option name="closed" value="true" />
+      <created>1741046941055</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1741046941055</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove and import an add headless" />
     <MESSAGE value="trying to fix .yml errors: Duplicate db" />
     <MESSAGE value="add a close to the db at the end of file" />
     <MESSAGE value="trying out ways to close the connection to continue workflow" />
@@ -663,6 +661,7 @@
     <MESSAGE value="finalize Project 1 Sprint 3 changes" />
     <MESSAGE value="fixes use from sprint 3 solution" />
     <MESSAGE value="trying to fix the headless mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the headless mode" />
+    <MESSAGE value="trying to fix the hang loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the hang loop" />
   </component>
 </project>

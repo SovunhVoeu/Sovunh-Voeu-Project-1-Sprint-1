@@ -12,7 +12,7 @@ from PyQt6.QtCore import Qt
 class SecondWindow(QWidget):
     def __init__(self, db):
         super().__init__()
-
+        self.db = db
         if QSqlDatabase.contains("qt_sql_default_connection"):
             self.db = QSqlDatabase.database("qt_sql_default_connection")
         else:
@@ -167,6 +167,8 @@ class MainWindow(QMainWindow):
         self.user_data_window.show()
 
     def display_details1(self, index):
+        if not index.isValid():
+            return
         row = index.row()
         job_details = []
         for col in range(self.model1.columnCount()):
@@ -176,6 +178,8 @@ class MainWindow(QMainWindow):
         self.details_text.setText("\n".join(job_details))
 
     def display_details2(self, index):
+        if not index.isValid():
+            return
         row = index.row()
         job_details = []
         for col in range(self.model2.columnCount()):
