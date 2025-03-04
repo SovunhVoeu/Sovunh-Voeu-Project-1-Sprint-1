@@ -158,7 +158,7 @@ def test_user_data_entry_save(app, test_db):
     second_window.classes_input.setPlainText("Test Class")
     second_window.other_input.setPlainText("Test Other")
 
-    QApplication.processEvents()
+    # QApplication.processEvents()
 
     second_window.save_user_data()
 
