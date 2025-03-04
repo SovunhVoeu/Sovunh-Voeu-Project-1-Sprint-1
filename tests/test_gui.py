@@ -10,7 +10,7 @@ from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def app():
     app = QApplication([])
     yield app
