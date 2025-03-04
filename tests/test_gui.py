@@ -5,7 +5,7 @@ Date: 2/22/2025
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlQuery, QSqlDatabase
+from PyQt6.QtSql import QSqlDatabase
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
