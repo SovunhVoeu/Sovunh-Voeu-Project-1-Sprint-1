@@ -121,15 +121,14 @@ def test_job_select_return2(main_window):
 
 @pytest.fixture
 def test_db():
-    db = QSqlDatabase.database("qt_sql_default_connection")
-    if not db.isValid():
-        db = QSqlDatabase.addDatabase("QSQLITE", "qt_sql_default_connection")
-        db.setDatabaseName(":memory:")
+    db = QSqlDatabase.addDatabase("QSQLITE")
+    db.setDatabaseName(":memory:")
 
-    assert db.open(), "Database failed to open"
+    if not db.open():
+        pytest.fail("Database failed to open")
 
     query = QSqlQuery(db)
-    query.exec("""
+    if not query.exec("""
         CREATE TABLE user_data (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name VARCHAR(255),
@@ -141,12 +140,11 @@ def test_db():
             classes TEXT,
             other TEXT
         )
-    """)
+    """):
+        pytest.fail(f"Table creation failed: {query.lastError().text()}")
 
     yield db
-
     db.close()
-    QSqlDatabase.removeDatabase("qt_sql_default_connection")
 
 
 def test_user_data_entry_save(app, test_db):
@@ -166,14 +164,13 @@ def test_user_data_entry_save(app, test_db):
     second_window.save_user_data()
 
     query = QSqlQuery(test_db)
-    query.exec("SELECT name, email FROM user_data WHERE name = 'Test User'")
+    if not query.exec("SELECT * FROM user_data WHERE name = 'Test User'"):
+        pytest.fail(f"Database query failed: {query.lastError().text()}")
 
     assert query.next(), "User data was not saved in the database"
 
-    saved_name = query.value(0)
-    saved_email = query.value(1)
+    saved_name = query.value(1)
+    saved_email = query.value(2)
 
-    assert saved_name == "Test User", f"Expected 'Test User', got '{saved_name}'"
-    assert saved_email == "test@example.com", f"Expected 'test@example.com', got '{saved_email}'"
-
-    second_window.close()
+    assert saved_name == "Test User"
+    assert saved_email == "test@example.com"
