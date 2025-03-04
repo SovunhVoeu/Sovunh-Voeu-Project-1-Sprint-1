@@ -118,6 +118,7 @@ def test_job_select_return2(main_window):
 #     db.close()
 #     QSqlDatabase.removeDatabase("qt_sql_default_connection")
 
+
 @pytest.fixture
 def test_db():
     db = QSqlDatabase.addDatabase("QSQLITE")

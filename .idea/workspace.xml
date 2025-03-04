@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="testing revise function to fix the db locking up">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="removing blank lines">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00138" summary="added possible function fixes">
-      <option name="closed" value="true" />
-      <created>1740452594838</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1740452594838</updated>
     </task>
     <task id="LOCAL-00139" summary="add flake8 blank line">
       <option name="closed" value="true" />
@@ -621,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741048093239</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="removing blank lines">
+      <option name="closed" value="true" />
+      <created>1741048257902</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1741048257902</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove production code from our libraries" />
     <MESSAGE value="took out the tests/test_Data.py" />
     <MESSAGE value="trying to exit the file to stop it from hanging" />
     <MESSAGE value="added proper clean up" />
@@ -661,6 +661,7 @@
     <MESSAGE value="Took out 3rd function" />
     <MESSAGE value="fix lint import not used" />
     <MESSAGE value="testing revise function to fix the db locking up" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing revise function to fix the db locking up" />
+    <MESSAGE value="removing blank lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing blank lines" />
   </component>
 </project>
