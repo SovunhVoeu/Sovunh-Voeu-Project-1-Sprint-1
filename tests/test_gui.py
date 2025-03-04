@@ -10,9 +10,11 @@ from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 def app():
-    app = QApplication([])
+    app = QApplication.instance()
+    if not app:
+        app = QApplication([])
     yield app
     app.quit()
 
@@ -120,7 +122,12 @@ def test_job_select_return2(main_window):
 
 @pytest.fixture
 def test_db():
-    db = QSqlDatabase.addDatabase("QSQLITE")
+    conn_name = "test_connection"
+
+    if QSqlDatabase.contains(conn_name):
+        QSqlDatabase.removeDatabase(conn_name)
+
+    db = QSqlDatabase.addDatabase("QSQLITE", conn_name)
     db.setDatabaseName(":memory:")
 
     if not db.open():
