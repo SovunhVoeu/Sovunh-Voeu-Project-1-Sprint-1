@@ -6,7 +6,7 @@ import sys
 import pytest
 from gui import MainWindow, SecondWindow
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtSql import QSqlDatabase
+from PyQt6.QtSql import QSqlQuery, QSqlDatabase
 from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
@@ -118,3 +118,57 @@ def test_job_select_return2(main_window):
 #
 #     db.close()
 #     QSqlDatabase.removeDatabase("qt_sql_default_connection")
+
+
+@pytest.fixture
+def test_db():
+    db = QSqlDatabase.addDatabase("QSQLITE")
+    db.setDatabaseName(":memory:")
+    assert db.open(), "Database failed to open"
+
+
+    query = QSqlQuery(db)
+    query.exec("""
+        CREATE TABLE user_data (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name VARCHAR(255),
+            email VARCHAR(255),
+            phone VARCHAR(255),
+            github VARCHAR(255),
+            linkedin VARCHAR(255),
+            projects TEXT,
+            classes TEXT,
+            other TEXT
+        )
+    """)
+
+    yield db
+    db.close()
+
+
+def test_user_data_entry_save(app, test_db):
+    second_window = SecondWindow(test_db)
+
+    second_window.name_input.setText("Test User")
+    second_window.email_input.setText("test@example.com")
+    second_window.phone_input.setText("123-456-7890")
+    second_window.github_input.setText("testgithub")
+    second_window.linkedin_input.setText("testlinkedin")
+    second_window.projects_input.setPlainText("Test Project")
+    second_window.classes_input.setPlainText("Test Class")
+    second_window.other_input.setPlainText("Test Other")
+
+    QApplication.processEvents()
+
+    second_window.save_user_data()
+
+    query = QSqlQuery(test_db)
+    query.exec("SELECT * FROM user_data WHERE name = 'Test User'")
+
+    assert query.next(), "User data was not saved in the database"
+
+    saved_name = query.value(1)
+    saved_email = query.value(2)
+
+    assert saved_name == "Test User"
+    assert saved_email == "test@example.com"
