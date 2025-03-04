@@ -68,7 +68,6 @@ def test_job_select_return2(main_window):
     assert "jobProviders:" in displayed_text, "jobProviders is missing"
     assert len(displayed_text) > 10, "Displayed details is short"
 
-
 # def test_user_data_entry_save(second_window):
 #     db = second_window.db
 #
@@ -119,13 +118,11 @@ def test_job_select_return2(main_window):
 #     db.close()
 #     QSqlDatabase.removeDatabase("qt_sql_default_connection")
 
-
 @pytest.fixture
 def test_db():
     db = QSqlDatabase.addDatabase("QSQLITE")
     db.setDatabaseName(":memory:")
     assert db.open(), "Database failed to open"
-
 
     query = QSqlQuery(db)
     query.exec("""
