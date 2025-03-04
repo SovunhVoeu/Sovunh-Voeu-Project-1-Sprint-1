@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying new changes out">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="revising the function">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00141" summary="add blank line for flake8">
-      <option name="closed" value="true" />
-      <created>1740453013061</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1740453013061</updated>
     </task>
     <task id="LOCAL-00142" summary="add blank line for flake8">
       <option name="closed" value="true" />
@@ -623,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741048556100</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="revising the function">
+      <option name="closed" value="true" />
+      <created>1741048827306</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1741048827306</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added proper clean up" />
     <MESSAGE value="made fixes as per professor suggestions" />
     <MESSAGE value="testing professor's recommended .yml sudo libgl" />
     <MESSAGE value="Using my libgl that works" />
@@ -663,6 +662,7 @@
     <MESSAGE value="removing blank lines" />
     <MESSAGE value="add blank line for line 121" />
     <MESSAGE value="trying new changes out" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying new changes out" />
+    <MESSAGE value="revising the function" />
+    <option name="LAST_COMMIT_MESSAGE" value="revising the function" />
   </component>
 </project>
