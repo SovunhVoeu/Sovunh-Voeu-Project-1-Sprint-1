@@ -10,25 +10,24 @@ from PyQt6.QtTest import QTest
 from PyQt6.QtCore import Qt
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture
 def app():
-    app = QApplication.instance()
-    if not app:
-        app = QApplication([])
-    yield app
-    app.quit()
+    return QApplication([])
+
 
 
 @pytest.fixture
 def second_window(app):
-    db = QSqlDatabase.addDatabase("QSQLITE")
+    db = QSqlDatabase.addDatabase("QSQLITE", "test_connection")
     db.setDatabaseName("jobs.db")
     assert db.open(), "Database failed to open"
 
-    window = SecondWindow("jobs.db")
+    window = SecondWindow(db)
     window.show()
     yield window
-    window.db.close()
+    if db.isOpen():
+        db.close()
+    QSqlDatabase.removeDatabase("test_connection")
 
 
 @pytest.fixture
