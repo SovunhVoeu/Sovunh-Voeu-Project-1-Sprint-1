@@ -17,16 +17,14 @@ def app():
 
 @pytest.fixture
 def second_window(app):
-    db = QSqlDatabase.addDatabase("QSQLITE", "test_connection")
+    db = QSqlDatabase.addDatabase("QSQLITE")
     db.setDatabaseName("jobs.db")
     assert db.open(), "Database failed to open"
 
-    window = SecondWindow(db)
+    window = SecondWindow("jobs.db")
     window.show()
     yield window
-    if db.isOpen():
-        db.close()
-    QSqlDatabase.removeDatabase("test_connection")
+    window.db.close()
 
 
 @pytest.fixture
