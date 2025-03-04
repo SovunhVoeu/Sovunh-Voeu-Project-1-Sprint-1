@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add db.close to Second Window to try to find the problem">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="reverted debugging changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,22 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting">
-      <option name="closed" value="true" />
-      <created>1740520377484</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1740520377484</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Got the test_user_data_entry function from copilot since it gave me an error for the longest time when pytesting. Linting by removing import">
-      <option name="closed" value="true" />
-      <created>1740520483373</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1740520483373</updated>
     </task>
     <task id="LOCAL-00153" summary="trying to renew the fix">
       <option name="closed" value="true" />
@@ -624,7 +608,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741050617106</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="adding to test_db">
+      <option name="closed" value="true" />
+      <created>1741050863009</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1741050863009</updated>
+    </task>
+    <task id="LOCAL-00201" summary="reverted debugging changes">
+      <option name="closed" value="true" />
+      <created>1741051001356</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1741051001356</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,8 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying different runs" />
-    <MESSAGE value="change the run features again" />
     <MESSAGE value="return the python -m" />
     <MESSAGE value="testing import os" />
     <MESSAGE value="fix a missing variable" />
@@ -664,6 +662,8 @@
     <MESSAGE value="remove QApplication" />
     <MESSAGE value="testing new code" />
     <MESSAGE value="add db.close to Second Window to try to find the problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="add db.close to Second Window to try to find the problem" />
+    <MESSAGE value="adding to test_db" />
+    <MESSAGE value="reverted debugging changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverted debugging changes" />
   </component>
 </project>

@@ -13,11 +13,11 @@ class SecondWindow(QWidget):
     def __init__(self, db):
         super().__init__()
         self.db = db
-        if QSqlDatabase.contains("qt_sql_default_connection"):
-            self.db = QSqlDatabase.database("qt_sql_default_connection")
-        else:
-            self.db = QSqlDatabase.addDatabase("QSQLITE")
-            self.db.setDatabaseName("jobs.db")
+        # if QSqlDatabase.contains("qt_sql_default_connection"):
+        #     self.db = QSqlDatabase.database("qt_sql_default_connection")
+        # else:
+        #     self.db = QSqlDatabase.addDatabase("QSQLITE")
+        #     self.db.setDatabaseName("jobs.db")
 
         self.setWindowTitle("User Profile Input Window")
         self.setGeometry(1000, 100, 800, 600)
