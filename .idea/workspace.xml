@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add export offscreen">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="change app function to QApplication([])">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
@@ -229,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00143" summary="working on changing function names in test file">
-      <option name="closed" value="true" />
-      <created>1740517436117</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1740517436117</updated>
     </task>
     <task id="LOCAL-00144" summary="2 blanks line for linting">
       <option name="closed" value="true" />
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741049001141</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="change app function to QApplication([])">
+      <option name="closed" value="true" />
+      <created>1741049280324</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1741049280324</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -637,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing professor's recommended .yml sudo libgl" />
     <MESSAGE value="Using my libgl that works" />
     <MESSAGE value="attempting fix data leak" />
     <MESSAGE value="add a kill to xvfb" />
@@ -662,6 +661,7 @@
     <MESSAGE value="trying new changes out" />
     <MESSAGE value="revising the function" />
     <MESSAGE value="add export offscreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="add export offscreen" />
+    <MESSAGE value="change app function to QApplication([])" />
+    <option name="LAST_COMMIT_MESSAGE" value="change app function to QApplication([])" />
   </component>
 </project>
