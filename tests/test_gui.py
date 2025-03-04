@@ -13,7 +13,7 @@ from PyQt6.QtCore import Qt
 
 @pytest.fixture(scope="session")
 def app():
-    app = QApplication(sys.argv)
+    app = QApplication([])
     yield app
     app.quit()
 
