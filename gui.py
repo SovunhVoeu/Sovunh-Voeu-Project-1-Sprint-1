@@ -84,8 +84,6 @@ class SecondWindow(QWidget):
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
-        self.db.close()
-
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -163,6 +161,7 @@ class MainWindow(QMainWindow):
         other TEXT
         )
         """)
+        self.db.close()
 
     def open_second_window(self):
         self.user_data_window = SecondWindow(self.db)

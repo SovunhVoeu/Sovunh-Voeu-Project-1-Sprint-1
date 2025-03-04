@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="testing new code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="add db.close to Second Window to try to find the problem">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00148" summary="add new lines">
-      <option name="closed" value="true" />
-      <created>1740519032313</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1740519032313</updated>
     </task>
     <task id="LOCAL-00149" summary="testing to see if one of my functions is breaking the pytest">
       <option name="closed" value="true" />
@@ -624,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741049979756</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="add db.close to Second Window to try to find the problem">
+      <option name="closed" value="true" />
+      <created>1741050183899</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1741050183899</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -639,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reverted the kill switch" />
     <MESSAGE value="trying different runs" />
     <MESSAGE value="change the run features again" />
     <MESSAGE value="return the python -m" />
@@ -664,6 +661,7 @@
     <MESSAGE value="remove import sys" />
     <MESSAGE value="remove QApplication" />
     <MESSAGE value="testing new code" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing new code" />
+    <MESSAGE value="add db.close to Second Window to try to find the problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="add db.close to Second Window to try to find the problem" />
   </component>
 </project>
