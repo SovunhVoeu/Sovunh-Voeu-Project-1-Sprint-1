@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fixes use from sprint 3 solution">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="trying to fix the headless mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00132" summary="trying new .yml">
-      <option name="closed" value="true" />
-      <created>1740451438744</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1740451438744</updated>
     </task>
     <task id="LOCAL-00133" summary="trying new .yml">
       <option name="closed" value="true" />
@@ -623,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741046385384</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="trying to fix the headless mode">
+      <option name="closed" value="true" />
+      <created>1741046582751</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1741046582752</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="attempt to fix .yml in case it is a .yml error" />
     <MESSAGE value="remove and import an add headless" />
     <MESSAGE value="trying to fix .yml errors: Duplicate db" />
     <MESSAGE value="add a close to the db at the end of file" />
@@ -663,6 +662,7 @@
     <MESSAGE value="revert changes made, this is the finalize for the project 1 Sprint 3" />
     <MESSAGE value="finalize Project 1 Sprint 3 changes" />
     <MESSAGE value="fixes use from sprint 3 solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes use from sprint 3 solution" />
+    <MESSAGE value="trying to fix the headless mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the headless mode" />
   </component>
 </project>

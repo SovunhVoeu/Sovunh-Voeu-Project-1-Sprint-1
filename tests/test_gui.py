@@ -72,7 +72,7 @@ def test_job_select_return2(main_window):
 def test_user_data_entry_save(second_window):
     db = second_window.db
 
-    second_window = SecondWindow(db)
+    assert db.isOpen(), "Database is not open"
 
     test_data = {
         "name": "Program Tester",
