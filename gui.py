@@ -55,6 +55,9 @@ class SecondWindow(QWidget):
         self.setLayout(layout)
 
     def save_user_data(self):
+        if not self.db.isOpen():
+            self.db.open()
+
         query = QSqlQuery(self.db)
         query.prepare("""
                 INSERT INTO user_data (name, email, phone, github, linkedin, projects, classes, other)
@@ -79,10 +82,16 @@ class SecondWindow(QWidget):
         query.addBindValue(other)
 
         if query.exec():
+            self.db.commit()
             QMessageBox.information(self, "Successful", "The User Information was saved, "
                                                         "Refresh the db for updated info.")
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
+
+    def closeEvent(self, event):
+        if self.db.isOpen():
+            self.db.close()
+        event.accept()
 
 
 class MainWindow(QMainWindow):
@@ -161,7 +170,6 @@ class MainWindow(QMainWindow):
         other TEXT
         )
         """)
-        self.db.close()
 
     def open_second_window(self):
         self.user_data_window = SecondWindow(self.db)
@@ -188,6 +196,11 @@ class MainWindow(QMainWindow):
             column_value = self.model2.data(self.model2.index(row, col))
             job_details.append(f"{column_name}: {column_value}")
         self.details_text.setText("\n".join(job_details))
+
+    def closeEvent(self, event):
+        if self.db.isOpen():
+            self.db.close()
+        event.accept()
 
 
 if __name__ == "__main__":
