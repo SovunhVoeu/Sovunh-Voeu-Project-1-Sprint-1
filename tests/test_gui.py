@@ -3,7 +3,8 @@ Author: Sovunh Voeu
 Date: 2/22/2025
 """
 import pytest
-from gui import MainWindow, SecondWindow
+from secondWindow import SecondWindow
+from mainWindow import MainWindow
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtSql import QSqlDatabase
 from PyQt6.QtTest import QTest
@@ -35,14 +36,14 @@ def main_window(app):
 
 
 def test_job_select_return(main_window):
-    job_list_view = main_window.table_view1
+    job_list_view = main_window.table_rapid_results_view
 
     assert job_list_view.model().rowCount() > 0, "There are no jobs available for selection"
 
     index = job_list_view.model().index(0, 0)
     QTest.mouseClick(job_list_view.viewport(), Qt.MouseButton.LeftButton, pos=job_list_view.visualRect(index).center())
 
-    main_window.display_details1(index)
+    main_window.display_rapid_results(index)
 
     displayed_text = main_window.details_text.toPlainText()
     assert "title:" in displayed_text, "Job title is missing"
@@ -51,14 +52,14 @@ def test_job_select_return(main_window):
 
 
 def test_job_select_return2(main_window):
-    job_list_view = main_window.table_view2
+    job_list_view = main_window.table_rapid_jobs_view
 
     assert job_list_view.model().rowCount() > 0, "There are no jobs available for selection"
 
     index = job_list_view.model().index(0, 0)
     QTest.mouseClick(job_list_view.viewport(), Qt.MouseButton.LeftButton, pos=job_list_view.visualRect(index).center())
 
-    main_window.display_details2(index)
+    main_window.display_rapid_jobs(index)
 
     displayed_text = main_window.details_text.toPlainText()
     assert "title:" in displayed_text, "Job title is missing"
