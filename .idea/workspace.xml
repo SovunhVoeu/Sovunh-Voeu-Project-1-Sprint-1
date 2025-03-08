@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="commented out 3rd function since it doesnt work for GITHUB">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="refactored, reformatted, and created cover letter and resume converter">
+      <change afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/secondWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs.db" beforeDir="false" afterPath="$PROJECT_DIR$/jobs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_resume.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/secondWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +50,29 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_db.test_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_gui.test_job_select_return.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_data.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_db.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_gui.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_db.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brand/PycharmProjects/pythonProject&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor": "Run",
+    "Python tests.Python tests for test_db.test_main.executor": "Run",
+    "Python tests.Python tests for test_gui.test_job_select_return.executor": "Run",
+    "Python tests.Python tests in test_data.py.executor": "Run",
+    "Python tests.Python tests in test_db.py.executor": "Run",
+    "Python tests.Python tests in test_gui.py.executor": "Run",
+    "Python.ai.executor": "Run",
+    "Python.db.executor": "Run",
+    "Python.gui.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainWindow.executor": "Run",
+    "Python.test_db.executor": "Run",
+    "Python.test_main.executor": "Run",
+    "Python.userProfiles.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Brand/PycharmProjects/pythonProject",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
@@ -240,14 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00160" summary="tried to add app.quit but it is not working">
-      <option name="closed" value="true" />
-      <created>1740521954309</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1740521954309</updated>
     </task>
     <task id="LOCAL-00161" summary="remove production code from our libraries">
       <option name="closed" value="true" />
@@ -633,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741052061152</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="refactored, reformatted, and created cover letter and resume converter">
+      <option name="closed" value="true" />
+      <created>1741392400420</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1741392400420</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -648,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixes use from sprint 3 solution" />
     <MESSAGE value="trying to fix the headless mode" />
     <MESSAGE value="trying to fix the hang loop" />
     <MESSAGE value="testing functions by handling missing data" />
@@ -673,6 +670,7 @@
     <MESSAGE value="revert second_window function" />
     <MESSAGE value="add changes" />
     <MESSAGE value="commented out 3rd function since it doesnt work for GITHUB" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out 3rd function since it doesnt work for GITHUB" />
+    <MESSAGE value="refactored, reformatted, and created cover letter and resume converter" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored, reformatted, and created cover letter and resume converter" />
   </component>
 </project>

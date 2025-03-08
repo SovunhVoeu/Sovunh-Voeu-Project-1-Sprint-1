@@ -15,8 +15,9 @@ from PyQt6.QtWidgets import (
     QApplication
     )
 from PyQt6.QtSql import QSqlDatabase, QSqlQuery
-import sqlite3
-from ai import main, example_main
+# import sqlite3
+from ai import prompts, example_main
+from thirdWindow import UserSelectionWindow
 
 
 class SecondWindow(QWidget):
@@ -62,6 +63,10 @@ class SecondWindow(QWidget):
         self.create_resume_button.clicked.connect(self.create_resume)
         layout.addWidget(self.create_resume_button)
 
+        self.selection_window_button = QPushButton("Open User Selection Window")
+        self.selection_window_button.clicked.connect(self.open_users_profiles_window)
+        layout.addWidget(self.selection_window_button)
+
         self.setLayout(layout)
 
     def save_user_data(self):
@@ -98,23 +103,16 @@ class SecondWindow(QWidget):
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
-    #EDIT THIS FURTHER MORE TO ALLOW THE SELECTED JOBS TO BE USED
     def create_resume(self, window):
         try:
             example_main()
             QMessageBox.information(window, "Resume and Cover Letter", "Resume and cover letter successfully created")
         except Exception as e:
             QMessageBox.critical(window, "Error", f"Error creating resume and cover letter: {e}")
-        # try:
-        #     db_connection = sqlite3.connect("jobs.db")
-        #     job_id = 1
-        #     user_id = 1
-        #
-        #     main(job_id, user_id, db_connection)
-        #
-        #     QMessageBox.information(window, "Database Connection", "Database connection successful")
-        # except Exception as e:
-        #     QMessageBox.critical(window, "Database Error", f"Error connecting to the database: {e}")
+
+    def open_users_profiles_window(self):
+        self.user_data_window = UserSelectionWindow("jobs.db")
+        self.user_data_window.show()
 
     def quit(self):
         QApplication.instance().quit()
