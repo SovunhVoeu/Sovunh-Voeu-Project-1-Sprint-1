@@ -59,9 +59,9 @@ class SecondWindow(QWidget):
         layout.addWidget(self.save_button)
 
         #RESUME BUTTON CREATE THE FUNCTION FOR THIS
-        self.create_resume_button = QPushButton("Create Resume And Cover Letter")
-        self.create_resume_button.clicked.connect(self.create_resume)
-        layout.addWidget(self.create_resume_button)
+        # self.create_resume_button = QPushButton("Create Resume And Cover Letter")
+        # self.create_resume_button.clicked.connect(self.create_resume)
+        # layout.addWidget(self.create_resume_button)
 
         self.selection_window_button = QPushButton("Open User Selection Window")
         self.selection_window_button.clicked.connect(self.open_users_profiles_window)
@@ -103,12 +103,12 @@ class SecondWindow(QWidget):
         else:
             QMessageBox.critical(self, "Database Error", f"Error saving data: {query.lastError().text()}")
 
-    def create_resume(self, window):
-        try:
-            example_main()
-            QMessageBox.information(window, "Resume and Cover Letter", "Resume and cover letter successfully created")
-        except Exception as e:
-            QMessageBox.critical(window, "Error", f"Error creating resume and cover letter: {e}")
+    # def create_resume(self, window):
+    #     try:
+    #         example_main()
+    #         QMessageBox.information(window, "Resume and Cover Letter", "Resume and cover letter successfully created")
+    #     except Exception as e:
+    #         QMessageBox.critical(window, "Error", f"Error creating resume and cover letter: {e}")
 
     def open_users_profiles_window(self):
         self.user_data_window = UserSelectionWindow("jobs.db")

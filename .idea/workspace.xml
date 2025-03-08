@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="refactored, reformatted, and created cover letter and resume converter">
-      <change afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="created thirdWindow.py to select users for the resume and cover letter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/secondWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/secondWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thirdWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/thirdWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
     "Python tests.Python tests in test_gui.py.executor": "Run",
     "Python.ai.executor": "Run",
     "Python.db.executor": "Run",
+    "Python.demo.executor": "Run",
     "Python.gui.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mainWindow.executor": "Run",
@@ -238,14 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00161" summary="remove production code from our libraries">
-      <option name="closed" value="true" />
-      <created>1740522013428</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1740522013428</updated>
     </task>
     <task id="LOCAL-00162" summary="took out the tests/test_Data.py">
       <option name="closed" value="true" />
@@ -631,7 +625,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741392400420</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="created thirdWindow.py to select users for the resume and cover letter">
+      <option name="closed" value="true" />
+      <created>1741396465281</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1741396465281</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -646,7 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to fix the headless mode" />
     <MESSAGE value="trying to fix the hang loop" />
     <MESSAGE value="testing functions by handling missing data" />
     <MESSAGE value="Took out 3rd function" />
@@ -671,6 +672,7 @@
     <MESSAGE value="add changes" />
     <MESSAGE value="commented out 3rd function since it doesnt work for GITHUB" />
     <MESSAGE value="refactored, reformatted, and created cover letter and resume converter" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored, reformatted, and created cover letter and resume converter" />
+    <MESSAGE value="created thirdWindow.py to select users for the resume and cover letter" />
+    <option name="LAST_COMMIT_MESSAGE" value="created thirdWindow.py to select users for the resume and cover letter" />
   </component>
 </project>

@@ -52,7 +52,7 @@ def retrieve_job_and_user_data(job_id, user_id, db_connection):
         "projects": user[5], "classes": user[6], "other": user[7]
     }
 
-    return {"title": job, "description": job_description }, user_data
+    return {"title": job_title, "description": job_description}, user_data
 
 
 def generate_markdown(model, prompt):
@@ -107,32 +107,25 @@ def prompts(job_id, user_id, db_connection):
     print("Cover letter and resume successfully created and converted to PDF.")
 
 
-# I WANT THESE FUNCTIONS TO GET THE NEW INPUTED DATA
-def get_latest_job_id(db_connection):
+def get_latest_job_id(db_connection, selected_job_id):
     cursor = db_connection.cursor()
-    cursor.execute("SELECT id FROM rapidResults")
+    cursor.execute("SELECT id FROM rapidResults WHERE id = ?", (selected_job_id,))
     result = cursor.fetchone()
     return result[0] if result else None
 
 
-def get_latest_user_id(db_connection):
+def get_latest_user_id(db_connection, selected_user_id):
     cursor = db_connection.cursor()
-    cursor.execute("SELECT id FROM user_data")
+    cursor.execute("SELECT id FROM user_data WHERE id = ?", (selected_user_id,))
     result = cursor.fetchone()
     return result[0] if result else None
 
 
-def example_main():
+def example_main(selected_job_id, selected_user_id):
     db_connection = sqlite3.connect("jobs.db")
 
-    job_id = get_latest_job_id(db_connection)
-    user_id = get_latest_user_id(db_connection)
+    job_id = get_latest_job_id(db_connection, selected_job_id)
+    user_id = get_latest_user_id(db_connection, selected_user_id)
 
     prompts(job_id=job_id, user_id=user_id, db_connection=db_connection)
     db_connection.close()
-
-# THIS BOTTOM CODE TESTS THE FUNCTIONS TO SEE IF THEY ARE GENERATING THE RESUME AND COVER LETTER
-# db_connection = sqlite3.connect("jobs.db")
-# job_id = get_latest_job_id(db_connection)
-# user_id = get_latest_user_id(db_connection)
-# main(job_id=job_id, user_id=user_id, db_connection=db_connection)
