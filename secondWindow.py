@@ -60,7 +60,7 @@ class SecondWindow(QWidget):
         self.save_button.clicked.connect(self.save_user_data)
         layout.addWidget(self.save_button)
 
-        #RESUME BUTTON CREATE THE FUNCTION FOR THIS
+        # RESUME BUTTON CREATE THE FUNCTION FOR THIS
         # self.create_resume_button = QPushButton("Create Resume And Cover Letter")
         # self.create_resume_button.clicked.connect(self.create_resume)
         # layout.addWidget(self.create_resume_button)

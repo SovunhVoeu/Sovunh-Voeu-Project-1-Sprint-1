@@ -6,7 +6,7 @@ import pytest
 import sqlite3
 import json
 from unittest.mock import patch, MagicMock
-from ai import gemini_setup, retrieve_job_and_user_data, generate_markdown
+from ai import gemini_setup, retrieve_job_and_user_data
 
 
 @pytest.fixture()

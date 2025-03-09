@@ -22,7 +22,7 @@ def connect_db():
 
 
 class UserSelectionWindow(QWidget):
-    def __init__(self, db_path = "jobs.db"):
+    def __init__(self, db_path="jobs.db"):
         super().__init__()
         self.db_path = db_path
         self.initUI()
@@ -64,7 +64,6 @@ class UserSelectionWindow(QWidget):
             self.job_combo_box.addItem(job[1], job[0])
         layout.addWidget(self.job_combo_box)
 
-
         self.cursor.execute("SELECT id, name, email, phone FROM user_data")
         user_data = self.cursor.fetchall()
         self.user_combo_box = QComboBox()
@@ -73,10 +72,9 @@ class UserSelectionWindow(QWidget):
             self.user_combo_box.addItem(f"{user[1]} - {user[2]}", user[0])
         layout.addWidget(self.user_combo_box)
 
-
         self.setLayout(layout)
 
-    def insert_users (self):
+    def insert_users(self):
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
