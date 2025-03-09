@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="new updated README.MD that contains the sprint 4 information.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="adding secrets to .yml for YOUR_API_KEY.txt. Trying to figure out placement.">
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,22 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00167" summary="testing professor's recommended .yml sudo libgl">
-      <option name="closed" value="true" />
-      <created>1740526512145</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1740526512145</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Using my libgl that works">
-      <option name="closed" value="true" />
-      <created>1740526617575</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1740526617575</updated>
     </task>
     <task id="LOCAL-00169" summary="attempting fix data leak">
       <option name="closed" value="true" />
@@ -632,7 +615,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741491090749</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="adding secrets to .yml for YOUR_API_KEY.txt">
+      <option name="closed" value="true" />
+      <created>1741491458111</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1741491458111</updated>
+    </task>
+    <task id="LOCAL-00217" summary="adding secrets to .yml for YOUR_API_KEY.txt. Trying to figure out placement.">
+      <option name="closed" value="true" />
+      <created>1741491562843</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1741491562843</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -647,8 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removing blank lines" />
-    <MESSAGE value="add blank line for line 121" />
     <MESSAGE value="trying new changes out" />
     <MESSAGE value="revising the function" />
     <MESSAGE value="add export offscreen" />
@@ -672,6 +669,8 @@
     <MESSAGE value="fixed various linting errors and mistakes" />
     <MESSAGE value="added google-generative ai" />
     <MESSAGE value="new updated README.MD that contains the sprint 4 information." />
-    <option name="LAST_COMMIT_MESSAGE" value="new updated README.MD that contains the sprint 4 information." />
+    <MESSAGE value="adding secrets to .yml for YOUR_API_KEY.txt" />
+    <MESSAGE value="adding secrets to .yml for YOUR_API_KEY.txt. Trying to figure out placement." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding secrets to .yml for YOUR_API_KEY.txt. Trying to figure out placement." />
   </component>
 </project>
