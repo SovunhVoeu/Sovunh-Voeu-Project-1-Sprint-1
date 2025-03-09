@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="created thirdWindow.py to select users for the resume and cover letter">
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="complete the user profile and job selection.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
@@ -56,6 +56,7 @@
     "Python tests.Python tests for test_db.test_insert_data_rapidJobs.executor": "Run",
     "Python tests.Python tests for test_db.test_main.executor": "Run",
     "Python tests.Python tests for test_gui.test_job_select_return.executor": "Run",
+    "Python tests.Python tests in test_ai.py.executor": "Run",
     "Python tests.Python tests in test_data.py.executor": "Run",
     "Python tests.Python tests in test_db.py.executor": "Run",
     "Python tests.Python tests in test_gui.py.executor": "Run",
@@ -67,18 +68,19 @@
     "Python.mainWindow.executor": "Run",
     "Python.test_db.executor": "Run",
     "Python.test_main.executor": "Run",
+    "Python.thirdWindow.executor": "Run",
     "Python.userProfiles.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Brand/PycharmProjects/pythonProject",
+    "last_opened_file_path": "C:/Users/Brand/PycharmProjects/pythonProject/tests",
     "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\tests" />
+      <recent name="C:\Users\Brand\PycharmProjects\pythonProject" />
       <recent name="C:\Users\Brand\PycharmProjects\pythonProject\.github\workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -240,14 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00162" summary="took out the tests/test_Data.py">
-      <option name="closed" value="true" />
-      <created>1740522264137</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1740522264137</updated>
     </task>
     <task id="LOCAL-00163" summary="trying to exit the file to stop it from hanging">
       <option name="closed" value="true" />
@@ -633,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741396465281</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="complete the user profile and job selection.">
+      <option name="closed" value="true" />
+      <created>1741411702399</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1741411702399</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -648,7 +650,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to fix the hang loop" />
     <MESSAGE value="testing functions by handling missing data" />
     <MESSAGE value="Took out 3rd function" />
     <MESSAGE value="fix lint import not used" />
@@ -673,6 +674,7 @@
     <MESSAGE value="commented out 3rd function since it doesnt work for GITHUB" />
     <MESSAGE value="refactored, reformatted, and created cover letter and resume converter" />
     <MESSAGE value="created thirdWindow.py to select users for the resume and cover letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="created thirdWindow.py to select users for the resume and cover letter" />
+    <MESSAGE value="complete the user profile and job selection." />
+    <option name="LAST_COMMIT_MESSAGE" value="complete the user profile and job selection." />
   </component>
 </project>

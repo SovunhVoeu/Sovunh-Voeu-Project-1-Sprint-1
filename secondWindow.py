@@ -16,7 +16,7 @@ from PyQt6.QtWidgets import (
     )
 from PyQt6.QtSql import QSqlDatabase, QSqlQuery
 # import sqlite3
-from ai import prompts, example_main
+# from ai import prompts, example_main
 from thirdWindow import UserSelectionWindow
 
 
@@ -30,7 +30,9 @@ class SecondWindow(QWidget):
 
         layout = QVBoxLayout()
         self.details_label = QLabel("Add your information to the boxes that apply to you. Once each box is filled or "
-                                    "left blank you may click the Save Information button at the bottom of the page.")
+                                    "left blank you may click the Save Information button at the bottom of the page.\n"
+                                    " If you would like to create a resume and cover letter click the Open User "
+                                    "Selection Window button.")
         layout.addWidget(self.details_label)
 
         form_layout = QFormLayout()

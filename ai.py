@@ -10,21 +10,6 @@ import google.generativeai as genai
 from pathlib import Path
 
 
-"""
-Plans For Sprint 4:
-Create the button for the resume in the secondWindow.py
-Program the actual AI prompt in the ai.py file
-
-Split this .py file into multiple functions for easier readability and debugging.
-the api_model_and_response function is gonna be left alone since most of the function requirements is there.
-Definitely gonna need seperate functions regarding the markdowns and requests though.
-
-Errors:
-The errors I am running into so far is that the resume and cover letter are not being generated.
-It may be the main() function that is causing the issue.
-"""
-
-
 def gemini_setup():
     file_path = Path("YOUR_API_KEY.txt")
     api = file_path.read_text().strip()
