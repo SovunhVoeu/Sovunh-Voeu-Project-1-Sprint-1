@@ -25,11 +25,6 @@ jobs:
         python-version: "3.10"
     - name: Set PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
-    - name: Build Secrets
-      env:
-      API_KEY: ${{ secrets.YOUR_API_KEY }}
-      run: |
-        echo 'gemini_api_key = "'$API_KEY'"' >> YOUR_API_KEY.txt
     - name: Install dependencies
       run: |
         sudo apt update && sudo apt install --yes libgl1-mesa-dev libxkbcommon-x11-0 xvfb libxcb-xinerama0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 qt6-base-dev
@@ -39,6 +34,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip uninstall opencv-python
         pip install opencv-python-headless
+    - name: Build Secrets
+      env:
+      API_KEY: ${{ secrets.YOUR_API_KEY }}
+      run: |
+        echo 'gemini_api_key = "'$API_KEY'"' >> YOUR_API_KEY.txt
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
