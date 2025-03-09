@@ -3,22 +3,22 @@ Project 1 SPRINT 4:
 Description:
 This project opens a gui that allows the user to view 2 lists of jobs that can be selected to see the details that are
 gathered from the jobs.db. There is also a second window that appears once the Open User Input Data button is clicked,
-this window will all for the user information to be stored within the jobs.db under a table called user_data. There is
-also a pytest created called test_gui.py under the tests folder directory. In order to see what the test_gui.py spat out
-you will need to open the user_data table in the jobs.db under the test dir since it operates separately. The functions
-within the test_gui.py that are intended to cover the cases are test_job_select_return, test_job_select_return2, and
-test_user_data_entry_save. The test_job_select_return cover the rapidResults table, while the test_job_select_return2
-covers the rapid_jobs2 table. The test_user_data_entry_save is one long function that covers all the user input data.
+this window will all for the user information to be stored within the jobs.db under a table called user_data. At the
+bottom of this page there is a button that will open a third window that will allow the user to input a 
+job and user dropdown where you can click confirm job to generate a ai made resume and cover letter. The tests are in
+test_ai.py my test functions are test_gemini_api_response, test_prompt_contains_job_and_user_data, and 
+test_retrieve_job_user_data. The test_gemini_api_response tests the response from the gemini api. The 
+test_prompt_contains_job_and_user_data tests if my prompt contains both the job and user description. While my
+test_retrieve_job_user_data tests if the job and user data is retrieved from the database.
 
 Files Used or created:
-test_gui.py, gui.py, and jobs.db
+test_ai.py, main.py, ai.py, mainWindow.py, secondWindow.py, thirdWindow.py, and jobs.db
 
 How to run this code:
-To run this code you can just run the gui.py file regularly or click the run next to if __name__ == "__main__":.
-There are more details within the gui that allows for a better navigation of the program itself.
+To run this code open the main.py file and run it. The gui will open and inform you what the program does.
 
 Libraries used: 
-pathlib, pypandoc, os, google.generativeai, sys, pytest and PyQt6
+unittest.mock, json, sqlite3, pathlib, pypandoc, os, google.generativeai, sys, pytest and PyQt6
 
 
 Project 1 SPRINT 3:

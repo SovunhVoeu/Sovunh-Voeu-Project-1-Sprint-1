@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="fixed various linting errors and mistakes">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-app.yml" afterDir="false" />
+    <list default="true" id="e1f89d73-b10e-42cf-81b7-f4fd3679b922" name="Changes" comment="added google-generative ai">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOUR_API_KEY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YOUR_API_KEY.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,14 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738185570186</updated>
-    </task>
-    <task id="LOCAL-00165" summary="made fixes as per professor suggestions">
-      <option name="closed" value="true" />
-      <created>1740526083506</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1740526083506</updated>
     </task>
     <task id="LOCAL-00166" summary="testing professor's recommended .yml sudo libgl">
       <option name="closed" value="true" />
@@ -633,7 +625,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741490253481</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="added google-generative ai">
+      <option name="closed" value="true" />
+      <created>1741490420730</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1741490420730</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -648,7 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix lint import not used" />
     <MESSAGE value="testing revise function to fix the db locking up" />
     <MESSAGE value="removing blank lines" />
     <MESSAGE value="add blank line for line 121" />
@@ -673,6 +672,7 @@
     <MESSAGE value="complete the user profile and job selection." />
     <MESSAGE value="complete the auto testing, added more information on how to run the project." />
     <MESSAGE value="fixed various linting errors and mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed various linting errors and mistakes" />
+    <MESSAGE value="added google-generative ai" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google-generative ai" />
   </component>
 </project>
